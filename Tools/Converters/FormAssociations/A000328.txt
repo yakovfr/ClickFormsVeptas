@@ -1,0 +1,6 @@
+[Pg1]
+Assoc1ID1=1
+Assoc1ID2=0
+Assoc2ID1=1
+Assoc2ID2=0
+

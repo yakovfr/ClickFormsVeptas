@@ -1,0 +1,295 @@
+XML Node Name,ClickForms Cell #,ClickForms Page #,Cell Type,WinTotal Field #,Field Description,Form Section
+FOOTER1,,1,,1,"Hidden, or not used","Hidden, or not used"
+OTHERFILENUMBER,5,1,,2,Other File #,None
+FNMA_FILENUMBER,3,1,,3,FNMA File #,None
+SUBBORROWER,6,1,,4,Borrower,Identification
+SUBCENTRACT,7,1,,5,Census Tract,Identification
+SUBMAPREF,8,1,,6,Map Reference,Identification
+SUBPROPADDRESS,9,1,,7,Property Address,Identification
+SUBCITY,10,1,,8,City,Identification
+SUBCOUNTY,11,1,,9,County,Identification
+SUBSTATE,12,1,,10,State,Identification
+SUBZIP,13,1,,11,Zip Code,Identification
+SUBLEGALDESCRIP,14,1,,12,Legal Description,Identification
+SUBSALEPRICE,15,1,,13,Sale Price,Identification
+SUBDATEOFSALE,16,1,,14,Date of Sale,Identification
+SUBLOANTERM,17,1,,15,Loan Term,Identification
+SUBPRA_FEESIMPLE,18,1,,16,Property Rights: Fee Simple,Identification
+SUBPRA_LEASEHOLD,19,1,,17,Property Rights: Leasehold,Identification
+SUBPRA_DEMINI,20,1,,18,Property Rights: De Minimis PUD,Identification
+SUBRETAX,21,1,,19,"Hidden, or not used","Hidden, or not used"
+SUBLOANCONC,22,1,,20,Loan Charges to be Paid by Seller,Identification
+SUBOTHERCONC,23,1,,21,Other Sales Concessions,Identification
+SUBLENCLIENT,24,1,,22,Lender/Client,Identification
+SUBLCADDRESS,25,1,,23,Lender/Client: Address,Identification
+SUBOCCUPANT,26,1,,24,Occupant,Identification
+SUBAPPRAISER,27,1,,25,Appraiser,Identification
+SUBAPPRINSTRUCT,28,1,,26,Instructions to Appraiser,Identification
+FLD25,,1,,27,"Hidden, or not used","Hidden, or not used"
+NBHLOC_URBAN,30,1,,28,Location: Urban,Neighborhood
+NBHLOC_SUBURBAN,31,1,,29,Location: Suburban,Neighborhood
+NBHLOC_RURAL,32,1,,30,Location: Rural,Neighborhood
+NBHBLTUP_OVER75,33,1,,31,Built up: Over 75%,Neighborhood
+NBHBLTUP_25TO75,34,1,,32,Built up: 25% to 75%,Neighborhood
+NBHBLTUP_UNDER25,35,1,,33,Built up: Under 25%,Neighborhood
+NBHGRWRT_FULL,36,1,,34,Growth Rate: Fully Developed,Neighborhood
+NBHGRWRT_RAPID,37,1,,35,Growth Rate: Rapid,Neighborhood
+NBHGRWRT_STABLE,38,1,,36,Growth Rate: Steady,Neighborhood
+NBHGRWRT_SLOW,39,1,,37,Growth Rate: Slow,Neighborhood
+NBHPROPVAL_INCR,40,1,,38,Property Values: Increasing,Neighborhood
+NBHPROPVAL_STAB,41,1,,39,Property Values: Stable,Neighborhood
+NBHPROPVAL_DECL,42,1,,40,Property Values: Declining,Neighborhood
+NBHDEMSUP_SHRTG,43,1,,41,Demand/Supply: Shortage,Neighborhood
+NBHDEMSUP_INBAL,44,1,,42,Demand/Supply: In Balance,Neighborhood
+NBHDEMSUP_OVRSUP,45,1,,43,Demand/Supply: Over Supply,Neighborhood
+NBHMKTTIME_UND3,46,1,,44,Marketing Time: Under 3 mos.,Neighborhood
+NBHMKTTIME_3TO6,47,1,,45,Marketing Time: 4-6 mos.,Neighborhood
+NBHMKTTIME_OVR6,48,1,,46,Marketing Time: Over 6 mos.,Neighborhood
+PLUONEFAM,49,1,,47,Present Land Use %: One Family,Neighborhood
+PLU2TO4FAM,50,1,,48,Present Land Use %: 2-4 Family,Neighborhood
+PLUAPARTMENT,51,1,,49,Present Land Use %: Apartments,Neighborhood
+PLUCONDO,52,1,,50,Present Land Use %: Condominium,Neighborhood
+PLUCOMMERCIAL,53,1,,51,Present Land Use %: Commercial,Neighborhood
+PLUINDUSTRIAL,54,1,,52,Present Land Use %: Industrial,Neighborhood
+PLUVACANT,55,1,,53,Present Land Use %: Vacant,Neighborhood
+PLUOTHER,56,1,,54,Present Land Use %: Other,Neighborhood
+PLUOTHER_TEXT,57,1,,55,Present Land Use %: Other text,Neighborhood
+LUCNOTLIKELY,58,1,,56,Land Use Change: Not Likely,Neighborhood
+LUCLIKELY,59,1,,57,Land Use Change: Likely,Neighborhood
+LUCINPROCESS,60,1,,58,Land Use Change: In Process,Neighborhood
+LUCFROM,61,1,,59,Land Use Change: From,Neighborhood
+LUCTO_1,62,1,,60,Land Use Change: To,Neighborhood
+PROOWNER,63,1,,61,Predominant Occupancy: Owner,Neighborhood
+PROTENANT,64,1,,62,Predominant Occupancy: Tenant,Neighborhood
+PROVACANT,65,1,,63,Predominant Occupancy: Vacant,Neighborhood
+SFHPRICELOW,66,1,,64,Single Family Housing: Price - Low,Neighborhood
+SFHPRICEHIGH,67,1,,65,Single Family Housing: Price - High,Neighborhood
+SFHPRICEPRED,68,1,,66,Single Family Housing: Price - Predominant,Neighborhood
+SFHAGELOW,69,1,,67,Single Family Housing: Age - Low,Neighborhood
+SFHAGEHIGH,70,1,,68,Single Family Housing: Age - High,Neighborhood
+SFHAGEPRED,71,1,,69,Single Family Housing: Age - Predominant,Neighborhood
+EMSTA_GOOD,72,1,,70,Employment Stability: Good,Neighborhood
+EMSTA_AVERAGE,73,1,,71,Employment Stability: Average,Neighborhood
+EMSTA_FAIR,74,1,,72,Employment Stability: Fair,Neighborhood
+EMSTA_POOR,75,1,,73,Employment Stability: Poor,Neighborhood
+CONEM_GOOD,76,1,,74,Convenience to Employment: Good,Neighborhood
+CONEM_AVERAGE,77,1,,75,Convenience to Employment: Average,Neighborhood
+CONEM_FAIR,78,1,,76,Convenience to Employment: Fair,Neighborhood
+CONEM_POOR,79,1,,77,Convenience to Employment: Poor,Neighborhood
+CONSHO_GOOD,80,1,,78,Convenience to Shopping: Good,Neighborhood
+CONSHO_AVERAGE,81,1,,79,Convenience to Shopping: Average,Neighborhood
+CONSHO_FAIR,82,1,,80,Convenience to Shopping: Fair,Neighborhood
+CONSHO_POOR,83,1,,81,Convenience to Shopping: Poor,Neighborhood
+CONSCH_GOOD,84,1,,82,Convenience to Schools: Good,Neighborhood
+CONSCH_AVERAGE,85,1,,83,Convenience to Schools: Average,Neighborhood
+CONSCH_FAIR,86,1,,84,Convenience to Schools: Fair,Neighborhood
+CONSCH_POOR,87,1,,85,Convenience to Schools: Poor,Neighborhood
+ADPUBTRANS_GOOD,88,1,,86,Adequacy of Public Transportation: Good,Neighborhood
+ADPUBTRANS_AVE,89,1,,87,Adequacy of Public Transportation: Average,Neighborhood
+ADPUBTRANS_FAIR,90,1,,88,Adequacy of Public Transportation: Fair,Neighborhood
+ADPUBTRANS_POOR,91,1,,89,Adequacy of Public Transportation: Poor,Neighborhood
+RECFAC_GOOD,92,1,,90,Recreational Facilities: Good,Neighborhood
+RECFAC_AVERAGE,93,1,,91,Recreational Facilities: Average,Neighborhood
+RECFAC_FAIR,94,1,,92,Recreational Facilities: Fair,Neighborhood
+RECFAC_POOR,95,1,,93,Recreational Facilities: Poor,Neighborhood
+ADUTILS_GOOD,96,1,,94,Adequacy of Utilities: Good,Neighborhood
+ADUTILS_AVERAGE,97,1,,95,Adequacy of Utilities: Average,Neighborhood
+ADUTILS_FAIR,98,1,,96,Adequacy of Utilities: Fair,Neighborhood
+ADUTILS_POOR,99,1,,97,Adequacy of Utilities: Poor,Neighborhood
+PROPCOM_GOOD,100,1,,98,Property Compatibility: Good,Neighborhood
+PROPCOM_AVERAGE,101,1,,99,Property Compatibility: Average,Neighborhood
+PROPCOM_FAIR,102,1,,100,Property Compatibility: Fair,Neighborhood
+PROPCOM_POOR,103,1,,101,Property Compatibility: Poor,Neighborhood
+PRODETCON_GOOD,104,1,,102,Protection from Detrimental Conditions: Good,Neighborhood
+PRODETCON_AVERAGE,105,1,,103,Protection from Detrimental Conditions: Average,Neighborhood
+PRODETCON_FAIR,106,1,,104,Protection from Detrimental Conditions: Fair,Neighborhood
+PRODETCON_POOR,107,1,,105,Protection from Detrimental Conditions: Poor,Neighborhood
+POLFIRPRO_GOOD,108,1,,106,Police and Fire Protection: Good,Neighborhood
+POLFIRPRO_AVERAGE,109,1,,107,Police and Fire Protection: Average,Neighborhood
+POLFIRPRO_FAIR,110,1,,108,Police and Fire Protection: Fair,Neighborhood
+POLFIRPRO_POOR,111,1,,109,Police and Fire Protection: Poor,Neighborhood
+GENAPP_GOOD,112,1,,110,General Appearance of Properties: Good,Neighborhood
+GENAPP_AVERAGE,113,1,,111,General Appearance of Properties: Average,Neighborhood
+GENAPP_FAIR,114,1,,112,General Appearance of Properties: Fair,Neighborhood
+GENAPP_POOR,115,1,,113,General Appearance of Properties: Poor,Neighborhood
+APMAR_GOOD,116,1,,114,Appeal to Market: Good,Neighborhood
+APMAR_AVERAGE,117,1,,115,Appeal to Market: Average,Neighborhood
+APMAR_FAIR,118,1,,116,Appeal to Market: Fair,Neighborhood
+APMAR_POOR,119,1,,117,Appeal to Market: Poor,Neighborhood
+NBHFACTORS_1,120,1,,118,Factors that Affect Marketability,Neighborhood
+FLD118,,1,,119,"Hidden, or not used","Hidden, or not used"
+FLD119,,1,,120,"Hidden, or not used","Hidden, or not used"
+FLD120,,1,,121,"Hidden, or not used","Hidden, or not used"
+SITDIMENSIONS,121,1,,122,Site Dimensions,Site
+RMSAGSQFTGLA,122,1,,123,Total GLA,Site
+SITCORLOT_YES,123,1,,124,Cornet Lot,Site
+SITZONCLASS,124,1,,125,Zoning Classification,Site
+PREIMPR_DO,125,1,,126,Present Improvements: Do Conform,Site
+PREIMPR_DONT,126,1,,127,Present Improvements: Do Not Conform,Site
+SITHBUSE_PRESENT,127,1,,128,Highest & Best Use: Present Use,Site
+SITHBUSE_OTHER,128,1,,129,Highest & Best Use: Other Use,Site
+SITHBUSE_EXPLAIN,129,1,,130,Highest & best use: Explanation,Site
+UTLELECT_PUB,130,1,,131,Electricity: public,Site
+UTLELECT_OTHER,135,1,,132,Electricity: other,Site
+UTLGAS_PUB,131,1,,133,Gas: Public,Site
+UTLGAS_OTHER,136,1,,134,Gas: Other,Site
+UTLWATER_PUB,132,1,,135,Water: Public,Site
+UTLWATER_OTHER,137,1,,136,Water: Other,Site
+UTLSANSEW_PUB,133,1,,137,Sanitary Sewer: Public,Site
+UTLSANSEW_OTHER,138,1,,138,"Hidden, or not used","Hidden, or not used"
+UNDELECTEL,134,1,,139,Underground Elect. & tel.: public,Site
+OSISTREET_PUB,139,1,,140,Off-site Improvements: Street Access Public,Site
+OSISTREET_PRIV,140,1,,141,Off-site Improvements: Street Access Private,Site
+OSISTREET_TYPE,141,1,,142,Off-site Improvements: Street Access Surface,Site
+MAINT_PUB,142,1,,143,Off-site improvements: maintenance - public,Site
+MAINT_PRIVATE,143,1,,144,Off-site improvements: maintenance - private,Site
+STORMSEW,144,1,,145,Off-site improvements: storm sewer,Site
+CUR_GUT,145,1,,146,Off-site improvements: curb/gutter,Site
+SIDEWALK,146,1,,147,Off-site improvements: sidewalk,Site
+STRLIGHTS,147,1,,148,Off-site improvements: street lights,Site
+SITTOPO,148,1,,149,Site Topography,Site
+SITSIZE,149,1,,150,Site Size,Site
+SITSHAPE,150,1,,151,Site Shape,Site
+SITVIEW,151,1,,152,Site View,Site
+SITDRAIN,152,1,,153,Site Drainage,Site
+SITFLDHAZ_NO,153,1,,154,HUD Identified Flood Hazard Area: No,Site
+SITFLDHAZ_YES,154,1,,155,HUD Identified Flood Hazard Area: Yes,Site
+SITCOMMENTS_1,155,1,,156,Site Comments,Site
+FLD157,,1,,157,"Hidden, or not used","Hidden, or not used"
+FLD158,,1,,158,"Hidden, or not used","Hidden, or not used"
+FLD159,,1,,159,"Hidden, or not used","Hidden, or not used"
+GSU_AD_ADDR1,156,1,,160,Comparable Subject: Address - line 1,Market Data Analysis
+GSU_AD_ADDR2,157,1,,161,Comparable Subject: Address - line 2,Market Data Analysis
+GSU_PR_SALEPR1,158,1,,162,Comparable Subject: Sales Price,Market Data Analysis
+GSU_CM_OTHR5_TEXT,159,1,,163,Comparable Subject: price - text,Market Data Analysis
+GSU_PR_PRICE,160,1,,164,Comparable Subject: price,Market Data Analysis
+GSU_SC_SOURCE1,161,1,,165,Comparable Subject: Data/Verification Source 1,Market Data Analysis
+GSU_DT_SALTIM1,162,1,,166,Comparable Subject: Date of Sale/Time Adjustment,Market Data Analysis
+GSU_LC_LOCAT1,163,1,,167,Comparable Subject: Location,Market Data Analysis
+GSU_ST_SITEVW,164,1,,168,Comparable Subject: Site/View,Market Data Analysis
+GSU_CM_OTHR1_TEXT,165,1,,169,Comparable Subject: Other 1 Label,Market Data Analysis
+GSU_BL_BLANK1,166,1,,170,Comparable Subject: Other 1 Data,Market Data Analysis
+GSU_CM_OTHR2_TEXT,167,1,,171,Comparable Subject: Other 2 Label,Market Data Analysis
+GSU_BL_BLANK2,168,1,,172,Comparable Subject: Other 2 Data,Market Data Analysis
+GSU_CM_OTHR3_TEXT,169,1,,173,Comparable Subject: Other 3 Label,Market Data Analysis
+GSU_BL_BLANK3,170,1,,174,Comparable Subject: Other 3 Data,Market Data Analysis
+GSU_CM_OTHR4_TEXT,171,1,,175,Comparable Subject: Other 4 Label,Market Data Analysis
+GSU_BL_BLANK4,172,1,,176,Comparable Subject: Other 4 Data,Market Data Analysis
+GSU_FN_CONC1,173,1,,177,Comparable Subject: Sales or Financing Concessions - line 1,Market Data Analysis
+GSU_FN_CONC2,174,1,,178,Comparable Subject: Sales or Financing Concessions - line 2,Market Data Analysis
+GC1_AD_ADDR1,175,1,,179,Comparable 1: Address - line 1,Market Data Analysis
+GC1_AD_ADDR2,176,1,,180,Comparable 1: Address - line 2,Market Data Analysis
+GC1_PROX1,177,1,,181,Comparable 1: Proximity,Market Data Analysis
+GC1_PR_SALEPR1,178,1,,182,Comparable 1: Sales Price,Market Data Analysis
+GC1_PR_PRICE,179,1,,183,Comparable 1: price,Market Data Analysis
+GC1_SC_SOURCE1,180,1,,184,Comparable 1: Data Sources,Market Data Analysis
+GC1_DT_SALTIM1,181,1,,185,Comparable 1: Date of Sale/Time adjustment,Market Data Analysis
+GC1_DT_SALTIM1_ADJ,182,1,,186,Comparable 1: Date of Sale Adjustment - adjustment,Market Data Analysis
+GC1_LC_LOCAT1,183,1,,187,Comparable 1: Location,Market Data Analysis
+GC1_LC_LOCAT1_ADJ,184,1,,188,Comparable 1: Location Adjustment,Market Data Analysis
+GC1_ST_SITEVW,185,1,,189,Comparable 1: Site/View,Market Data Analysis
+GC1_ST_SITEVW_ADJ,186,1,,190,Comparable 1: Site/View Adjustment,Market Data Analysis
+GC1_BL_BLANK1,187,1,,191,Comparable 1: Other 1 Data,Market Data Analysis
+GC1_BL_BLANK1_ADJ,188,1,,192,Comparable 1: Other 1 Adjustment,Market Data Analysis
+GC1_BL_BLANK2,189,1,,193,Comparable 1: Other 2 Data,Market Data Analysis
+GC1_BL_BLANK2_ADJ,190,1,,194,Comparable 1: Other 2 Adjustment,Market Data Analysis
+GC1_BL_BLANK3,191,1,,195,Comparable 1: Other 3 Data,Market Data Analysis
+GC1_BL_BLANK3_ADJ,192,1,,196,Comparable 1: Other 3 Adjustment,Market Data Analysis
+GC1_BL_BLANK4,193,1,,197,Comparable 1: Other 4 Data,Market Data Analysis
+GC1_BL_BLANK4_ADJ,194,1,,198,Comparable 1: Other 4 Adjustment,Market Data Analysis
+GC1_FN_CONC1,195,1,,199,Comparable 1: Sales or Financing Concessions - line 1,Market Data Analysis
+GC1_FN_CONC1_ADJ,196,1,,200,Comparable 1: Sales or Financing Concessions - line 1 Adjustment,Market Data Analysis
+GC1_FN_CONC2,197,1,,201,Comparable 1: Sales or Financing Concessions - line 2,Market Data Analysis
+GC1_FN_CONC2_ADJ,198,1,,202,Comparable 1: Sales or Financing Concessions - line 2 Adjustment,Market Data Analysis
+GC1_CHECKPOS_ADJ,199,1,,203,Comparable 1: Positive Adjustment Checkbox,Market Data Analysis
+GC1_CHECKNEG_ADJ,200,1,,204,Comparable 1: Negative Adjustment Checkbox,Market Data Analysis
+GC1_NETADJ_ADJ,201,1,,205,Comparable 1: Net Adjustment,Market Data Analysis
+GC1_NET_TEXT1,,1,,206,"Hidden, or not used","Hidden, or not used"
+GC1_NETADJPCT_ADJ,,1,,207,Comparable 1: Net Adjustment %,Market Data Analysis
+GC1_NET_TEXT2,,1,,208,"Hidden, or not used","Hidden, or not used"
+GC1_ADJSALEPRC_ADJ,202,1,,209,Comparable 1: Adjusted Sales Price,Market Data Analysis
+GC2_AD_ADDR1,203,1,,210,Comparable 2: Address - line 1,Market Data Analysis
+GC2_AD_ADDR2,204,1,,211,Comparable 2: Address - line 2,Market Data Analysis
+GC2_PROX1,205,1,,212,Comparable 2: Proximity,Market Data Analysis
+GC2_PR_SALEPR1,206,1,,213,Comparable 2: Sales Price,Market Data Analysis
+GC2_PR_PRICE,207,1,,214,Comparable 2: price,Market Data Analysis
+GC2_SC_SOURCE1,208,1,,215,Comparable 2: Data Sources,Market Data Analysis
+GC2_DT_SALTIM1,209,1,,216,Comparable 2: Date of Sale/Time Adjustment,Market Data Analysis
+GC2_DT_SALTIM1_ADJ,210,1,,217,Comparable 2: Date of Sale/Time Adjustment - Adjustment,Market Data Analysis
+GC2_LC_LOCAT1,211,1,,218,Comparable 2: Location,Market Data Analysis
+GC2_LC_LOCAT1_ADJ,212,1,,219,Comparable 2: Location Adjustment,Market Data Analysis
+GC2_ST_SITEVW,213,1,,220,Comparable 2: Site/View,Market Data Analysis
+GC2_ST_SITEVW_ADJ,214,1,,221,Comparable 2: Site/View Adjustment,Market Data Analysis
+GC2_BL_BLANK1,215,1,,222,Comparable 2: Other 1 Data,Market Data Analysis
+GC2_BL_BLANK1_ADJ,216,1,,223,Comparable 2: Other 1 Adjustment,Market Data Analysis
+GC2_BL_BLANK2,217,1,,224,Comparable 2: Other 2 Data,Market Data Analysis
+GC2_BL_BLANK2_ADJ,218,1,,225,Comparable 2: Other 2 Adjustment,Market Data Analysis
+GC2_BL_BLANK3,219,1,,226,Comparable 2: Other 3 Data,Market Data Analysis
+GC2_BL_BLANK3_ADJ,220,1,,227,Comparable 2: Other 3 Adjustment,Market Data Analysis
+GC2_BL_BLANK4,221,1,,228,Comparable 2: Other 4 Data,Market Data Analysis
+GC2_BL_BLANK4_ADJ,222,1,,229,Comparable 2: Other 4 Adjustment,Market Data Analysis
+GC2_FN_CONC1,223,1,,230,Comparable 2: Sales or Financing Concessions - line 1,Market Data Analysis
+GC2_FN_CONC1_ADJ,224,1,,231,Comparable 2: Sales or Financing Concessions - line 1 Adjustment,Market Data Analysis
+GC2_FN_CONC2,225,1,,232,Comparable 2: Sales or Financing Concessions - line 2,Market Data Analysis
+GC2_FN_CONC2_ADJ,226,1,,233,Comparable 2: Sales or Financing Concessions - line 2 Adjustment,Market Data Analysis
+GC2_CHECKPOS_ADJ,227,1,,234,Comparable 2: Positive Adjustment Checkbox,Market Data Analysis
+GC2_CHECKNEG_ADJ,228,1,,235,Comparable 2: Negative Adjustment Checkbox,Market Data Analysis
+GC2_NETADJ_ADJ,229,1,,236,Comparable 2: Net Adjustment,Market Data Analysis
+GC2_NET_TEXT1,,1,,237,"Hidden, or not used","Hidden, or not used"
+GC2_NETADJPCT_ADJ,,1,,238,Comparable 2: Net Adjustment %,Market Data Analysis
+GC2_NET_TEXT2,,1,,239,"Hidden, or not used","Hidden, or not used"
+GC2_ADJSALEPRC_ADJ,230,1,,240,Comparable 2: Adjusted Sales Price,Market Data Analysis
+GC3_AD_ADDR1,231,1,,241,Comparable 3: Address - line 1,Market Data Analysis
+GC3_AD_ADDR2,232,1,,242,Comparable 3: Address - line 2,Market Data Analysis
+GC3_PROX1,233,1,,243,Comparable 3: proximity to subject,Market Data Analysis
+GC3_PR_SALEPR1,234,1,,244,Comparable 3: Sales Price,Market Data Analysis
+GC3_PR_PRICE,235,1,,245,Comparable 3: price,Market Data Analysis
+GC3_SC_SOURCE1,236,1,,246,Comparable 3: Data Sources,Market Data Analysis
+GC3_DT_SALTIM1,237,1,,247,Comparable 3: Date of Sale/Time Adjustment,Market Data Analysis
+GC3_DT_SALTIM1_ADJ,238,1,,248,Comparable 3: Date of Sale/Time Adjustment - Adjustment,Market Data Analysis
+GC3_LC_LOCAT1,239,1,,249,Comparable 3: Location,Market Data Analysis
+GC3_LC_LOCAT1_ADJ,240,1,,250,Comparable 3: Location Adjustment,Market Data Analysis
+GC3_ST_SITEVW,241,1,,251,Comparable 3: Site/View,Market Data Analysis
+GC3_ST_SITEVW_ADJ,242,1,,252,Comparable 3: Site/View Adjustment,Market Data Analysis
+GC3_BL_BLANK1,243,1,,253,Comparable 3: Other 1 Data,Market Data Analysis
+GC3_BL_BLANK1_ADJ,244,1,,254,Comparable 3: Other 1 Adjustment,Market Data Analysis
+GC3_BL_BLANK2,245,1,,255,Comparable 3: Other 2 Data,Market Data Analysis
+GC3_BL_BLANK2_ADJ,246,1,,256,Comparable 3: Other 2 Adjustment,Market Data Analysis
+GC3_BL_BLANK3,247,1,,257,Comparable 3: Other 3 Data,Market Data Analysis
+GC3_BL_BLANK3_ADJ,248,1,,258,Comparable 3: Other 3 Adjustment,Market Data Analysis
+GC3_BL_BLANK4,249,1,,259,Comparable 3: Other 4 Data,Market Data Analysis
+GC3_BL_BLANK4_ADJ,250,1,,260,Comparable 3: Other 4 Adjustment,Market Data Analysis
+GC3_FN_CONC1,251,1,,261,Comparable 3: Sales or Financing Concessions - line 1,Market Data Analysis
+GC3_FN_CONC1_ADJ,252,1,,262,Comparable 3: Sales or Financing Concessions - line 1 Adjustment,Market Data Analysis
+GC3_FN_CONC2,253,1,,263,Comparable 3: Sales or Financing Concessions - line 2,Market Data Analysis
+GC3_FN_CONC2_ADJ,254,1,,264,Comparable 3: Sales or Financing Concessions - line 2 Adjustment,Market Data Analysis
+GC3_CHECKPOS_ADJ,255,1,,265,Comparable 3: Positive Adjustment Checkbox,Market Data Analysis
+GC3_CHECKNEG_ADJ,256,1,,266,Comparable 3: Negative Adjustment Checkbox,Market Data Analysis
+GC3_NETADJ_ADJ,257,1,,267,Comparable 3: Net Adjustment,Market Data Analysis
+GC3_NET_TEXT1,,1,,268,"Hidden, or not used","Hidden, or not used"
+GC3_NETADJPCT_ADJ,,1,,269,Comparable 3: Net Adjustment %,Market Data Analysis
+GC3_NET_TEXT2,,1,,270,"Hidden, or not used","Hidden, or not used"
+GC3_ADJSALEPRC_ADJ,258,1,,271,Comparable 3: Adjusted Sales Price,Market Data Analysis
+RECMARDATA_1,259,1,,272,Comments on market data,Reconciliation
+FLD267,,1,,273,"Hidden, or not used","Hidden, or not used"
+FLD268,,1,,274,"Hidden, or not used","Hidden, or not used"
+RECCONDITIONS_1,260,1,,275,Conditions of Appraisal,Reconciliation
+FLD271,,1,,276,"Hidden, or not used","Hidden, or not used"
+FLD272,,1,,277,"Hidden, or not used","Hidden, or not used"
+FLD273,,1,,278,"Hidden, or not used","Hidden, or not used"
+RECFINREC_1,261,1,,279,Final Reconciliation,Reconciliation
+FLD275,,1,,280,"Hidden, or not used","Hidden, or not used"
+FLD276,,1,,281,"Hidden, or not used","Hidden, or not used"
+RECINSPECTDATE,262,1,,282,Date of Estimated Market Value,Reconciliation
+RECYEAR,,1,,283,Inspection Date: Year,Reconciliation
+RECESTMKTVALUE,263,1,,284,Estimated Market Value,Reconciliation
+RECOTHER_1,,1,,285,Reconciliation: Other 1,Reconciliation
+RECOTHER_2,,1,,286,Reconciliation: Other 2,Reconciliation
+RECAPPRNAME,264,1,,287,Appraiser: Name,Reconciliation
+RECSUPNAME,273,1,,288,Supervisor: Name,Reconciliation
+RECSUPINSP_DID,271,1,,289,Supervisor: Did Inspect,Reconciliation
+RECSUPINSP_DIDNOT,272,1,,290,Supervisor: Did Not Inspect,Reconciliation
+ENCRYPTION,,1,,291,"Hidden, or not used","Hidden, or not used"
+SIGNATURE,,1,,292,"Hidden, or not used","Hidden, or not used"
+SIGNATUREB,,1,,293,"Hidden, or not used","Hidden, or not used"
+RECCENTURY_0,,1,,294,Inspection Date: Century,Reconciliation

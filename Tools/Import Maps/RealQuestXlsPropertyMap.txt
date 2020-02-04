@@ -1,0 +1,142 @@
+SourceFileType,ExcelFile
+Delimiter,','
+TextQualifier,"
+SrcHasFieldNames,Yes
+SrcHdrHasExcessDelim,No
+SourceFields,130
+1,Record #,,
+2,Situs House No./House Alpha,100001,Property Street No.
+3,Situs Direction/Street/Suffix,100002,Property Street Name
+4,Situs City/State/ZIP/ZIP+4 DWL,926,City/State/Zip
+5,Situs ZIP/ZIP+4,,
+6,Situs Carrier Route,,
+7,Owner Name (First Name First),58,Current Owner
+8,Owner First Name,,
+9,Owner Middle Name,,
+10,Owner Last Name,,
+11,Owner Spouse First/Middle,,
+12,Owner 2,,
+13,Mail Care Of Name,,
+14,Mail Address,,
+15,Mail City/State/ZIP/ZIP+4 DWL,,
+16,Mail State DWL,,
+17,Mail ZIP/ZIP+4,,
+18,Mail Carrier Route,,
+19,Phone Number,,
+20,Land Use,,
+21,Zoning,68,Zoning
+22,Stories No.,148,No. of Stories
+23,No. Residential Units,,
+24,Gross Area,,
+25,Bldg/Living Area,1004,Gross Living Area
+26,Adjusted Area (Total),,
+27,Basement Area,200,Basement Area SqFt
+28,Total Rooms,229,Rooms (Total)
+29,Bedrooms,230,Bedrooms
+30,Baths (Total),231,Bathrooms
+31,Baths (Full),,
+32,Baths (Half),,
+33,Pool,1022,Pool
+34,Fireplace Number,323,Fireplaces
+35,Parking Type,,
+36,Parking Size,,
+37,Sale Price,447,Sale Price
+38,Price per Square Foot,,
+39,Sale Price Type1 DWL,,
+40,Sale Type 2,,
+41,Recording Date,448,Date of Sale
+42,Sale Date,,
+43,Document Number,931,Verification of Sources
+44,1st Mtg Amount,,
+45,1st Mtg Loan Type,,
+46,1st Mtg Interest Rate,,
+47,1st Mtg Interest Rate Type,,
+48,Deed Type,,
+49,Lender,,
+50,Prior Sale Price,935,Prior Sale Price
+51,Prior Sale Type Code1,,
+52,Prior Sale Date,934,Prior Sale Date
+53,Seller,,
+54,Construction Type,,
+55,Foundation,173,Foundation
+56,Exterior Wall,174,Exterior Walls
+57,Roof Material Type,175,Roof Surface
+58,Roof Type,,
+59,Air Conditioning,,
+60,Heat Type,287,Heating Type
+61,Assessment Year,367,Tax Year
+62,Land Value,,
+63,Improvement Value,,
+64,Total Value,,
+65,Total Value (Taxable),,
+66,Property Tax,368,R.E. Taxes $
+67,Tax Area,,
+68,Lot Acreage,,
+69,Lot Area,67,Site
+70,County Land Use,,
+71,State Use,,
+72,Site Influence,,
+73,APN,60,Assesor's Parcel No.
+74,Alt/Old APN,,
+75,Map Ref1,,
+76,Map Ref2,598,Map Reference
+77,Municipality/Township,,
+78,Year Built,100005,Year Built
+79,Year Built (Effective),499,Effective Age (yrs)
+80,Township/Range/Section,,
+81,Census Tract,599,Census Tract
+82,Subdivision,595,Neighborhood or Project Name (Subject Only)
+83,Legal Block,,
+84,Legal Lot,,
+85,Legal Plat BkPg,,
+86,Legal Description,59,Legal Description
+87,County Name,100052,County/State
+88,Tract,,
+89,School District,,
+90,Market Area,,
+91,Owner Transfer Rec Date,,
+92,Owner Transfer Sale Date,,
+93,Owner Transfer Price,,
+94,Owner Transfer Doc #,,
+95,Owner Transfer Deed Type,,
+96,Transfer Doc Number,,
+97,New Construction,,
+98,Title Company,,
+99,2nd Mtg Amount,,
+100,2nd Mtg Loan Type,,
+101,2nd Mtg Int Rate,,
+102,2nd Mtg Int Rate Type,,
+103,Prior Recording Date,,
+104,Prior Document Number,,
+105,Prior Deed Type,,
+106,Prior Lender,,
+107,Prior 1st TD Amount,,
+108,Prior 1st TD Mortgage Type,,
+109,Prior 1st TD Int Rate,,
+110,Prior 1st TD Int Rate Type,,
+111,ABOVE_GRADE_SQFT,,
+112,Other Improvements,,
+113,Garage Capacity Number,,
+114,Parking Spaces,345,Garage Spaces
+115,Basement Finish Area,201,Basement % Finished
+116,Basement Type,,
+117,Porch Type,,
+118,Style,149,Design (Style)
+119,Quality,994,Construction Quality
+120,Condition,998,Condition
+121,Flood Zone,106,FEMA Zone
+122,Flood Panel,108,FEMA Map No.
+123,Flood Panel Date,107,FEMA Map Date
+124,Lot Width,,
+125,Lot Depth,,
+126,No. Commercial Units,,
+127,Improved %,,
+128,Exempt-Homestead,,
+129,Tax Year,,
+130,School Name,,
+CustomFields,5
+47,City,47,,ExtractCityCityStateZip 926
+48,State,48,,ExtractStateCityStateZip 926
+49,ZIP,49,,ExtractZipCityStateZip 926
+100052,County/State,,,
+50,County/State,50,,BreakField 100052 '1'

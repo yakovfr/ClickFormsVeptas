@@ -1,0 +1,57 @@
+Delimiter,'	'
+SrcHasFieldNames,Yes
+SrcHdrHasExcessDelim,No
+SourceFields,53
+1,Address,46,Property Address
+2,City,47,City
+3,State,48,State
+4,Zip,49,ZIP
+5,County,50,County
+6,APN,60,Assesor's Parcel No.
+7,Tract,599,Census Tract
+8,Map Page/Grid,598,Map Reference
+9,Zone,68,Zoning
+10,Use Code,,
+11,Legal Desc,59,Legal Description
+12,Tax Year,367,Tax Year
+13,Tax Amount,368,R.E. Taxes $
+14,Assessed Value,,
+15,Percent Improvement,,
+16,Owner,58,Current Owner
+17,Sale Date,448,Date of Sale
+18,Sale Value,447,Sale Price
+19,Prior Sale Date,934,Prior Sale Date
+20,Prior Sale Price,935,Prior Sale Price
+21,Effective Year Built,100008,Effective Year Built
+22,Year Built,100005,Year Built
+23,Building Area,1004,Gross Living Area
+24,Lot Size,67,Site
+25,Total Rooms,229,Rooms (Total)
+26,Bedrooms,230,Bedrooms
+27,Bathrooms,231,Bathrooms
+28,Stories,148,No. of Stories
+29,Units,146,Number Of Units
+30,Basement,200,Basement Area SqFt
+31,Fireplaces,323,Fireplaces
+32,Garage,1016,Garage/Carport
+33,Pool/Spa,1022,Pool
+34,Heating,287,Heating Type
+35,Cooling,292,Central Cooling
+36,View,90,View
+37,Roof Type,,
+38,Design,149,Design (Style)
+39,Shape,,
+40,Quality,994,Construction Quality
+41,Document Number,931,Verification of Sources
+42,Document Type,,
+43,Prior Document No.,,
+44,Prior Document Type,,
+45,Owner Address,,
+46,Owner Zip,,
+47,Transferred From,,
+48,Seller Address,,
+49,Lender,,
+50,Loan Amount,,
+51,Loan Type,,
+52,Full/Partial,,
+53,MLS#,930,Data Source

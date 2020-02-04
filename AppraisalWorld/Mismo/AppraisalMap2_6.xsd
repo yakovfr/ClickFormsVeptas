@@ -1,0 +1,4580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ===============================================================================
+  Title                : Real Estate Property Information Valuation Response v2.6 Errata 1 XSD
+  File Name            : REAL_ESTATE_PROPERTY_INFORMATION_VALUATION_RESPONSE_v2_6_Errata_1.XSD
+  ELE Version          :                               
+  Creation Date        : 2010-09-07    
+  Modification Date    :           
+  Modification Date    : 
+  ===============================================================================
+  ===============================================================================
+   Copyright 2010 Mortgage Industry Standards Maintenance Organization (MISMO)
+   All rights reserved.
+   THIS MISMO STANDARD INCLUDES THE END USER LICENSE AGREEMENT ATTACHED HERETO AT http://www.mismo.org/mismo/pdf/ipr_policy.pdf AND IS GOVERNED BY AND SUBJECT TO THE END USER LICENSE AGREEMENT. NO USER OF
+   THIS STANDARD MAY REMOVE THIS REFERENCE TO AND STATEMENT REGARDING THE END USER LICENSE. ANY HARD COPY PUBLICATION OF THIS STANDARD MUST INCLUDE AND ATTACH A HARD COPY PRINT OUT OFTHE END USER
+   LICENSE.  ANY FURTHER ELECTRONIC DISTRIBUTION OF THIS STANDARD MUST INCLUDE A SPECIFIC REFERENCED LINK TO THE END USER LICENSE AGREEMENT OR OTHER MEANS OF ATTACHMENT OF THE END USER LICENSE
+   AGREEMENT.
+  
+   DISCLAIMER: THIS MISMO STANDARD IS PROVIDED "AS IS." MISMO, THE MORTGAGE BANKERS ASSOCIATION OF AMERICA ("MBA"), THE COPYRIGHT HOLDER, THE AUTHORS OF THIS MISMO STANDARD AND ANY STANDARD-SETTING
+   BODY PARTICIPANTS TO THIS MISMO STANDARD MAKE NO REPRESENTATIONS OR WARRANTIES (i) EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+   TITLE OR NON-INFRINGEMENT; (ii) THAT THE CONTENTS OF SUCH MISMO STANDARD ARE FREE FROM ERROR OR SUITABLE FOR ANY PURPOSE; NOR THAT IMPLEMENTATION OF SUCH CONTENTS WILL NOT INFRINGE ANY THIRD-PARTY
+   PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS. IN NO EVENT WILL MISMO, MBA, THE COPYRIGHT HOLDER OR THE STANDARD-SETTING BODY PARTICIPANTS TO THIS MISMO STANDARD BE LIABLE TO ANY PARTY FOR ANY
+   DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES FOR ANY USE OF THIS MISMO STANDARD, INCLUDING, WITHOUT LIMITATION, ANY LOST PROFITS, BUSINESS INTERRUPTION, LOSS OF PROGRAMS OR OTHER DATA ON YOUR
+   INFORMATION HANDLING SYSTEM OR OTHERWISE, EVEN IF MISMO, MBA, THE COPYRIGHT HOLDER AND/OR ANY AUTHORS AND/OR ANY STANDARD-SETTING BODY PARTICIPANTS TO THIS MISMO STANDARD ARE EXPRESSLY
+   ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+   ================================================================================
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="VALUATION_RESPONSE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="REPORT" minOccurs="0"/>
+				<xs:element ref="PARTIES" minOccurs="0"/>
+				<xs:element ref="PROPERTY" minOccurs="0"/>
+				<xs:element ref="VALUATION_METHODS" minOccurs="0"/>
+				<xs:element ref="VALUATION" minOccurs="0"/>
+				<xs:element ref="APPRAISAL_UPDATE" minOccurs="0"/>
+				<xs:element ref="APPRAISAL_REVIEW" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.VALUATION_RESPONSE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.VALUATION_RESPONSE">
+		<xs:attribute name="MISMOVersionID" default="2.6">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="2.6"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="REPORT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="FORM" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="EMBEDDED_FILE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="REFERENCED_FILE" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.REPORT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.REPORT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="AppraisalSoftwareProductName"/>
+		<xs:attribute name="AppraisalSoftwareProductVersionIdentifier"/>
+		<xs:attribute name="AppraisalFormType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="FNM1004"/>
+					<xs:enumeration value="FNM1004B"/>
+					<xs:enumeration value="FNM1004C"/>
+					<xs:enumeration value="FNM1004D"/>
+					<xs:enumeration value="ERC2001"/>
+					<xs:enumeration value="ERC2003"/>
+					<xs:enumeration value="FNM2090"/>
+					<xs:enumeration value="FNM2095"/>
+					<xs:enumeration value="FNM1073"/>
+					<xs:enumeration value="FNM1075"/>
+					<xs:enumeration value="FNM1025"/>
+					<xs:enumeration value="FNM2000"/>
+					<xs:enumeration value="FNM2000A"/>
+					<xs:enumeration value="FNM2055"/>
+					<xs:enumeration value="FNM2065"/>
+					<xs:enumeration value="FRE2070"/>
+					<xs:enumeration value="FNM2075"/>
+					<xs:enumeration value="MobileHome"/>
+					<xs:enumeration value="VacantLand"/>
+					<xs:enumeration value="FNM442"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AppraisalFormTypeOtherDescription"/>
+		<xs:attribute name="AppraisalFormVersionIdentifier"/>
+		<xs:attribute name="USPAPReportDescription"/>
+		<xs:attribute name="AppraiserFileIdentifier"/>
+		<xs:attribute name="AppraiserAdditionalFileIdentifierName"/>
+		<xs:attribute name="AppraiserAdditionalFileIdentifier"/>
+		<xs:attribute name="LoanPurposeType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="ConstructionOnly"/>
+					<xs:enumeration value="ConstructionToPermanent"/>
+					<xs:enumeration value="Purchase"/>
+					<xs:enumeration value="Refinance"/>
+					<xs:enumeration value="Unknown"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="OtherLoanPurposeDescription"/>
+		<xs:attribute name="LoanOriginationSystemLoanIdentifier"/>
+		<xs:attribute name="AppraiserReportSignedDate"/>
+		<xs:attribute name="SupervisorReportSignedDate"/>
+		<xs:attribute name="AppraisalScopeOfWorkDescription"/>
+		<xs:attribute name="AppraisalIntendedUserDescription"/>
+		<xs:attribute name="AppraisalIntendedUseDescription"/>
+		<xs:attribute name="AppraisalPurposeType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="EmployeeRelocation"/>
+					<xs:enumeration value="JuniorLien"/>
+					<xs:enumeration value="Other"/>
+					<xs:enumeration value="PortfolioEvaluation"/>
+					<xs:enumeration value="Purchase"/>
+					<xs:enumeration value="QualityControl"/>
+					<xs:enumeration value="Refinance"/>
+					<xs:enumeration value="REO"/>
+					<xs:enumeration value="Review"/>
+					<xs:enumeration value="Validation"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AppraisalPurposeTypeOtherDescription"/>
+		<xs:attribute name="_TitleDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="FORM">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="IMAGE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="MARKET" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.FORM"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.FORM">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="AppraisalReportContentSequenceIdentifier"/>
+		<xs:attribute name="AppraisalReportContentType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="CoverPage"/>
+					<xs:enumeration value="AppraisalForm"/>
+					<xs:enumeration value="Certification"/>
+					<xs:enumeration value="ExtraSales"/>
+					<xs:enumeration value="ExtraRentals"/>
+					<xs:enumeration value="ExtraListsings"/>
+					<xs:enumeration value="Addendum"/>
+					<xs:enumeration value="Sketch"/>
+					<xs:enumeration value="LocationMap"/>
+					<xs:enumeration value="PlatMap"/>
+					<xs:enumeration value="FloodMap"/>
+					<xs:enumeration value="SubjectPhotos"/>
+					<xs:enumeration value="SalePhotos"/>
+					<xs:enumeration value="ListingPhotos"/>
+					<xs:enumeration value="RentalPhotos"/>
+					<xs:enumeration value="CommentAddendum"/>
+					<xs:enumeration value="Exhibit"/>
+					<xs:enumeration value="SalesContract"/>
+					<xs:enumeration value="AppraisalLicense"/>
+					<xs:enumeration value="Invoice"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AppraisalReportContentTypeOtherDescription"/>
+		<xs:attribute name="AppraisalReportContentIdentifier"/>
+		<xs:attribute name="AppraisalReportContentName"/>
+		<xs:attribute name="AppraisalReportContentDescription"/>
+		<xs:attribute name="AppraisalAddendumText"/>
+		<xs:attribute name="_TitleDescription"/>
+		<xs:attribute name="AppraisalReportContentIsPrimaryFormIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="MARKET">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MARKET_INVENTORY" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="SUBJECT_PROJECT" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.MARKET"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.MARKET">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="MarketTrendsAdverseFinancingTrendType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Declining"/>
+					<xs:enumeration value="Stable"/>
+					<xs:enumeration value="Increasing"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="MarketTrendsAdverseFinancingIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SalesConcessionDescription"/>
+		<xs:attribute name="MarketTrendsForeclosureActivityIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="NeighborhoodMarketabilityFactorsDescription"/>
+		<xs:attribute name="DataSourceDescription"/>
+		<xs:attribute name="MarketTrendsReconciliationComment"/>
+	</xs:attributeGroup>
+	<xs:element name="MARKET_INVENTORY">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.MARKET_INVENTORY"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.MARKET_INVENTORY">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="AbsorptionRate"/>
+					<xs:enumeration value="MedianListDOM"/>
+					<xs:enumeration value="MedianListPrice"/>
+					<xs:enumeration value="MedianSalesDOM"/>
+					<xs:enumeration value="MedianSalesPrice"/>
+					<xs:enumeration value="MedianSalesToListRatio"/>
+					<xs:enumeration value="Supply"/>
+					<xs:enumeration value="TotalListings"/>
+					<xs:enumeration value="TotalSales"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_MonthRangeType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Prior7To12Months"/>
+					<xs:enumeration value="Prior4To6Months"/>
+					<xs:enumeration value="Last3Months"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Count"/>
+		<xs:attribute name="_Rate"/>
+		<xs:attribute name="_Amount"/>
+		<xs:attribute name="_TrendType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Declining"/>
+					<xs:enumeration value="Stable"/>
+					<xs:enumeration value="Increasing"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="SUBJECT_PROJECT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MARKET_INVENTORY" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.SUBJECT_PROJECT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.SUBJECT_PROJECT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="MarketTrendsAdverseFinancingType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Declining"/>
+					<xs:enumeration value="Stable"/>
+					<xs:enumeration value="Increasing"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ProjectName"/>
+		<xs:attribute name="MarketTrendsForeclosureActivityIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="NeighborhoodMarketabilityFactorsDescription"/>
+		<xs:attribute name="MarketTrendsReconciliationComment"/>
+	</xs:attributeGroup>
+	<xs:element name="IMAGE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="EMBEDDED_FILE" minOccurs="0"/>
+				<xs:element ref="REFERENCED_FILE" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.IMAGE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.IMAGE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_SequenceIdentifier"/>
+		<xs:attribute name="_Identifier"/>
+		<xs:attribute name="_Name"/>
+		<xs:attribute name="_CaptionComment"/>
+	</xs:attributeGroup>
+	<xs:element name="EMBEDDED_FILE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="DOCUMENT" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.EMBEDDED_FILE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.EMBEDDED_FILE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type"/>
+		<xs:attribute name="_Version"/>
+		<xs:attribute name="_Name"/>
+		<xs:attribute name="_Extension"/>
+		<xs:attribute name="_EncodingType"/>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="MIMEType"/>
+	</xs:attributeGroup>
+	<xs:element name="DOCUMENT" type="any"/>
+	<xs:element name="REFERENCED_FILE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.REFERENCED_FILE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.REFERENCED_FILE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Name"/>
+		<xs:attribute name="_ExtensionIdentifier"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="PDF"/>
+					<xs:enumeration value="HTML"/>
+					<xs:enumeration value="TXT"/>
+					<xs:enumeration value="XML"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="_PathDescription"/>
+		<xs:attribute name="_URLDescription"/>
+		<xs:attribute name="_CreatorName"/>
+		<xs:attribute name="_CreatorVersionIdentifier"/>
+	</xs:attributeGroup>
+	<xs:element name="PARTIES">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="APPRAISER" minOccurs="0"/>
+				<xs:element ref="SUPERVISOR" minOccurs="0"/>
+				<xs:element ref="REVIEW_APPRAISER" minOccurs="0"/>
+				<xs:element ref="REAL_ESTATE_AGENT" minOccurs="0"/>
+				<xs:element ref="LENDER" minOccurs="0"/>
+				<xs:element ref="BORROWER" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.PARTIES"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.PARTIES">
+		<xs:attribute name="_ID" type="xs:ID"/>
+	</xs:attributeGroup>
+	<xs:element name="APPRAISER">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CONTACT_DETAIL" minOccurs="0"/>
+				<xs:element ref="APPRAISER_LICENSE" minOccurs="0"/>
+				<xs:element ref="INSPECTION" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.APPRAISER"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.APPRAISER">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Name"/>
+		<xs:attribute name="_CompanyName"/>
+		<xs:attribute name="_StreetAddress"/>
+		<xs:attribute name="_StreetAddress2"/>
+		<xs:attribute name="_City"/>
+		<xs:attribute name="_State"/>
+		<xs:attribute name="_PostalCode"/>
+		<xs:attribute name="_Country"/>
+		<xs:attribute name="_Identifier"/>
+	</xs:attributeGroup>
+	<xs:element name="CONTACT_DETAIL">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CONTACT_POINT" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.CONTACT_DETAIL"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.CONTACT_DETAIL">
+		<xs:attribute name="_Name"/>
+		<xs:attribute name="_Identifier"/>
+		<xs:attribute name="_FirstName"/>
+		<xs:attribute name="_LastName"/>
+		<xs:attribute name="_MiddleName"/>
+		<xs:attribute name="_NameSuffix"/>
+		<xs:attribute name="_SequenceIdentifier"/>
+		<xs:attribute name="_ID" type="xs:ID"/>
+	</xs:attributeGroup>
+	<xs:element name="CONTACT_POINT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.CONTACT_POINT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.CONTACT_POINT">
+		<xs:attribute name="_RoleType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Home"/>
+					<xs:enumeration value="Mobile"/>
+					<xs:enumeration value="Work"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Email"/>
+					<xs:enumeration value="Fax"/>
+					<xs:enumeration value="Other"/>
+					<xs:enumeration value="Phone"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Value"/>
+		<xs:attribute name="_PreferenceIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_RoleTypeOtherDescription"/>
+		<xs:attribute name="_ID" type="xs:ID"/>
+	</xs:attributeGroup>
+	<xs:element name="APPRAISER_LICENSE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.APPRAISER_LICENSE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.APPRAISER_LICENSE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Identifier"/>
+		<xs:attribute name="_ExpirationDate"/>
+		<xs:attribute name="_State"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Certificate"/>
+					<xs:enumeration value="License"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="INSPECTION">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.INSPECTION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.INSPECTION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="AppraisalInspectionPropertyType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Subject"/>
+					<xs:enumeration value="Comparable"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AppraisalInspectionType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="ExteriorAndInterior"/>
+					<xs:enumeration value="ExteriorOnly"/>
+					<xs:enumeration value="None"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AppraisalInspectionTypeOtherDescription"/>
+		<xs:attribute name="ExteriorInspectionSufficientIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="InspectionDate"/>
+	</xs:attributeGroup>
+	<xs:element name="SUPERVISOR">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CONTACT_DETAIL" minOccurs="0"/>
+				<xs:element ref="APPRAISER_LICENSE" minOccurs="0"/>
+				<xs:element ref="INSPECTION" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.SUPERVISOR"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.SUPERVISOR">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Name"/>
+		<xs:attribute name="_CompanyName"/>
+		<xs:attribute name="_StreetAddress"/>
+		<xs:attribute name="_StreetAddress2"/>
+		<xs:attribute name="_City"/>
+		<xs:attribute name="_State"/>
+		<xs:attribute name="_PostalCode"/>
+		<xs:attribute name="_Country"/>
+		<xs:attribute name="_Identifier"/>
+	</xs:attributeGroup>
+	<xs:element name="REVIEW_APPRAISER">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CONTACT_DETAIL" minOccurs="0"/>
+				<xs:element ref="APPRAISER_LICENSE" minOccurs="0"/>
+				<xs:element ref="INSPECTION" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.REVIEW_APPRAISER"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.REVIEW_APPRAISER">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Name"/>
+		<xs:attribute name="_CompanyName"/>
+		<xs:attribute name="_StreetAddress"/>
+		<xs:attribute name="_StreetAddress2"/>
+		<xs:attribute name="_City"/>
+		<xs:attribute name="_State"/>
+		<xs:attribute name="_PostalCode"/>
+		<xs:attribute name="_Country"/>
+		<xs:attribute name="_Identifier"/>
+	</xs:attributeGroup>
+	<xs:element name="REAL_ESTATE_AGENT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CONTACT_DETAIL" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.REAL_ESTATE_AGENT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.REAL_ESTATE_AGENT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Listing"/>
+					<xs:enumeration value="Other"/>
+					<xs:enumeration value="Selling"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_UnparsedName"/>
+		<xs:attribute name="_StreetAddress"/>
+		<xs:attribute name="_StreetAddress2"/>
+		<xs:attribute name="_City"/>
+		<xs:attribute name="_State"/>
+		<xs:attribute name="_PostalCode"/>
+		<xs:attribute name="_County"/>
+	</xs:attributeGroup>
+	<xs:element name="LENDER">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CONTACT_DETAIL" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.LENDER"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.LENDER">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Identifier"/>
+		<xs:attribute name="_UnparsedName"/>
+		<xs:attribute name="_StreetAddress"/>
+		<xs:attribute name="_StreetAddress2"/>
+		<xs:attribute name="_City"/>
+		<xs:attribute name="_State"/>
+		<xs:attribute name="_PostalCode"/>
+		<xs:attribute name="_Country"/>
+		<xs:attribute name="AppraisalFormsUnparsedAddress"/>
+	</xs:attributeGroup>
+	<xs:element name="BORROWER">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.BORROWER"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.BORROWER">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_FirstName"/>
+		<xs:attribute name="_MiddleName"/>
+		<xs:attribute name="_LastName"/>
+		<xs:attribute name="_UnparsedName"/>
+	</xs:attributeGroup>
+	<xs:element name="PROPERTY">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PARSED_STREET_ADDRESS" minOccurs="0"/>
+				<xs:element ref="_IDENTIFICATION" minOccurs="0"/>
+				<xs:element ref="_LEGAL_DESCRIPTION" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="STRUCTURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="_OFF_SITE_IMPROVEMENT" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="SITE" minOccurs="0"/>
+				<xs:element ref="PROJECT" minOccurs="0"/>
+				<xs:element ref="NEIGHBORHOOD" minOccurs="0"/>
+				<xs:element ref="_TITLE_TRANSFER_INSPECTION" minOccurs="0"/>
+				<xs:element ref="_TAX" minOccurs="0"/>
+				<xs:element ref="SALES_HISTORY" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="LISTING_HISTORY" minOccurs="0"/>
+				<xs:element ref="EMBEDDED_FILE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="PROPERTY_ANALYSIS" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="_OWNER" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="SALES_CONTRACT" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.PROPERTY"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.PROPERTY">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="MISMOVersionID" default="2.6">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="2.6"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_SequenceIdentifier"/>
+		<xs:attribute name="_StreetAddress"/>
+		<xs:attribute name="_StreetAddress2"/>
+		<xs:attribute name="_City"/>
+		<xs:attribute name="_State"/>
+		<xs:attribute name="_PostalCode"/>
+		<xs:attribute name="_County"/>
+		<xs:attribute name="_Country"/>
+		<xs:attribute name="BuildingStatusType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Complete"/>
+					<xs:enumeration value="Existing"/>
+					<xs:enumeration value="Proposed"/>
+					<xs:enumeration value="SubjectToAlteration"/>
+					<xs:enumeration value="SubstantiallyRehabilitated"/>
+					<xs:enumeration value="UnderConstruction"/>
+					<xs:enumeration value="Incomplete"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="BuildingStatusTypeOtherDescription"/>
+		<xs:attribute name="LandUseType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Residential"/>
+					<xs:enumeration value="Income"/>
+					<xs:enumeration value="Commercial"/>
+					<xs:enumeration value="Industrial"/>
+					<xs:enumeration value="Vacant"/>
+					<xs:enumeration value="Agricultural"/>
+					<xs:enumeration value="PublicAndSemipublic"/>
+					<xs:enumeration value="Recreational"/>
+					<xs:enumeration value="TransportationAndUtility"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="LandUseTypeOtherDescription"/>
+		<xs:attribute name="LandUseComment"/>
+		<xs:attribute name="_ConditionDescription"/>
+		<xs:attribute name="_CurrentOccupancyType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Abandoned"/>
+					<xs:enumeration value="AdverseOccupied"/>
+					<xs:enumeration value="OwnerOccupied"/>
+					<xs:enumeration value="RemovedOrDestroyed"/>
+					<xs:enumeration value="TenantOccupied"/>
+					<xs:enumeration value="Unknown"/>
+					<xs:enumeration value="Vacant"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_CurrentOccupantUnparsedName"/>
+		<xs:attribute name="_GatedCommunityIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_RightsType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="CommunityProperty"/>
+					<xs:enumeration value="FeeSimple"/>
+					<xs:enumeration value="JointTenants"/>
+					<xs:enumeration value="Leasehold"/>
+					<xs:enumeration value="TenantsInCommon"/>
+					<xs:enumeration value="Cooperative"/>
+					<xs:enumeration value="Personal"/>
+					<xs:enumeration value="DeMinimisPUD"/>
+					<xs:enumeration value="Unassigned"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_RightsTypeOtherDescription"/>
+		<xs:attribute name="_TaxDelinquentIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TitleCategoryType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="SingleFamily"/>
+					<xs:enumeration value="Condominium"/>
+					<xs:enumeration value="Townhouse"/>
+					<xs:enumeration value="Cooperative"/>
+					<xs:enumeration value="TwoToFourUnitProperty"/>
+					<xs:enumeration value="MultipleFamilyMoreThanFourUnits"/>
+					<xs:enumeration value="ManufacturedHome"/>
+					<xs:enumeration value="CommercialNonResidential"/>
+					<xs:enumeration value="MixedUserResidential"/>
+					<xs:enumeration value="Farm"/>
+					<xs:enumeration value="HomeAndBusinessCombined"/>
+					<xs:enumeration value="VacantLand"/>
+					<xs:enumeration value="Church"/>
+					<xs:enumeration value="CondominiumOverFourStories"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TitleCategoryTypeOtherDescription"/>
+		<xs:attribute name="_AppraisedWithinPreviousYearIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_AppraisedWithinPreviousYearDescription"/>
+		<xs:attribute name="ProjectClassificationType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Condominium"/>
+					<xs:enumeration value="Cooperative"/>
+					<xs:enumeration value="PUD"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ProjectClassificationTypeOtherDescription"/>
+		<xs:attribute name="LeaseExpirationDate"/>
+	</xs:attributeGroup>
+	<xs:element name="PARSED_STREET_ADDRESS">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.PARSED_STREET_ADDRESS"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.PARSED_STREET_ADDRESS">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_StreetName"/>
+		<xs:attribute name="_DirectionPrefix"/>
+		<xs:attribute name="_DirectionSuffix"/>
+		<xs:attribute name="_StreetSuffix"/>
+		<xs:attribute name="_HouseNumber"/>
+		<xs:attribute name="_BuildingNumber"/>
+		<xs:attribute name="_ApartmentOrUnit"/>
+		<xs:attribute name="_MilitaryAPOFPO"/>
+		<xs:attribute name="_RuralRoute"/>
+		<xs:attribute name="_PostOfficeBox"/>
+		<xs:attribute name="PlusFourPostalCode"/>
+		<xs:attribute name="SitusCarrierRouteIdentifier"/>
+	</xs:attributeGroup>
+	<xs:element name="_IDENTIFICATION">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._IDENTIFICATION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._IDENTIFICATION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="AssessorsParcelIdentifier"/>
+		<xs:attribute name="AssessorsSecondParcelIdentifier"/>
+		<xs:attribute name="CountyFIPSCode"/>
+		<xs:attribute name="CensusTractIdentifier"/>
+		<xs:attribute name="LongitudeNumber"/>
+		<xs:attribute name="LatitudeNumber"/>
+		<xs:attribute name="MapReferenceIdentifier"/>
+		<xs:attribute name="MapReferenceSecondIdentifier"/>
+		<xs:attribute name="MSAIdentifier"/>
+		<xs:attribute name="MunicipalityName"/>
+		<xs:attribute name="SchoolDistrictName"/>
+		<xs:attribute name="StateFIPSCode"/>
+	</xs:attributeGroup>
+	<xs:element name="_LEGAL_DESCRIPTION">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PLATTED_LAND" minOccurs="0"/>
+				<xs:element ref="UNPLATTED_LAND" minOccurs="0"/>
+				<xs:element ref="PARCEL_IDENTIFICATION" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist._LEGAL_DESCRIPTION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._LEGAL_DESCRIPTION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_TextDescription"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="MetesAndBounds"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="PLATTED_LAND">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.PLATTED_LAND"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.PLATTED_LAND">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="PropertyLotIdentifier"/>
+		<xs:attribute name="PropertyBlockIdentifier"/>
+		<xs:attribute name="PropertySectionIdentifier"/>
+		<xs:attribute name="PropertySubdivisionIdentifier"/>
+		<xs:attribute name="PropertyTractIdentifier"/>
+		<xs:attribute name="PlatName"/>
+		<xs:attribute name="_BuildingIdentifier"/>
+		<xs:attribute name="_PlatCodeIdentifier"/>
+		<xs:attribute name="_PlatInstrumentIdentifier"/>
+		<xs:attribute name="_UnitNumberIdentifier"/>
+		<xs:attribute name="RecordedDocumentBook"/>
+		<xs:attribute name="RecordedDocumentPage"/>
+	</xs:attributeGroup>
+	<xs:element name="UNPLATTED_LAND">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.UNPLATTED_LAND"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.UNPLATTED_LAND">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_DescriptionType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="GovernmentSurvey"/>
+					<xs:enumeration value="MetesAndBounds"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_DescriptionTypeOtherDescription"/>
+		<xs:attribute name="PropertyTownshipIdentifier"/>
+		<xs:attribute name="PropertyRangeIdentifier"/>
+		<xs:attribute name="PropertySectionIdentifier"/>
+		<xs:attribute name="_AbstractNumberIdentifier"/>
+		<xs:attribute name="_BaseIdentifier"/>
+		<xs:attribute name="_LandGrantIdentifier"/>
+		<xs:attribute name="_MeridianIdentifier"/>
+		<xs:attribute name="_MetesAndBoundsRemainingDescription"/>
+		<xs:attribute name="_QuarterSectionIdentifier"/>
+	</xs:attributeGroup>
+	<xs:element name="PARCEL_IDENTIFICATION">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.PARCEL_IDENTIFICATION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.PARCEL_IDENTIFICATION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="ParcelIdentificationNumber"/>
+					<xs:enumeration value="TaxMapIdentifier"/>
+					<xs:enumeration value="TaxParcelIdentifier"/>
+					<xs:enumeration value="AssessorUnformattedIdentifier"/>
+					<xs:enumeration value="TorrensCertificateIdentifier"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Identifier"/>
+	</xs:attributeGroup>
+	<xs:element name="STRUCTURE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="STRUCTURE_DATA_SOURCE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="EXTERIOR_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="MANUFACTURED_HOME" minOccurs="0"/>
+				<xs:element ref="FOUNDATION" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="FOUNDATION_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="BASEMENT" minOccurs="0"/>
+				<xs:element ref="INSULATION" minOccurs="0"/>
+				<xs:element ref="LEVEL" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="INTERIOR_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="FLOOR_COVERING" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="HEATING" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="COOLING" minOccurs="0"/>
+				<xs:element ref="KITCHEN_EQUIPMENT" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="ATTIC" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="AMENITY" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="CAR_STORAGE" minOccurs="0"/>
+				<xs:element ref="STRUCTURE_ANALYSIS" minOccurs="0"/>
+				<xs:element ref="_ADDITIONAL_ITEM" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="_UNIT_GROUP" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="_UNIT" minOccurs="0"/>
+				<xs:element ref="_TYPICAL_TO_NEIGHBORHOOD" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.STRUCTURE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.STRUCTURE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="PropertyStructureBuiltYear"/>
+		<xs:attribute name="AgeYearsCount"/>
+		<xs:attribute name="BuildingCount"/>
+		<xs:attribute name="BuildingStatusType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Complete"/>
+					<xs:enumeration value="Existing"/>
+					<xs:enumeration value="Proposed"/>
+					<xs:enumeration value="SubjectToAlteration"/>
+					<xs:enumeration value="SubstantiallyRehabilitated"/>
+					<xs:enumeration value="UnderConstruction"/>
+					<xs:enumeration value="Incomplete"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ElevatorCount"/>
+		<xs:attribute name="StoriesCount"/>
+		<xs:attribute name="_AppealDescription"/>
+		<xs:attribute name="PropertyCategoryType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Attached"/>
+					<xs:enumeration value="Detached"/>
+					<xs:enumeration value="SemiDetached"/>
+					<xs:enumeration value="Church"/>
+					<xs:enumeration value="CommercialNonResidential"/>
+					<xs:enumeration value="CommercialResidential"/>
+					<xs:enumeration value="Farm"/>
+					<xs:enumeration value="HighRise"/>
+					<xs:enumeration value="LandAndLots"/>
+					<xs:enumeration value="LowRise"/>
+					<xs:enumeration value="Manufactured"/>
+					<xs:enumeration value="ManufacturedMultiWide"/>
+					<xs:enumeration value="ManufacturedSingleWide"/>
+					<xs:enumeration value="MobileHome"/>
+					<xs:enumeration value="Modular"/>
+					<xs:enumeration value="SiteBuilt"/>
+					<xs:enumeration value="Stacked"/>
+					<xs:enumeration value="TownhouseRowhouse"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="PropertyCategoryTypeOtherDescription"/>
+		<xs:attribute name="StructureConfigurationType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Duplex"/>
+					<xs:enumeration value="Fourplex"/>
+					<xs:enumeration value="Other"/>
+					<xs:enumeration value="RowHouse"/>
+					<xs:enumeration value="Single"/>
+					<xs:enumeration value="Triplex"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="StructureConfigurationTypeOtherDescription"/>
+		<xs:attribute name="_ConditionDescription"/>
+		<xs:attribute name="_ConstructionStatusDescription"/>
+		<xs:attribute name="_DesignDescription"/>
+		<xs:attribute name="PropertyStructureHabitableYearRoundIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_HeatingCoolingMeteredSeparatelyIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_HeatingCoolingMeteredSeparatelyDescription"/>
+		<xs:attribute name="ManufacturedHomeIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ManufacturedHousingDescription"/>
+		<xs:attribute name="_NeverOccupiedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_SingleFamilyResidenceIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_StateDescription"/>
+		<xs:attribute name="LivingUnitCount"/>
+		<xs:attribute name="_AccessoryUnitCount"/>
+		<xs:attribute name="GrossBuildingAreaSquareFeetCount"/>
+		<xs:attribute name="GrossLivingAreaSquareFeetCount"/>
+		<xs:attribute name="GrossLivingAreaSquareFeetDataSourceDescription"/>
+		<xs:attribute name="TotalRoomCount"/>
+		<xs:attribute name="TotalBedroomCount"/>
+		<xs:attribute name="TotalBathroomCount"/>
+		<xs:attribute name="CharacteristicsAffectMarketabilityDescription"/>
+		<xs:attribute name="_AdditionsDescription"/>
+		<xs:attribute name="ExteriorInspectionSufficientIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="RentControlStatusType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Yes"/>
+					<xs:enumeration value="No"/>
+					<xs:enumeration value="Likely"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="RentControlDescription"/>
+		<xs:attribute name="_InteriorFloorComment"/>
+		<xs:attribute name="_InteriorWallComment"/>
+		<xs:attribute name="ParkingSpaceAssignmentTypeOtherDescription"/>
+		<xs:attribute name="_AccessoryUnitExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AttachmentType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Attached"/>
+					<xs:enumeration value="Detached"/>
+					<xs:enumeration value="SemiDetached"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="STRUCTURE_DATA_SOURCE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.STRUCTURE_DATA_SOURCE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.STRUCTURE_DATA_SOURCE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="DataSourceType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="InteriorExteriorInspection"/>
+					<xs:enumeration value="ExteriorInspectionOnly"/>
+					<xs:enumeration value="PreviousAppraisalFile"/>
+					<xs:enumeration value="ThirdPartyAppraisalReport"/>
+					<xs:enumeration value="MultipleListingService"/>
+					<xs:enumeration value="AssessmentAndTaxRecords"/>
+					<xs:enumeration value="PriorInspection"/>
+					<xs:enumeration value="PropertyOwner"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DataSourceTypeOtherDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="EXTERIOR_FEATURE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.EXTERIOR_FEATURE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.EXTERIOR_FEATURE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Foundation"/>
+					<xs:enumeration value="Walls"/>
+					<xs:enumeration value="RoofSurface"/>
+					<xs:enumeration value="GuttersAndDownspouts"/>
+					<xs:enumeration value="WindowType"/>
+					<xs:enumeration value="WindowStormSash"/>
+					<xs:enumeration value="WindowScreens"/>
+					<xs:enumeration value="WindowInsulation"/>
+					<xs:enumeration value="WindowCombination"/>
+					<xs:enumeration value="Doors"/>
+					<xs:enumeration value="Skirting"/>
+					<xs:enumeration value="Condition"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Description"/>
+	</xs:attributeGroup>
+	<xs:element name="MANUFACTURED_HOME">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="_SECTION" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="_QUALITY" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.MANUFACTURED_HOME"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.MANUFACTURED_HOME">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="LengthFeetCount"/>
+		<xs:attribute name="_DeckDescription"/>
+		<xs:attribute name="_MakeIdentifier"/>
+		<xs:attribute name="_ModelIdentifier"/>
+		<xs:attribute name="_ModelYear"/>
+		<xs:attribute name="_ManufactureDate"/>
+		<xs:attribute name="_PorchDescription"/>
+		<xs:attribute name="_SerialNumberIdentifier"/>
+		<xs:attribute name="_HUDCertificationLabelIdentifier"/>
+		<xs:attribute name="_TipOutDescription"/>
+		<xs:attribute name="_WaniganDescription"/>
+		<xs:attribute name="_WidthType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="SingleWide"/>
+					<xs:enumeration value="MultiWide"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="WidthFeetCount"/>
+		<xs:attribute name="_SectionCount"/>
+		<xs:attribute name="_ModificationsDescription"/>
+		<xs:attribute name="_InstallerName"/>
+		<xs:attribute name="_InstalledDate"/>
+		<xs:attribute name="_AttachedToFoundationIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_AttachedToFoundationDescription"/>
+		<xs:attribute name="_WheelsRemovedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_WheelsDescription"/>
+		<xs:attribute name="_ConnectedToUtilitiesIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ConnectionToUtilitiesDescription"/>
+		<xs:attribute name="_InteriorSpaceAcceptableToMarketIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_InteriorSpaceAcceptabilityToMarketDescription"/>
+		<xs:attribute name="_HUDDataPlateAttachedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_HUDDataPlateDataSourceDescription"/>
+		<xs:attribute name="_HUDCertificationLabelAttachedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_HUDCertificationLabelDataSourceDescription"/>
+		<xs:attribute name="_MeetsHUDRequirementsForLocationIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_MeetsHUDRequirementsForLocationDescription"/>
+		<xs:attribute name="_ManufacturedYear"/>
+	</xs:attributeGroup>
+	<xs:element name="_SECTION">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._SECTION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._SECTION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="SectionOne"/>
+					<xs:enumeration value="SectionTwo"/>
+					<xs:enumeration value="SectionThree"/>
+					<xs:enumeration value="SectionFour"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="DepthFeetCount"/>
+		<xs:attribute name="WidthFeetCount"/>
+		<xs:attribute name="SquareFeetCount"/>
+	</xs:attributeGroup>
+	<xs:element name="_QUALITY">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._QUALITY"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._QUALITY">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="RatingConditionType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Poor"/>
+					<xs:enumeration value="Fair"/>
+					<xs:enumeration value="Average"/>
+					<xs:enumeration value="Good"/>
+					<xs:enumeration value="Excellent"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DataSourceDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="FOUNDATION">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="_CONDITION" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.FOUNDATION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.FOUNDATION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Slab"/>
+					<xs:enumeration value="Crawlspace"/>
+					<xs:enumeration value="Basement"/>
+					<xs:enumeration value="PartialBasement"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ConditionDescription"/>
+		<xs:attribute name="_MaterialType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="PouredConcrete"/>
+					<xs:enumeration value="ConcreteRunners"/>
+					<xs:enumeration value="BlockAndPier"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_MaterialTypeOtherDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="_CONDITION">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._CONDITION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._CONDITION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Dampness"/>
+					<xs:enumeration value="Settlement"/>
+					<xs:enumeration value="Infestation"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Comment"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="FOUNDATION_FEATURE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.FOUNDATION_FEATURE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.FOUNDATION_FEATURE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="SumpPump"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_DetailDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="BASEMENT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="BASEMENT_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="ROOM_TYPE_SUMMARY" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.BASEMENT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.BASEMENT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_CeilingMaterialDescription"/>
+		<xs:attribute name="_FinishedPercent"/>
+		<xs:attribute name="_FinishDescription"/>
+		<xs:attribute name="_FinishedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_FirstFloorAreaPercent"/>
+		<xs:attribute name="_FloorMaterialDescription"/>
+		<xs:attribute name="_WallMaterialDescription"/>
+		<xs:attribute name="SquareFeetCount"/>
+	</xs:attributeGroup>
+	<xs:element name="BASEMENT_FEATURE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.BASEMENT_FEATURE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.BASEMENT_FEATURE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="OutsideEntry"/>
+					<xs:enumeration value="FloorDrain"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="ROOM_TYPE_SUMMARY">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.ROOM_TYPE_SUMMARY"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.ROOM_TYPE_SUMMARY">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="RoomType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Foyer"/>
+					<xs:enumeration value="LivingRoom"/>
+					<xs:enumeration value="DiningRoom"/>
+					<xs:enumeration value="Kitchen"/>
+					<xs:enumeration value="Den"/>
+					<xs:enumeration value="FamilyRoom"/>
+					<xs:enumeration value="RecreationRoom"/>
+					<xs:enumeration value="Bedroom"/>
+					<xs:enumeration value="Bathroom"/>
+					<xs:enumeration value="Laundry"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="RoomTypeOtherDescription"/>
+		<xs:attribute name="_Count"/>
+	</xs:attributeGroup>
+	<xs:element name="INSULATION">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="_AREA" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="_ABSENCE" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.INSULATION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.INSULATION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Comment"/>
+		<xs:attribute name="EnergyEfficientItemsDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="_AREA">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._AREA"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._AREA">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Roof"/>
+					<xs:enumeration value="Ceiling"/>
+					<xs:enumeration value="Walls"/>
+					<xs:enumeration value="Floor"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="InsulationRatingDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="_ABSENCE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._ABSENCE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._ABSENCE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Unknown"/>
+					<xs:enumeration value="None"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Comment"/>
+	</xs:attributeGroup>
+	<xs:element name="LEVEL">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ROOM_TYPE_SUMMARY" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.LEVEL"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.LEVEL">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Basement"/>
+					<xs:enumeration value="LevelOne"/>
+					<xs:enumeration value="LevelTwo"/>
+					<xs:enumeration value="LevelThree"/>
+					<xs:enumeration value="LevelFour"/>
+					<xs:enumeration value="LevelFive"/>
+					<xs:enumeration value="Attic"/>
+					<xs:enumeration value="Other"/>
+					<xs:enumeration value="OtherTwo"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="SquareFeetCount"/>
+		<xs:attribute name="SquareFeetPerUnitCount"/>
+	</xs:attributeGroup>
+	<xs:element name="INTERIOR_FEATURE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="WALL_MATERIAL" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="FLOOR_COVERING" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.INTERIOR_FEATURE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.INTERIOR_FEATURE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Floors"/>
+					<xs:enumeration value="Walls"/>
+					<xs:enumeration value="TrimAndFinish"/>
+					<xs:enumeration value="BathroomWainscot"/>
+					<xs:enumeration value="BathroomFloors"/>
+					<xs:enumeration value="Doors"/>
+					<xs:enumeration value="Appliances"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_ConditionDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="WALL_MATERIAL">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.WALL_MATERIAL"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.WALL_MATERIAL">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Drywall"/>
+					<xs:enumeration value="Paneling"/>
+					<xs:enumeration value="Pressboard"/>
+					<xs:enumeration value="Plaster"/>
+					<xs:enumeration value="Ceramic"/>
+					<xs:enumeration value="Marlite"/>
+					<xs:enumeration value="Fiberglass"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="FLOOR_COVERING">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.FLOOR_COVERING"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.FLOOR_COVERING">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Carpet"/>
+					<xs:enumeration value="Vinyl"/>
+					<xs:enumeration value="CeramicTile"/>
+					<xs:enumeration value="Hardwood"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="HEATING">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.HEATING"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.HEATING">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="ForcedWarmAir"/>
+					<xs:enumeration value="HotWaterBaseboard"/>
+					<xs:enumeration value="Radiant"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_AdditionalUnitDescription"/>
+		<xs:attribute name="_AdditionalUnitName"/>
+		<xs:attribute name="_UnitConditionDescription"/>
+		<xs:attribute name="_FuelDescription"/>
+		<xs:attribute name="_UnitDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="COOLING">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.COOLING"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.COOLING">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="AdequateIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_AdditionalUnitDescription"/>
+		<xs:attribute name="_AdditionalUnitName"/>
+		<xs:attribute name="_CentralizedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_IndividualIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_OtherIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_UnitDescription"/>
+		<xs:attribute name="_UnitConditionDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="KITCHEN_EQUIPMENT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.KITCHEN_EQUIPMENT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.KITCHEN_EQUIPMENT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Refrigerator"/>
+					<xs:enumeration value="RangeOven"/>
+					<xs:enumeration value="Cooktop"/>
+					<xs:enumeration value="Disposal"/>
+					<xs:enumeration value="Dishwasher"/>
+					<xs:enumeration value="Compactor"/>
+					<xs:enumeration value="FanHood"/>
+					<xs:enumeration value="Microwave"/>
+					<xs:enumeration value="WasherDryer"/>
+					<xs:enumeration value="StandAloneOven"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Count"/>
+	</xs:attributeGroup>
+	<xs:element name="ATTIC">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ATTIC_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="LEVEL" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.ATTIC"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.ATTIC">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SquareFeetCount"/>
+	</xs:attributeGroup>
+	<xs:element name="ATTIC_FEATURE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.ATTIC_FEATURE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.ATTIC_FEATURE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Finished"/>
+					<xs:enumeration value="DropStair"/>
+					<xs:enumeration value="Scuttle"/>
+					<xs:enumeration value="Floor"/>
+					<xs:enumeration value="Stairs"/>
+					<xs:enumeration value="Heated"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="AMENITY">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="FLOOR_COVERING" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.AMENITY"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.AMENITY">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Fireplace"/>
+					<xs:enumeration value="SecuritySystem"/>
+					<xs:enumeration value="Intercom"/>
+					<xs:enumeration value="JettedTub"/>
+					<xs:enumeration value="Patio"/>
+					<xs:enumeration value="Deck"/>
+					<xs:enumeration value="Balcony"/>
+					<xs:enumeration value="Porch"/>
+					<xs:enumeration value="Fence"/>
+					<xs:enumeration value="Spa"/>
+					<xs:enumeration value="Pool"/>
+					<xs:enumeration value="WoodStove"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Count"/>
+		<xs:attribute name="_DetailedDescription"/>
+		<xs:attribute name="SquareFeetCount"/>
+	</xs:attributeGroup>
+	<xs:element name="CAR_STORAGE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CAR_STORAGE_LOCATION" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.CAR_STORAGE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.CAR_STORAGE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="AdequateIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="GuestParkingSpacesCount"/>
+		<xs:attribute name="ParkingSpacesCount"/>
+		<xs:attribute name="ParkingSpaceIdentifier"/>
+		<xs:attribute name="ParkingSpaceAssignmentType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Assigned"/>
+					<xs:enumeration value="Owned"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_AttachmentType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Attached"/>
+					<xs:enumeration value="Detached"/>
+					<xs:enumeration value="BuiltIn"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="CAR_STORAGE_LOCATION">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.CAR_STORAGE_LOCATION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.CAR_STORAGE_LOCATION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Garage"/>
+					<xs:enumeration value="Carport"/>
+					<xs:enumeration value="Covered"/>
+					<xs:enumeration value="Driveway"/>
+					<xs:enumeration value="Open"/>
+					<xs:enumeration value="OffStreet"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ParkingSpacesCount"/>
+		<xs:attribute name="SquareFeetCount"/>
+	</xs:attributeGroup>
+	<xs:element name="STRUCTURE_ANALYSIS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="STRUCTURE_ANALYSIS_RATING" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.STRUCTURE_ANALYSIS"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.STRUCTURE_ANALYSIS">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="EffectiveAgeRangeHighYearsCount"/>
+		<xs:attribute name="EffectiveAgeRangeLowYearsCount"/>
+		<xs:attribute name="EffectiveAgeYearsCount"/>
+		<xs:attribute name="RemainingEconomicLifeRangeHighYearsCount"/>
+		<xs:attribute name="RemainingEconomicLifeRangeLowYearsCount"/>
+	</xs:attributeGroup>
+	<xs:element name="STRUCTURE_ANALYSIS_RATING">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.STRUCTURE_ANALYSIS_RATING"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.STRUCTURE_ANALYSIS_RATING">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_ItemType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="ExteriorAppeal"/>
+					<xs:enumeration value="ConstructionQuality"/>
+					<xs:enumeration value="TrimAndFinish"/>
+					<xs:enumeration value="Condition"/>
+					<xs:enumeration value="InteriorAppeal"/>
+					<xs:enumeration value="FunctionalUtility"/>
+					<xs:enumeration value="RoomSizeAndLayout"/>
+					<xs:enumeration value="AdequacyOfClosetsAndStorage"/>
+					<xs:enumeration value="KitchenEquipment"/>
+					<xs:enumeration value="Plumbing"/>
+					<xs:enumeration value="Electrical"/>
+					<xs:enumeration value="Skirting"/>
+					<xs:enumeration value="AdequacyOfInsulation"/>
+					<xs:enumeration value="LocationWithinProjectOrView"/>
+					<xs:enumeration value="OverallLivability"/>
+					<xs:enumeration value="AppealAndMarketability"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ItemTypeOtherDescription"/>
+		<xs:attribute name="RatingConditionType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Excellent"/>
+					<xs:enumeration value="Good"/>
+					<xs:enumeration value="Average"/>
+					<xs:enumeration value="Fair"/>
+					<xs:enumeration value="Poor"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Comment"/>
+	</xs:attributeGroup>
+	<xs:element name="_ADDITIONAL_ITEM">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._ADDITIONAL_ITEM"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._ADDITIONAL_ITEM">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="StructureAdditionalGeneralItemName"/>
+		<xs:attribute name="StructureAdditionalGeneralItemDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="_UNIT_GROUP">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ROOM_TYPE_SUMMARY" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist._UNIT_GROUP"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._UNIT_GROUP">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="UnitType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="UnitOne"/>
+					<xs:enumeration value="UnitTwo"/>
+					<xs:enumeration value="UnitThree"/>
+					<xs:enumeration value="UnitFour"/>
+					<xs:enumeration value="UnitFive"/>
+					<xs:enumeration value="UnitSix"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="LevelCount"/>
+		<xs:attribute name="GrossLivingAreaSquareFeetCount"/>
+		<xs:attribute name="LivingUnitCount"/>
+		<xs:attribute name="TotalRoomCount"/>
+		<xs:attribute name="TotalBedroomCount"/>
+		<xs:attribute name="TotalBathroomCount"/>
+		<xs:attribute name="SquareFeetPerUnitCount"/>
+	</xs:attributeGroup>
+	<xs:element name="_UNIT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._UNIT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._UNIT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="UnitIdentifier"/>
+		<xs:attribute name="LevelCount"/>
+		<xs:attribute name="FloorIdentifier"/>
+		<xs:attribute name="SquareFeetCount"/>
+		<xs:attribute name="AgeYearsCount"/>
+		<xs:attribute name="EffectiveAgeYearsCount"/>
+		<xs:attribute name="ExteriorWallsDescription"/>
+		<xs:attribute name="RoofSurfaceDescription"/>
+		<xs:attribute name="AdditionalImprovementName"/>
+		<xs:attribute name="AdditionalImprovementDescription"/>
+		<xs:attribute name="_SharesCount"/>
+	</xs:attributeGroup>
+	<xs:element name="_TYPICAL_TO_NEIGHBORHOOD">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._TYPICAL_TO_NEIGHBORHOOD"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._TYPICAL_TO_NEIGHBORHOOD">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="StructureFeatureType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Overall"/>
+					<xs:enumeration value="MaterialAndConstruction"/>
+					<xs:enumeration value="Design"/>
+					<xs:enumeration value="Appeal"/>
+					<xs:enumeration value="View"/>
+					<xs:enumeration value="Age"/>
+					<xs:enumeration value="GrossLivingArea"/>
+					<xs:enumeration value="Utilities"/>
+					<xs:enumeration value="LotSize"/>
+					<xs:enumeration value="LotShapeAndTopography"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="StructureFeatureTypeOtherDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_AtypicalDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="_OFF_SITE_IMPROVEMENT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._OFF_SITE_IMPROVEMENT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._OFF_SITE_IMPROVEMENT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Alley"/>
+					<xs:enumeration value="CurbGutter"/>
+					<xs:enumeration value="Gated"/>
+					<xs:enumeration value="Sidewalk"/>
+					<xs:enumeration value="Street"/>
+					<xs:enumeration value="StreetLighting"/>
+					<xs:enumeration value="StreetSurface"/>
+					<xs:enumeration value="StreetMaintenance"/>
+					<xs:enumeration value="StreetAccess"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="_OwnershipType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Public"/>
+					<xs:enumeration value="Private"/>
+					<xs:enumeration value="Unknown"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="SITE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SITE_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="FLOOD_ZONE" minOccurs="0"/>
+				<xs:element ref="SITE_UTILITY" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.SITE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.SITE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Comment"/>
+		<xs:attribute name="CornerLotIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DepthFeetCount"/>
+		<xs:attribute name="HighestBestUseIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="HighestBestUseDescription"/>
+		<xs:attribute name="PropertyAcreageNumber"/>
+		<xs:attribute name="SquareFeetCount"/>
+		<xs:attribute name="_AdverseEasementsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_AdverseEasementsDescription"/>
+		<xs:attribute name="_AdverseEnvironmentalFactorsComment"/>
+		<xs:attribute name="_AreaDescription"/>
+		<xs:attribute name="_DimensionsDescription"/>
+		<xs:attribute name="_UndergroundUtilitiesIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ZoningComplianceType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Legal"/>
+					<xs:enumeration value="Nonconforming"/>
+					<xs:enumeration value="Illegal"/>
+					<xs:enumeration value="NoZoning"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ZoningComplianceDescription"/>
+		<xs:attribute name="_ZoningClassificationIdentifier"/>
+		<xs:attribute name="_ZoningClassificationDescription"/>
+		<xs:attribute name="_ZoningPermitRebuildToCurrentDensityIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="PropertyZoningCategoryType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Residential"/>
+					<xs:enumeration value="Commercial"/>
+					<xs:enumeration value="Industrial"/>
+					<xs:enumeration value="Agricultural"/>
+					<xs:enumeration value="NonResidentialGrandfatheredResidential"/>
+					<xs:enumeration value="NoZoning"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="PropertyZoningCategoryTypeOtherDescription"/>
+		<xs:attribute name="WidthFeetCount"/>
+		<xs:attribute name="RatingConditionType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Excellent"/>
+					<xs:enumeration value="Good"/>
+					<xs:enumeration value="Average"/>
+					<xs:enumeration value="Fair"/>
+					<xs:enumeration value="Poor"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="CharacteristicsAffectMarketabilityDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="SITE_FEATURE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.SITE_FEATURE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.SITE_FEATURE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Topography"/>
+					<xs:enumeration value="Size"/>
+					<xs:enumeration value="Shape"/>
+					<xs:enumeration value="Drainage"/>
+					<xs:enumeration value="Density"/>
+					<xs:enumeration value="View"/>
+					<xs:enumeration value="Landscaping"/>
+					<xs:enumeration value="Driveway"/>
+					<xs:enumeration value="ApparentEasement"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Comment"/>
+	</xs:attributeGroup>
+	<xs:element name="FLOOD_ZONE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.FLOOD_ZONE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.FLOOD_ZONE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="NFIPFloodZoneIdentifier"/>
+		<xs:attribute name="NFIPMapIdentifier"/>
+		<xs:attribute name="NFIPMapPanelDate"/>
+		<xs:attribute name="NFIPCommunityName"/>
+		<xs:attribute name="SpecialFloodHazardAreaIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="SITE_UTILITY">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.SITE_UTILITY"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.SITE_UTILITY">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Electricity"/>
+					<xs:enumeration value="Gas"/>
+					<xs:enumeration value="Water"/>
+					<xs:enumeration value="SanitarySewer"/>
+					<xs:enumeration value="StormSewer"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_PublicIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_NonPublicIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_NonPublicDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="PROJECT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="DEVELOPMENT_STAGE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="PROJECT_RATING" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="PROJECT_CAR_STORAGE" minOccurs="0"/>
+				<xs:element ref="PROJECT_ANALYSIS" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="_PER_UNIT_FEE" minOccurs="0"/>
+				<xs:element ref="_BLANKET_FINANCING" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="_OCCUPANCY" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.PROJECT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.PROJECT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Name"/>
+		<xs:attribute name="_CommonElementsDescription"/>
+		<xs:attribute name="_CommonElementsCompletedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_CommonElementsStatusDescription"/>
+		<xs:attribute name="_CommonElementsLeasedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_CommonElementsLeaseTermsDescription"/>
+		<xs:attribute name="_ConditionAndQualityDescription"/>
+		<xs:attribute name="_ContainsMultipleDwellingUnitsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ContainsMultipleDwellingUnitsDataSourceDescription"/>
+		<xs:attribute name="_ConversionIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ConversionDate"/>
+		<xs:attribute name="_ConversionOriginalUseDescription"/>
+		<xs:attribute name="_ClassificationType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Condominium"/>
+					<xs:enumeration value="Cooperative"/>
+					<xs:enumeration value="PUD"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ClassificationTypeOtherDescription"/>
+		<xs:attribute name="_CurrentStatusDescription"/>
+		<xs:attribute name="_DesignType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="TownhouseRowhouse"/>
+					<xs:enumeration value="GardenProject"/>
+					<xs:enumeration value="MidriseProject"/>
+					<xs:enumeration value="HighriseProject"/>
+					<xs:enumeration value="Attached"/>
+					<xs:enumeration value="Detached"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_DesignTypeOtherDescription"/>
+		<xs:attribute name="_DeveloperControlsProjectManagementIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_DeveloperControlOfProjectManagementDescription"/>
+		<xs:attribute name="_ManagementType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="HomeownersAssociation"/>
+					<xs:enumeration value="Developer"/>
+					<xs:enumeration value="CooperativeBoard"/>
+					<xs:enumeration value="ManagementAgent"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ManagementTypeOtherDescription"/>
+		<xs:attribute name="_ManagementAgentName"/>
+		<xs:attribute name="_PhaseIdentifier"/>
+		<xs:attribute name="PropertyCurrentUsageType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="PrimaryResidence"/>
+					<xs:enumeration value="SecondHome"/>
+					<xs:enumeration value="Investment"/>
+					<xs:enumeration value="Tenant"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_PrimaryOccupancyType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="PrincipleResidence"/>
+					<xs:enumeration value="SecondHome"/>
+					<xs:enumeration value="Tenant"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_UnitDensityPerAcreCount"/>
+		<xs:attribute name="LivingUnitCount"/>
+		<xs:attribute name="ElevatorCount"/>
+		<xs:attribute name="StoriesCount"/>
+		<xs:attribute name="_DataSourceType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="ManagementAgency"/>
+					<xs:enumeration value="CooperativeBoard"/>
+					<xs:enumeration value="HomeownersAssociation"/>
+					<xs:enumeration value="Developer"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_DataSourceTypeOtherDescription"/>
+		<xs:attribute name="DataSourceDescription"/>
+		<xs:attribute name="_ConcentratedOwnershipIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ConcentratedOwnershipDescription"/>
+		<xs:attribute name="_CommercialSpaceIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="CommercialSpaceDescription"/>
+		<xs:attribute name="_PartOfMasterAssociationIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_PartOfMasterAssociationDescription"/>
+		<xs:attribute name="_TotalSharesCount"/>
+		<xs:attribute name="_PerUnitFinancingAmount"/>
+		<xs:attribute name="_PerUnitLienAmount"/>
+		<xs:attribute name="OwnersWithinProjectMoreThanTwoMonthsDelinquentCount"/>
+		<xs:attribute name="_DeveloperTransferConcessionsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_DeveloperTransferConcessionsDescription"/>
+		<xs:attribute name="_TaxAbatementsOrExemptionsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TaxAbatementsOrExemptionsDescription"/>
+		<xs:attribute name="_StockTransferFeeIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_StockTransferFeeDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="DEVELOPMENT_STAGE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.DEVELOPMENT_STAGE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.DEVELOPMENT_STAGE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Complete"/>
+					<xs:enumeration value="Incomplete"/>
+					<xs:enumeration value="SubjectPhase"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="_TotalPhasesCount"/>
+		<xs:attribute name="CompletedUnitsCount"/>
+		<xs:attribute name="LivingUnitCount"/>
+		<xs:attribute name="DataSourceDescription"/>
+		<xs:attribute name="PlannedUnitsCount"/>
+		<xs:attribute name="UnitsForSaleCount"/>
+		<xs:attribute name="UnitsSoldCount"/>
+		<xs:attribute name="UnitsRentedCount"/>
+		<xs:attribute name="OwnerOccupiedUnitCount"/>
+	</xs:attributeGroup>
+	<xs:element name="PROJECT_RATING">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.PROJECT_RATING"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.PROJECT_RATING">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="ProjectAspectType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Location"/>
+					<xs:enumeration value="GeneralAppearance"/>
+					<xs:enumeration value="AmenityAndRecreationalFacilities"/>
+					<xs:enumeration value="Density"/>
+					<xs:enumeration value="UnitMix"/>
+					<xs:enumeration value="QualityOfConstruction"/>
+					<xs:enumeration value="ConditionOfExterior"/>
+					<xs:enumeration value="ConditionOfInterior"/>
+					<xs:enumeration value="AppealToMarket"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ProjectAspectTypeOtherDescription"/>
+		<xs:attribute name="RatingConditionType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Excellent"/>
+					<xs:enumeration value="Good"/>
+					<xs:enumeration value="Average"/>
+					<xs:enumeration value="Fair"/>
+					<xs:enumeration value="Poor"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Comment"/>
+	</xs:attributeGroup>
+	<xs:element name="PROJECT_CAR_STORAGE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CAR_STORAGE_LOCATION" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.PROJECT_CAR_STORAGE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.PROJECT_CAR_STORAGE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="AdequateIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_AdequacyEffectOnMarketabilityDescription"/>
+		<xs:attribute name="GuestParkingIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="GuestParkingSpacesCount"/>
+		<xs:attribute name="ParkingSpacesCount"/>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="_SpacesToUnitsRatioNumber"/>
+	</xs:attributeGroup>
+	<xs:element name="PROJECT_ANALYSIS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="UNIT_CHARGE" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.PROJECT_ANALYSIS"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.PROJECT_ANALYSIS">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_BudgetAnalyzedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_BudgetAnalysisComment"/>
+		<xs:attribute name="_AdequacyOfBudgetType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Adequate"/>
+					<xs:enumeration value="Inadequate"/>
+					<xs:enumeration value="Unknown"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_AdequacyOfManagementType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Adequate"/>
+					<xs:enumeration value="Inadequate"/>
+					<xs:enumeration value="Unknown"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_CharacteristicsAffectMarketabilityIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="CharacteristicsAffectMarketabilityDescription"/>
+		<xs:attribute name="_GroundRentAmount"/>
+		<xs:attribute name="_GroundRentIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_GroundRentDescription"/>
+		<xs:attribute name="_AdditionalFacilitiesFeeIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_AdditionalFacilitiesFeeAmount"/>
+		<xs:attribute name="_AdditionalFacilitiesFeeDescription"/>
+		<xs:attribute name="_UnitChargesIncludeUtilitiesIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_UnitChargesDoNotIncludeUtilitiesComment"/>
+		<xs:attribute name="_UnitChargesRatingType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="High"/>
+					<xs:enumeration value="Typical"/>
+					<xs:enumeration value="Low"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_CompetitiveProjectComparisonType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="High"/>
+					<xs:enumeration value="Average"/>
+					<xs:enumeration value="Low"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_CompetitiveProjectComparisonDescription"/>
+		<xs:attribute name="_SpecialCharacteristicsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_SpecialCharacteristicsDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="UNIT_CHARGE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="UNIT_CHARGE_UTILITY" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.UNIT_CHARGE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.UNIT_CHARGE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_PeriodType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Annually"/>
+					<xs:enumeration value="Biweekly"/>
+					<xs:enumeration value="Daily"/>
+					<xs:enumeration value="Monthly"/>
+					<xs:enumeration value="Quarterly"/>
+					<xs:enumeration value="Semiannually"/>
+					<xs:enumeration value="Semimonthly"/>
+					<xs:enumeration value="Weekly"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Amount"/>
+		<xs:attribute name="_PerSquareFootAmount"/>
+		<xs:attribute name="_NoUtilitiesIncludedInAssessmentIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="UNIT_CHARGE_UTILITY">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.UNIT_CHARGE_UTILITY"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.UNIT_CHARGE_UTILITY">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Heating"/>
+					<xs:enumeration value="Cooling"/>
+					<xs:enumeration value="Electricity"/>
+					<xs:enumeration value="Gas"/>
+					<xs:enumeration value="Water"/>
+					<xs:enumeration value="Sewer"/>
+					<xs:enumeration value="Garbage"/>
+					<xs:enumeration value="Cable"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_IncludedInAssessmentIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="_PER_UNIT_FEE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._PER_UNIT_FEE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._PER_UNIT_FEE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_PeriodType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Annually"/>
+					<xs:enumeration value="Biweekly"/>
+					<xs:enumeration value="Daily"/>
+					<xs:enumeration value="Monthly"/>
+					<xs:enumeration value="Quarterly"/>
+					<xs:enumeration value="Semiannually"/>
+					<xs:enumeration value="Semimonthly"/>
+					<xs:enumeration value="Weekly"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Amount"/>
+	</xs:attributeGroup>
+	<xs:element name="_BLANKET_FINANCING">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._BLANKET_FINANCING"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._BLANKET_FINANCING">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="LienPriorityType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="FirstLien"/>
+					<xs:enumeration value="FourthLien"/>
+					<xs:enumeration value="Other"/>
+					<xs:enumeration value="SecondLien"/>
+					<xs:enumeration value="ThirdLien"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="LienPriorityTypeOtherDescription"/>
+		<xs:attribute name="LienDescription"/>
+		<xs:attribute name="LiabilityUnpaidBalanceAmount"/>
+		<xs:attribute name="BalloonIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="RemainingTermDescription"/>
+		<xs:attribute name="LiabilityMonthlyPaymentAmount"/>
+		<xs:attribute name="CurrentInterestRate"/>
+		<xs:attribute name="LoanAmortizationType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="AdjustableRate"/>
+					<xs:enumeration value="DailySimpleInterest"/>
+					<xs:enumeration value="Fixed"/>
+					<xs:enumeration value="GraduatedPaymentARM"/>
+					<xs:enumeration value="GraduatedPaymentMortgage"/>
+					<xs:enumeration value="GrowingEquityMortgage"/>
+					<xs:enumeration value="OtherAmortizationType"/>
+					<xs:enumeration value="RateImprovementMortgage"/>
+					<xs:enumeration value="ReverseMortgage"/>
+					<xs:enumeration value="Ruleof78s"/>
+					<xs:enumeration value="Step"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="LoanAmortizationTypeOtherDescription"/>
+		<xs:attribute name="LienHolderName"/>
+	</xs:attributeGroup>
+	<xs:element name="_OCCUPANCY">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._OCCUPANCY"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._OCCUPANCY">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="OwnerOccupied"/>
+					<xs:enumeration value="DeveloperVacant"/>
+					<xs:enumeration value="DeveloperTenantMarketRent"/>
+					<xs:enumeration value="DeveloperTenantRegulatedRent"/>
+					<xs:enumeration value="InvestorVacant"/>
+					<xs:enumeration value="InvestorTenantMarketRent"/>
+					<xs:enumeration value="InvestorTenantRegulatedRent"/>
+					<xs:enumeration value="Total"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="LivingUnitCount"/>
+		<xs:attribute name="_Percent"/>
+	</xs:attributeGroup>
+	<xs:element name="NEIGHBORHOOD">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="_HOUSING" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="_TYPICAL_APARTMENT" minOccurs="0"/>
+				<xs:element ref="_PRESENT_LAND_USE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="NEIGHBORHOOD_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="_ADVERSE_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.NEIGHBORHOOD"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.NEIGHBORHOOD">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Name"/>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="_BoundaryAndCharacteristicsDescription"/>
+		<xs:attribute name="_BuiltupRangeType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Over75Percent"/>
+					<xs:enumeration value="25To75Percent"/>
+					<xs:enumeration value="Under25Percent"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_BuiltupEstimatedPercent"/>
+		<xs:attribute name="_DemandSupplyType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Shortage"/>
+					<xs:enumeration value="InBalance"/>
+					<xs:enumeration value="OverSupply"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ExtendedMarketingTimeIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_GrowthPaceType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="FullyDeveloped"/>
+					<xs:enumeration value="Rapid"/>
+					<xs:enumeration value="Stable"/>
+					<xs:enumeration value="Slow"/>
+					<xs:enumeration value="Declining"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_LandUseChangeStatusType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Likely"/>
+					<xs:enumeration value="NotLikely"/>
+					<xs:enumeration value="InProcess"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_LandUseCurrentDescription"/>
+		<xs:attribute name="_LandUseFutureDescription"/>
+		<xs:attribute name="PropertyNeighborhoodLocationType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Urban"/>
+					<xs:enumeration value="Suburban"/>
+					<xs:enumeration value="Rural"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="PropertyNeighborhoodLocationTypeOtherDescription"/>
+		<xs:attribute name="_PotentialManufacturedHomeParkDescription"/>
+		<xs:attribute name="_MarketabilityFactorsDescription"/>
+		<xs:attribute name="_MarketConditionsDescription"/>
+		<xs:attribute name="_StreetMeetsStandardsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_PropertyValueTrendType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Increasing"/>
+					<xs:enumeration value="Stable"/>
+					<xs:enumeration value="Declining"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypicalMarketingTimeDurationType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="UnderThreeMonths"/>
+					<xs:enumeration value="ThreeToSixMonths"/>
+					<xs:enumeration value="OverSixMonths"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_PredominantOccupancyType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Owner"/>
+					<xs:enumeration value="Tenant"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_OwnerOccupancyPercent"/>
+		<xs:attribute name="_TenantOccupancyPercent"/>
+		<xs:attribute name="_PercentageVacancyType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="VacantZeroToFivePercent"/>
+					<xs:enumeration value="VacantOverFivePercent"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_VacancyPercent"/>
+		<xs:attribute name="_AcceptanceOfCooperativeOwnershipIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_AcceptabilityOfCooperativeOwnershipDescription"/>
+		<xs:attribute name="RatingConditionType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Excellent"/>
+					<xs:enumeration value="Good"/>
+					<xs:enumeration value="Average"/>
+					<xs:enumeration value="Fair"/>
+					<xs:enumeration value="Poor"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AdverseMarketConditionsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="_HOUSING">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._HOUSING"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._HOUSING">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="SingleFamily"/>
+					<xs:enumeration value="TwoToFourFamily"/>
+					<xs:enumeration value="Condominium"/>
+					<xs:enumeration value="ManufacturedHome"/>
+					<xs:enumeration value="Cooperative"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_OldestYearsCount"/>
+		<xs:attribute name="_NewestYearsCount"/>
+		<xs:attribute name="_HighPriceAmount"/>
+		<xs:attribute name="_LowPriceAmount"/>
+		<xs:attribute name="_PredominantAgeYearsCount"/>
+		<xs:attribute name="_PredominantPriceAmount"/>
+		<xs:attribute name="_PredominantOccupancyType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Owner"/>
+					<xs:enumeration value="Tenant"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_OwnerOccupancyPercent"/>
+		<xs:attribute name="_TenantOccupancyPercent"/>
+		<xs:attribute name="_PercentageVacancyType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="VacantZeroToFivePercent"/>
+					<xs:enumeration value="VacantOverFivePercent"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_VacancyPercent"/>
+	</xs:attributeGroup>
+	<xs:element name="_TYPICAL_APARTMENT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._TYPICAL_APARTMENT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._TYPICAL_APARTMENT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="AgeYearsCount"/>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="_EstimatedVacancyPercent"/>
+		<xs:attribute name="_VacancyTrendType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Increasing"/>
+					<xs:enumeration value="Stable"/>
+					<xs:enumeration value="Decreasing"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_RentHighPriceAmount"/>
+		<xs:attribute name="_RentLowPriceAmount"/>
+		<xs:attribute name="_RentTrendType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Increasing"/>
+					<xs:enumeration value="Stable"/>
+					<xs:enumeration value="Decreasing"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="RentControlStatusType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Yes"/>
+					<xs:enumeration value="No"/>
+					<xs:enumeration value="Likely"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="RentControlDescription"/>
+		<xs:attribute name="StoriesCount"/>
+		<xs:attribute name="LivingUnitCount"/>
+	</xs:attributeGroup>
+	<xs:element name="_PRESENT_LAND_USE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._PRESENT_LAND_USE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._PRESENT_LAND_USE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="SingleFamily"/>
+					<xs:enumeration value="TwoToFourFamily"/>
+					<xs:enumeration value="Apartment"/>
+					<xs:enumeration value="Condominium"/>
+					<xs:enumeration value="Cooperative"/>
+					<xs:enumeration value="Commercial"/>
+					<xs:enumeration value="Industrial"/>
+					<xs:enumeration value="Vacant"/>
+					<xs:enumeration value="ManufacturedHome"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Percent"/>
+	</xs:attributeGroup>
+	<xs:element name="NEIGHBORHOOD_FEATURE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.NEIGHBORHOOD_FEATURE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.NEIGHBORHOOD_FEATURE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="AdequacyOfShopping"/>
+					<xs:enumeration value="EmploymentOpportunities"/>
+					<xs:enumeration value="RecreationalFacilities"/>
+					<xs:enumeration value="AdequacyOfUtilities"/>
+					<xs:enumeration value="AdequacyOfPublicTransportation"/>
+					<xs:enumeration value="PropertyCompatibility"/>
+					<xs:enumeration value="ProtectionFromDetrimentalConditions"/>
+					<xs:enumeration value="PoliceAndFireProtection"/>
+					<xs:enumeration value="GeneralAppearanceOfProperties"/>
+					<xs:enumeration value="AppealToMarket"/>
+					<xs:enumeration value="EmploymentStability"/>
+					<xs:enumeration value="ConvenienceToEmployment"/>
+					<xs:enumeration value="ConvenienceToShopping"/>
+					<xs:enumeration value="ConvenienceToPublicTransportation"/>
+					<xs:enumeration value="ConvenienceToGrammarSchool"/>
+					<xs:enumeration value="ConvenienceToFreewayAccess"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_EstimatedDistanceText"/>
+		<xs:attribute name="RatingConditionType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Excellent"/>
+					<xs:enumeration value="Good"/>
+					<xs:enumeration value="Average"/>
+					<xs:enumeration value="Fair"/>
+					<xs:enumeration value="Poor"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="_ADVERSE_FEATURE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._ADVERSE_FEATURE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._ADVERSE_FEATURE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="EmploymentConditions"/>
+					<xs:enumeration value="OverSupply"/>
+					<xs:enumeration value="DecliningValues"/>
+					<xs:enumeration value="ExtendedMarketingTime"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Comment"/>
+	</xs:attributeGroup>
+	<xs:element name="_TITLE_TRANSFER_INSPECTION">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._TITLE_TRANSFER_INSPECTION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._TITLE_TRANSFER_INSPECTION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_RequiredIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Comment"/>
+	</xs:attributeGroup>
+	<xs:element name="_TAX">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="_SPECIAL" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="_EXEMPTION" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist._TAX"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._TAX">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_AssessmentStartYear"/>
+		<xs:attribute name="_AssessmentEndYear"/>
+		<xs:attribute name="_CertificateDate"/>
+		<xs:attribute name="_CountyRateAreaIdentifier"/>
+		<xs:attribute name="_ExemptionIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ImprovementValueAmount"/>
+		<xs:attribute name="_LandValueAmount"/>
+		<xs:attribute name="_TotalAssessedValueAmount"/>
+		<xs:attribute name="_TotalTaxableValueAmount"/>
+		<xs:attribute name="_TotalTaxAmount"/>
+		<xs:attribute name="_TotalSpecialTaxAmount"/>
+		<xs:attribute name="_ToValueRate"/>
+		<xs:attribute name="_TypicalTaxIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_AtypicalComment"/>
+		<xs:attribute name="_YearIdentifier"/>
+		<xs:attribute name="_EndYear"/>
+	</xs:attributeGroup>
+	<xs:element name="_SPECIAL">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._SPECIAL"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._SPECIAL">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="_Amount"/>
+	</xs:attributeGroup>
+	<xs:element name="_EXEMPTION">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._EXEMPTION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._EXEMPTION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="_Indicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="SALES_HISTORY">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.SALES_HISTORY"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.SALES_HISTORY">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Last"/>
+					<xs:enumeration value="FirstPrior"/>
+					<xs:enumeration value="SecondPrior"/>
+					<xs:enumeration value="ThirdPrior"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_SequenceIdentifier"/>
+		<xs:attribute name="DownPaymentAmount"/>
+		<xs:attribute name="LenderUnparsedName"/>
+		<xs:attribute name="LoanTermDescription"/>
+		<xs:attribute name="LoanOriginalMaturityTermMonths"/>
+		<xs:attribute name="PricePerSquareFootAmount"/>
+		<xs:attribute name="PropertySalesDate"/>
+		<xs:attribute name="PropertySalesAmount"/>
+		<xs:attribute name="_AnalysisOfAgreementDescription"/>
+		<xs:attribute name="RecordedDocumentType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Assignment"/>
+					<xs:enumeration value="BargainAndSaleDeed"/>
+					<xs:enumeration value="BlanketAssignment"/>
+					<xs:enumeration value="DeedOfTrust"/>
+					<xs:enumeration value="ModificationAgreementOrConsolidationAgreements"/>
+					<xs:enumeration value="Mortgage"/>
+					<xs:enumeration value="PartialSatisfactionOfLien"/>
+					<xs:enumeration value="QuitClaimDeed"/>
+					<xs:enumeration value="Reconveyance"/>
+					<xs:enumeration value="Riders"/>
+					<xs:enumeration value="SatisfactionOfLien"/>
+					<xs:enumeration value="SubordinateLienAgreement"/>
+					<xs:enumeration value="WarrantyDeed"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="RecordedDocumentTypeOtherDescription"/>
+		<xs:attribute name="RecordedDocumentIdentifier"/>
+		<xs:attribute name="_ParcelSplitDescription"/>
+		<xs:attribute name="_PendingRecordIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_StampAmount"/>
+		<xs:attribute name="_TransferredOwnershipPercent"/>
+		<xs:attribute name="SalesConcessionAmount"/>
+		<xs:attribute name="SalesConcessionDescription"/>
+		<xs:attribute name="SellingRealEstateAgencyName"/>
+		<xs:attribute name="SellerUnparsedName"/>
+		<xs:attribute name="TitleCompanyName"/>
+	</xs:attributeGroup>
+	<xs:element name="LISTING_HISTORY">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.LISTING_HISTORY"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.LISTING_HISTORY">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="CurrentlyListedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="CurrentListPriceAmount"/>
+		<xs:attribute name="DaysOnMarketCount"/>
+		<xs:attribute name="OriginalListPriceAmount"/>
+		<xs:attribute name="LastListPriceRevisionDate"/>
+		<xs:attribute name="ListedWithinPreviousYearIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="ListedWithinPreviousYearDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="PROPERTY_ANALYSIS">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.PROPERTY_ANALYSIS"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.PROPERTY_ANALYSIS">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="AdditionalFeatures"/>
+					<xs:enumeration value="AdverseEnvironmentalFactors"/>
+					<xs:enumeration value="Depreciation"/>
+					<xs:enumeration value="QualityAndAppearance"/>
+					<xs:enumeration value="ConformsToNeighborhood"/>
+					<xs:enumeration value="AdversePhysicalDeficiencies"/>
+					<xs:enumeration value="AdverseConditions"/>
+					<xs:enumeration value="AdverseSiteConditions"/>
+					<xs:enumeration value="UtilitiesAndOffSiteImprovementsConformToNeighborhood"/>
+					<xs:enumeration value="ConformsToNeighborhoodInTermsOfSizeAndShape"/>
+					<xs:enumeration value="ExternalObsolescence"/>
+					<xs:enumeration value="HazardousWaste"/>
+					<xs:enumeration value="AdequateIngress"/>
+					<xs:enumeration value="UndergoingRemodeling"/>
+					<xs:enumeration value="AtypicalFunctionalObsolescence"/>
+					<xs:enumeration value="AppearsToBeSingleFamily"/>
+					<xs:enumeration value="PhysicalDeficiency"/>
+					<xs:enumeration value="PropertyCondition"/>
+					<xs:enumeration value="NoAdverseFactors"/>
+					<xs:enumeration value="HasFactorsRequiringAppraisal"/>
+					<xs:enumeration value="HasAdverseFactorsRequiringAppraisal"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_ExistsIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Comment"/>
+	</xs:attributeGroup>
+	<xs:element name="_OWNER">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CONTACT_DETAIL" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist._OWNER"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._OWNER">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Name"/>
+		<xs:attribute name="_StreetAddress"/>
+		<xs:attribute name="_StreetAddress2"/>
+		<xs:attribute name="_City"/>
+		<xs:attribute name="_State"/>
+		<xs:attribute name="_PostalCode"/>
+		<xs:attribute name="_Country"/>
+	</xs:attributeGroup>
+	<xs:element name="SALES_CONTRACT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.SALES_CONTRACT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.SALES_CONTRACT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Date"/>
+		<xs:attribute name="_Amount"/>
+		<xs:attribute name="_ConditionsOfSaleDescription"/>
+		<xs:attribute name="_ReviewedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ReviewComment"/>
+		<xs:attribute name="_TermsAndConditionsConsistentWithTheLocalMarketIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SellerIsOwnerIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SalesConcessionIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DataSourceDescription"/>
+		<xs:attribute name="SalesConcessionDescription"/>
+		<xs:attribute name="_RetailerName"/>
+		<xs:attribute name="_InvoiceReviewedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_InvoiceReviewComment"/>
+		<xs:attribute name="SalesConcessionAmount"/>
+	</xs:attributeGroup>
+	<xs:element name="VALUATION_METHODS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="COST_ANALYSIS" minOccurs="0"/>
+				<xs:element ref="SALES_COMPARISON" minOccurs="0"/>
+				<xs:element ref="INCOME_ANALYSIS" minOccurs="0"/>
+				<xs:element ref="PRICE_FORECASTING" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.VALUATION_METHODS"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.VALUATION_METHODS">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_AdditionalDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="COST_ANALYSIS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="NEW_IMPROVEMENT" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="DEPRECIATION" minOccurs="0"/>
+				<xs:element ref="DATA_IDENTIFICATION" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.COST_ANALYSIS"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.COST_ANALYSIS">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Reproduction"/>
+					<xs:enumeration value="Replacement"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="SiteEstimatedValueAmount"/>
+		<xs:attribute name="SiteEstimatedValueComment"/>
+		<xs:attribute name="DataSourceDescription"/>
+		<xs:attribute name="DataSourceEffectiveDate"/>
+		<xs:attribute name="CostServiceQualityRatingDescription"/>
+		<xs:attribute name="NewImprovementTotalCostAmount"/>
+		<xs:attribute name="NewImprovementCostMultiplierFactor"/>
+		<xs:attribute name="NewImprovementCostLocalizedAmount"/>
+		<xs:attribute name="NewImprovementDepreciatedCostAmount"/>
+		<xs:attribute name="SiteOtherImprovementsAsIsAmount"/>
+		<xs:attribute name="ManufacturedHomeInstallationCostAmount"/>
+		<xs:attribute name="EstimatedRemainingEconomicLifeYearsCount"/>
+		<xs:attribute name="ValueIndicatedByCostApproachAmount"/>
+		<xs:attribute name="_Comment"/>
+	</xs:attributeGroup>
+	<xs:element name="NEW_IMPROVEMENT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.NEW_IMPROVEMENT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.NEW_IMPROVEMENT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_SequenceIdentifier"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Dwelling"/>
+					<xs:enumeration value="Garage"/>
+					<xs:enumeration value="PorchesPatios"/>
+					<xs:enumeration value="EnergyEfficientItems"/>
+					<xs:enumeration value="LevelOne"/>
+					<xs:enumeration value="LevelTwo"/>
+					<xs:enumeration value="LevelThree"/>
+					<xs:enumeration value="LevelFour"/>
+					<xs:enumeration value="LevelFive"/>
+					<xs:enumeration value="SectionOne"/>
+					<xs:enumeration value="SectionTwo"/>
+					<xs:enumeration value="SectionThree"/>
+					<xs:enumeration value="SectionFour"/>
+					<xs:enumeration value="Additional"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_CostDescription"/>
+		<xs:attribute name="SquareFeetCount"/>
+		<xs:attribute name="PricePerSquareFootAmount"/>
+		<xs:attribute name="_CostAmount"/>
+	</xs:attributeGroup>
+	<xs:element name="DEPRECIATION">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.DEPRECIATION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.DEPRECIATION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_PhysicalPercent"/>
+		<xs:attribute name="_PhysicalAmount"/>
+		<xs:attribute name="_FunctionalPercent"/>
+		<xs:attribute name="_FunctionalAmount"/>
+		<xs:attribute name="_ExteriorPercent"/>
+		<xs:attribute name="_ExteriorAmount"/>
+		<xs:attribute name="_TotalAmount"/>
+	</xs:attributeGroup>
+	<xs:element name="DATA_IDENTIFICATION">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.DATA_IDENTIFICATION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.DATA_IDENTIFICATION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="NADAManufacturedHousingGuideEditionMonth"/>
+		<xs:attribute name="NADAManufacturedHousingGuideEditionYear"/>
+		<xs:attribute name="ManufacturedHomeBuiltState"/>
+		<xs:attribute name="ManufacturedHomeRegionIdentifier"/>
+		<xs:attribute name="WidthFeetCount"/>
+		<xs:attribute name="LengthFeetCount"/>
+		<xs:attribute name="NADAManufacturedHousingGuideGreyPageIdentifier"/>
+		<xs:attribute name="NADAManufacturedHousingGuideWhitePageIdentifier"/>
+		<xs:attribute name="NADAManufacturedHousingGuideBlackPageIdentifier"/>
+		<xs:attribute name="NADAManufacturedHousingGuideYellowPageIdentifier"/>
+		<xs:attribute name="NADAManufacturedHousingGuideConversionChartPageIdentifier"/>
+		<xs:attribute name="ManufacturedHomeCostDataComment"/>
+	</xs:attributeGroup>
+	<xs:element name="SALES_COMPARISON">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="OTHER_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="RESEARCH" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="COMPARABLE_SALE" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.SALES_COMPARISON"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.SALES_COMPARISON">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="ValueIndicatedBySalesComparisonApproachAmount"/>
+		<xs:attribute name="_Comment"/>
+		<xs:attribute name="_CurrentSalesAgreementAnalysisComment"/>
+		<xs:attribute name="_UnitOfMeasureDescription"/>
+		<xs:attribute name="_ValuePerUnitAmount"/>
+		<xs:attribute name="_TotalUnitValueAmount"/>
+		<xs:attribute name="_ValuePerRoomAmount"/>
+		<xs:attribute name="_TotalRoomValueAmount"/>
+		<xs:attribute name="_ValuePerBedroomAmount"/>
+		<xs:attribute name="_TotalBedroomValueAmount"/>
+		<xs:attribute name="_ValuePerGrossBuildingAreaAmount"/>
+		<xs:attribute name="_TotalGrossBuildingAreaValueAmount"/>
+	</xs:attributeGroup>
+	<xs:element name="OTHER_FEATURE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.OTHER_FEATURE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.OTHER_FEATURE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="PropertyFeatureSequenceIdentifier"/>
+		<xs:attribute name="PropertyFeatureName"/>
+	</xs:attributeGroup>
+	<xs:element name="RESEARCH">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SUBJECT" minOccurs="0"/>
+				<xs:element ref="COMPARABLE" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.RESEARCH"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.RESEARCH">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="SalesHistoryResearchedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SalesHistoryNotResearchedComment"/>
+		<xs:attribute name="ComparableListingsResearchedCount"/>
+		<xs:attribute name="ComparableListingsPriceRangeLowAmount"/>
+		<xs:attribute name="ComparableListingsPriceRangeHighAmount"/>
+		<xs:attribute name="ComparableSalesResearchedCount"/>
+		<xs:attribute name="ComparableSalesPriceRangeLowAmount"/>
+		<xs:attribute name="ComparableSalesPriceRangeHighAmount"/>
+	</xs:attributeGroup>
+	<xs:element name="SUBJECT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.SUBJECT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.SUBJECT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_HasPriorSalesIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DataSourceDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="COMPARABLE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.COMPARABLE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.COMPARABLE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_HasPriorSalesIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DataSourceDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="COMPARABLE_SALE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="LOCATION" minOccurs="0"/>
+				<xs:element ref="ROOM_ADJUSTMENT" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="SALE_PRICE_ADJUSTMENT" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="OTHER_FEATURE_ADJUSTMENT" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="PRIOR_SALES" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="IMAGE" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.COMPARABLE_SALE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.COMPARABLE_SALE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="PropertySequenceIdentifier"/>
+		<xs:attribute name="ProjectName"/>
+		<xs:attribute name="ProjectPhaseIdentifier"/>
+		<xs:attribute name="DataSourceDescription"/>
+		<xs:attribute name="DataSourceVerificationDescription"/>
+		<xs:attribute name="ManufacturedHomeIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_FurnishedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="MonthlyRentAmount"/>
+		<xs:attribute name="GrossMonthlyRentMultiplierFactor"/>
+		<xs:attribute name="ClosingDate"/>
+		<xs:attribute name="DaysOnMarketCount"/>
+		<xs:attribute name="FinalListPriceAmount"/>
+		<xs:attribute name="PropertySalesAmount"/>
+		<xs:attribute name="SalesPriceToListPriceRate"/>
+		<xs:attribute name="SalesPricePerGrossBuildingAreaAmount"/>
+		<xs:attribute name="SalesPricePerOwnershipShareAmount"/>
+		<xs:attribute name="SalesPricePerGrossLivingAreaAmount"/>
+		<xs:attribute name="SalesPricePerUnitAmount"/>
+		<xs:attribute name="SalesPricePerRoomAmount"/>
+		<xs:attribute name="SalesPricePerBedroomAmount"/>
+		<xs:attribute name="RentControlStatusType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Yes"/>
+					<xs:enumeration value="No"/>
+					<xs:enumeration value="Likely"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SalePriceTotalAdjustmentAmount"/>
+		<xs:attribute name="SalesPriceTotalAdjustmentPositiveIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="SalePriceTotalAdjustmentNetPercent"/>
+		<xs:attribute name="SalesPriceTotalAdjustmentGrossPercent"/>
+		<xs:attribute name="AdjustedSalesPriceAmount"/>
+		<xs:attribute name="AdjustedSalesPricePerUnitAmount"/>
+		<xs:attribute name="AdjustedSalesPricePerRoomAmount"/>
+		<xs:attribute name="AdjustedSalesPricePerBedroomAmount"/>
+		<xs:attribute name="ComparablePropertyComment"/>
+	</xs:attributeGroup>
+	<xs:element name="LOCATION">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.LOCATION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.LOCATION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="PropertyStreetAddress"/>
+		<xs:attribute name="PropertyStreetAddress2"/>
+		<xs:attribute name="UnitIdentifier"/>
+		<xs:attribute name="PropertyCity"/>
+		<xs:attribute name="PropertyState"/>
+		<xs:attribute name="PropertyPostalCode"/>
+		<xs:attribute name="LongitudeNumber"/>
+		<xs:attribute name="LatitudeNumber"/>
+		<xs:attribute name="ProximityToSubjectDescription"/>
+		<xs:attribute name="AppraisalFormsAdditionalLocationDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="ROOM_ADJUSTMENT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.ROOM_ADJUSTMENT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.ROOM_ADJUSTMENT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="UnitSequenceIdentifier"/>
+		<xs:attribute name="TotalRoomCount"/>
+		<xs:attribute name="TotalBedroomCount"/>
+		<xs:attribute name="TotalBathroomCount"/>
+		<xs:attribute name="BathroomAdjustmentAmount"/>
+		<xs:attribute name="RoomAdjustmentAmount"/>
+	</xs:attributeGroup>
+	<xs:element name="SALE_PRICE_ADJUSTMENT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.SALE_PRICE_ADJUSTMENT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.SALE_PRICE_ADJUSTMENT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Additions"/>
+					<xs:enumeration value="AdjustedMonthlyRent"/>
+					<xs:enumeration value="Age"/>
+					<xs:enumeration value="BasementArea"/>
+					<xs:enumeration value="BasementFinish"/>
+					<xs:enumeration value="CarStorage"/>
+					<xs:enumeration value="CommonElements"/>
+					<xs:enumeration value="Condition"/>
+					<xs:enumeration value="DateOfSale"/>
+					<xs:enumeration value="DesignAppeal"/>
+					<xs:enumeration value="DesignStyle"/>
+					<xs:enumeration value="EffectiveAge"/>
+					<xs:enumeration value="EnergyEfficient"/>
+					<xs:enumeration value="FencePool"/>
+					<xs:enumeration value="FinancingConcessions"/>
+					<xs:enumeration value="RoomsBelowGrade"/>
+					<xs:enumeration value="Fireplaces"/>
+					<xs:enumeration value="FloorLocation"/>
+					<xs:enumeration value="Forecasting"/>
+					<xs:enumeration value="FunctionalUtility"/>
+					<xs:enumeration value="Furnishings"/>
+					<xs:enumeration value="GarageCarport"/>
+					<xs:enumeration value="GrossBuildingArea"/>
+					<xs:enumeration value="GrossLivingArea"/>
+					<xs:enumeration value="HeatingCooling"/>
+					<xs:enumeration value="InteriorAppeal"/>
+					<xs:enumeration value="Location"/>
+					<xs:enumeration value="Make"/>
+					<xs:enumeration value="MarketChange"/>
+					<xs:enumeration value="MaintenanceFees"/>
+					<xs:enumeration value="MonthlyFacilityFee"/>
+					<xs:enumeration value="NeighborhoodAppeal"/>
+					<xs:enumeration value="Parking"/>
+					<xs:enumeration value="PorchDeck"/>
+					<xs:enumeration value="ProjectAmenities"/>
+					<xs:enumeration value="ProjectSize"/>
+					<xs:enumeration value="PropertyRights"/>
+					<xs:enumeration value="Quality"/>
+					<xs:enumeration value="RecreationFacilities"/>
+					<xs:enumeration value="RemodelKitchen"/>
+					<xs:enumeration value="RemodelBath"/>
+					<xs:enumeration value="RentConcessions"/>
+					<xs:enumeration value="SalesConcessions"/>
+					<xs:enumeration value="SecurityFeatures"/>
+					<xs:enumeration value="ProjectSecurity"/>
+					<xs:enumeration value="SignificantFeatures"/>
+					<xs:enumeration value="SiteAppeal"/>
+					<xs:enumeration value="SiteArea"/>
+					<xs:enumeration value="SiteValue"/>
+					<xs:enumeration value="TipOut"/>
+					<xs:enumeration value="Utilities"/>
+					<xs:enumeration value="View"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="_Amount"/>
+	</xs:attributeGroup>
+	<xs:element name="OTHER_FEATURE_ADJUSTMENT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.OTHER_FEATURE_ADJUSTMENT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.OTHER_FEATURE_ADJUSTMENT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="PropertyFeatureSequenceIdentifier"/>
+		<xs:attribute name="PropertyFeatureDescription"/>
+		<xs:attribute name="PropertyFeatureAdjustmentAmount"/>
+	</xs:attributeGroup>
+	<xs:element name="PRIOR_SALES">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.PRIOR_SALES"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.PRIOR_SALES">
+		<xs:attribute name="PropertySalesDate"/>
+		<xs:attribute name="PropertySalesAmount"/>
+		<xs:attribute name="DataSourceDescription"/>
+		<xs:attribute name="DataSourceEffectiveDate"/>
+	</xs:attributeGroup>
+	<xs:element name="INCOME_ANALYSIS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="RESIDENTIAL_RENT_SCHEDULE" minOccurs="0"/>
+				<xs:element ref="MULTIFAMILY_RENT_SCHEDULE" minOccurs="0"/>
+				<xs:element ref="MULTIFAMILY_RENTALS" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.INCOME_ANALYSIS"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.INCOME_ANALYSIS">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="EstimatedMarketMonthlyRentAmount"/>
+		<xs:attribute name="GrossRentMultiplierFactor"/>
+		<xs:attribute name="ValueIndicatedByIncomeApproachAmount"/>
+		<xs:attribute name="_Comment"/>
+	</xs:attributeGroup>
+	<xs:element name="RESIDENTIAL_RENT_SCHEDULE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="OTHER_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="RESIDENTIAL_RENTAL" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="OTHER_FEATURE_ADJUSTMENT" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.RESIDENTIAL_RENT_SCHEDULE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.RESIDENTIAL_RENT_SCHEDULE">
+		<xs:attribute name="EstimatedMarketMonthlyRentAmount"/>
+		<xs:attribute name="EstimatedMarketMonthlyRentEffectiveDate"/>
+		<xs:attribute name="MarketRentalDataComment"/>
+		<xs:attribute name="MarketRentReconciliationComment"/>
+	</xs:attributeGroup>
+	<xs:element name="RESIDENTIAL_RENTAL">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="LOCATION" minOccurs="0"/>
+				<xs:element ref="RENT_ADJUSTMENT" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="ROOM_ADJUSTMENT" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.RESIDENTIAL_RENTAL"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.RESIDENTIAL_RENTAL">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="PropertySequenceIdentifier"/>
+		<xs:attribute name="LeaseStartDate"/>
+		<xs:attribute name="LeaseExpirationDate"/>
+		<xs:attribute name="MonthlyRentAmount"/>
+		<xs:attribute name="RentalMonthlyUtilitiesCostAmount"/>
+		<xs:attribute name="MonthlyFurnitureRentAmount"/>
+		<xs:attribute name="ExpenseAdjustedMonthlyRentAmount"/>
+		<xs:attribute name="DataSourceDescription"/>
+		<xs:attribute name="RentTotalAdjustmentAmount"/>
+		<xs:attribute name="RentTotalAdjustmentPositiveIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="RentTotalAdjustmentNetPercent"/>
+		<xs:attribute name="RentTotalAdjustmentGrossPercent"/>
+		<xs:attribute name="MarketAdjustedMonthlyRentAmount"/>
+	</xs:attributeGroup>
+	<xs:element name="RENT_ADJUSTMENT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.RENT_ADJUSTMENT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.RENT_ADJUSTMENT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="RentConcessions"/>
+					<xs:enumeration value="OtherConcessions"/>
+					<xs:enumeration value="Location"/>
+					<xs:enumeration value="View"/>
+					<xs:enumeration value="Design"/>
+					<xs:enumeration value="Appeal"/>
+					<xs:enumeration value="Age"/>
+					<xs:enumeration value="Condition"/>
+					<xs:enumeration value="GrossLivingArea"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="_Amount"/>
+	</xs:attributeGroup>
+	<xs:element name="MULTIFAMILY_RENT_SCHEDULE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="UNIT_RENT_SCHEDULE" maxOccurs="unbounded"/>
+				<xs:element ref="RENT_INCLUDES_UTILITY" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.MULTIFAMILY_RENT_SCHEDULE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.MULTIFAMILY_RENT_SCHEDULE">
+		<xs:attribute name="RentalActualGrossMonthlyRentAmount"/>
+		<xs:attribute name="RentalActualAdditionalMonthlyIncomeAmount"/>
+		<xs:attribute name="RentalActualTotalMonthlyIncomeAmount"/>
+		<xs:attribute name="RentalEstimatedGrossMonthlyRentAmount"/>
+		<xs:attribute name="RentalEstimatedAdditionalMonthlyIncomeAmount"/>
+		<xs:attribute name="RentalEstimatedTotalMonthlyIncomeAmount"/>
+		<xs:attribute name="MarketRentalDataComment"/>
+		<xs:attribute name="RentalDataAnalysisComment"/>
+	</xs:attributeGroup>
+	<xs:element name="UNIT_RENT_SCHEDULE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.UNIT_RENT_SCHEDULE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.UNIT_RENT_SCHEDULE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="UnitSequenceIdentifier"/>
+		<xs:attribute name="LeaseStartDate"/>
+		<xs:attribute name="LeaseExpirationDate"/>
+		<xs:attribute name="UnitUnfurnishedActualRentAmount"/>
+		<xs:attribute name="UnitFurnishedActualRentAmount"/>
+		<xs:attribute name="UnitActualRentAmount"/>
+		<xs:attribute name="UnitUnfurnishedMarketRentAmount"/>
+		<xs:attribute name="UnitFurnishedMarketRentAmount"/>
+		<xs:attribute name="UnitMarketRentAmount"/>
+	</xs:attributeGroup>
+	<xs:element name="RENT_INCLUDES_UTILITY">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.RENT_INCLUDES_UTILITY"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.RENT_INCLUDES_UTILITY">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Electric"/>
+					<xs:enumeration value="Water"/>
+					<xs:enumeration value="Sewer"/>
+					<xs:enumeration value="Gas"/>
+					<xs:enumeration value="Oil"/>
+					<xs:enumeration value="Cable"/>
+					<xs:enumeration value="Trash"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Indicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="MULTIFAMILY_RENTALS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="OTHER_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="MULTIFAMILY_RENTAL" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.MULTIFAMILY_RENTALS"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.MULTIFAMILY_RENTALS">
+		<xs:attribute name="RentalDataAnalysisComment"/>
+	</xs:attributeGroup>
+	<xs:element name="MULTIFAMILY_RENTAL">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="LOCATION" minOccurs="0"/>
+				<xs:element ref="RENTAL_UNIT" maxOccurs="unbounded"/>
+				<xs:element ref="RENTAL_FEATURE" maxOccurs="unbounded"/>
+				<xs:element ref="OTHER_FEATURE_DESCRIPTION" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="IMAGE" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.MULTIFAMILY_RENTAL"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.MULTIFAMILY_RENTAL">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="PropertySequenceIdentifier"/>
+		<xs:attribute name="MonthlyRentAmount"/>
+		<xs:attribute name="RentPerGrossBuildingAreaAmount"/>
+		<xs:attribute name="RentControlStatusType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Yes"/>
+					<xs:enumeration value="No"/>
+					<xs:enumeration value="Likely"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="DataSourceDescription"/>
+		<xs:attribute name="GrossBuildingAreaSquareFeetCount"/>
+	</xs:attributeGroup>
+	<xs:element name="RENTAL_UNIT">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.RENTAL_UNIT"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.RENTAL_UNIT">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="UnitSequenceIdentifier"/>
+		<xs:attribute name="TotalRoomCount"/>
+		<xs:attribute name="TotalBedroomCount"/>
+		<xs:attribute name="TotalBathroomCount"/>
+		<xs:attribute name="SquareFeetCount"/>
+		<xs:attribute name="MonthlyRentAmount"/>
+	</xs:attributeGroup>
+	<xs:element name="RENTAL_FEATURE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.RENTAL_FEATURE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.RENTAL_FEATURE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Lease"/>
+					<xs:enumeration value="Location"/>
+					<xs:enumeration value="Age"/>
+					<xs:enumeration value="Condition"/>
+					<xs:enumeration value="UtilitiesIncluded"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Description"/>
+	</xs:attributeGroup>
+	<xs:element name="OTHER_FEATURE_DESCRIPTION">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.OTHER_FEATURE_DESCRIPTION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.OTHER_FEATURE_DESCRIPTION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="PropertyFeatureSequenceIdentifier"/>
+		<xs:attribute name="PropertyFeatureDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="PRICE_FORECASTING">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="COMPETITIVE_LISTINGS" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.PRICE_FORECASTING"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.PRICE_FORECASTING">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="MarketTrendsAdverseFinancingIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="MarketTrendsHistoricPricesType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Increasing"/>
+					<xs:enumeration value="Stable"/>
+					<xs:enumeration value="Decreasing"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="MarketTrendsForeclosureActivityIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="MarketTrendsInterestRatesType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Increasing"/>
+					<xs:enumeration value="Stable"/>
+					<xs:enumeration value="Decreasing"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="MarketTrendsSalesActivityType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Increasing"/>
+					<xs:enumeration value="Stable"/>
+					<xs:enumeration value="Decreasing"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="NeighborhoodPropertyValueTrendType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Increasing"/>
+					<xs:enumeration value="Stable"/>
+					<xs:enumeration value="Decreasing"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="NeighborhoodDemandSupplyType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="OverSupply"/>
+					<xs:enumeration value="InBalance"/>
+					<xs:enumeration value="UnderSupply"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="NeighborhoodTypicalMarketingMonthsDurationType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="OverSixMonths"/>
+					<xs:enumeration value="ThreeToSixMonths"/>
+					<xs:enumeration value="UnderThreeMonths"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="NeighborhoodTypicalMarketingDaysDurationType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Under30Days"/>
+					<xs:enumeration value="30To120Days"/>
+					<xs:enumeration value="Over120Days"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="PropertyTypicalMarketingDaysDurationType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Under30Days"/>
+					<xs:enumeration value="30To120Days"/>
+					<xs:enumeration value="Over120Days"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="MarketTrendsHistoricAnalysisComment"/>
+		<xs:attribute name="MarketTrendsReconciliationComment"/>
+	</xs:attributeGroup>
+	<xs:element name="COMPETITIVE_LISTINGS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="OTHER_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="RESEARCH" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="COMPARABLE_LISTING" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.COMPETITIVE_LISTINGS"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.COMPETITIVE_LISTINGS">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Comment"/>
+	</xs:attributeGroup>
+	<xs:element name="COMPARABLE_LISTING">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="LOCATION" minOccurs="0"/>
+				<xs:element ref="LISTING_FEATURE" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="OTHER_FEATURE_DESCRIPTION" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="IMAGE" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.COMPARABLE_LISTING"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.COMPARABLE_LISTING">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="PropertySequenceIdentifier"/>
+		<xs:attribute name="ComparablePropertyComment"/>
+	</xs:attributeGroup>
+	<xs:element name="LISTING_FEATURE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.LISTING_FEATURE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.LISTING_FEATURE">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="NeighborhoodAppeal"/>
+					<xs:enumeration value="OriginalListPrice"/>
+					<xs:enumeration value="CurrentListPrice"/>
+					<xs:enumeration value="LastPriceRevisionDate"/>
+					<xs:enumeration value="DaysOnMarket"/>
+					<xs:enumeration value="ActualAge"/>
+					<xs:enumeration value="GrossLivingArea"/>
+					<xs:enumeration value="TotalRooms"/>
+					<xs:enumeration value="TotalBedrooms"/>
+					<xs:enumeration value="TotalBathrooms"/>
+					<xs:enumeration value="SiteArea"/>
+					<xs:enumeration value="SiteAppeal"/>
+					<xs:enumeration value="StyleAndAppeal"/>
+					<xs:enumeration value="ConstructionQuality"/>
+					<xs:enumeration value="Condition"/>
+					<xs:enumeration value="InteriorAppeal"/>
+					<xs:enumeration value="BasementArea"/>
+					<xs:enumeration value="BasementFinish"/>
+					<xs:enumeration value="FunctionalUtility"/>
+					<xs:enumeration value="HeatingCooling"/>
+					<xs:enumeration value="CarStorage"/>
+					<xs:enumeration value="Fireplace"/>
+					<xs:enumeration value="SignificantFeatures"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_Description"/>
+	</xs:attributeGroup>
+	<xs:element name="VALUATION">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="_RECONCILIATION" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.VALUATION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.VALUATION">
+		<xs:attribute name="PropertyAppraisedValueAmount"/>
+		<xs:attribute name="PropertyForecastedSalePriceAmount"/>
+		<xs:attribute name="AppraisalEffectiveDate"/>
+	</xs:attributeGroup>
+	<xs:element name="_RECONCILIATION">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="_CONDITION_OF_APPRAISAL" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="REPAIRS" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist._RECONCILIATION"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._RECONCILIATION">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_ConditionsComment"/>
+		<xs:attribute name="_SummaryComment"/>
+	</xs:attributeGroup>
+	<xs:element name="_CONDITION_OF_APPRAISAL">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._CONDITION_OF_APPRAISAL"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._CONDITION_OF_APPRAISAL">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="AsIs"/>
+					<xs:enumeration value="Other"/>
+					<xs:enumeration value="SubjectToCompletion"/>
+					<xs:enumeration value="SubjectToInspections"/>
+					<xs:enumeration value="SubjectToRepairs"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+	</xs:attributeGroup>
+	<xs:element name="REPAIRS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="REPAIR_ITEM" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.REPAIRS"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.REPAIRS">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_TotalCostAmount"/>
+		<xs:attribute name="_Description"/>
+	</xs:attributeGroup>
+	<xs:element name="REPAIR_ITEM">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.REPAIR_ITEM"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.REPAIR_ITEM">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_SequenceIdentifier"/>
+		<xs:attribute name="_Description"/>
+		<xs:attribute name="_CostAmount"/>
+	</xs:attributeGroup>
+	<xs:element name="APPRAISAL_UPDATE">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist.APPRAISAL_UPDATE"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.APPRAISAL_UPDATE">
+		<xs:attribute name="AppraisalUpdateIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AppraisalCompletionCertificateIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AppraisalReviewOriginalAppraisalEffectiveDate"/>
+		<xs:attribute name="AppraisalReviewOriginalAppraisedValueAmount"/>
+		<xs:attribute name="_OriginalLenderUnparsedName"/>
+		<xs:attribute name="_OriginalLenderUnparsedAddress"/>
+		<xs:attribute name="_OriginalAppraiserUnparsedName"/>
+		<xs:attribute name="_OriginalAppraiserCompanyName"/>
+		<xs:attribute name="PropertyMarketValueDecreasedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="PropertyImprovementsCompletedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="AppraisalUpdateComment"/>
+		<xs:attribute name="AppraisalCompletionCertificateComment"/>
+	</xs:attributeGroup>
+	<xs:element name="APPRAISAL_REVIEW">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="_CATEGORY" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="attlist.APPRAISAL_REVIEW"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist.APPRAISAL_REVIEW">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_OriginalAppraisalEffectiveDate"/>
+		<xs:attribute name="_OriginalAppraisedValueAmount"/>
+		<xs:attribute name="_OriginalAppraisedValueAccurateIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ExtraordinaryAssumptionsDescription"/>
+		<xs:attribute name="_DisagreementDescription"/>
+		<xs:attribute name="PropertyMarketValueDecreasedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_ImprovementsCompletedIndicator">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Y"/>
+					<xs:enumeration value="N"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_MarketValueChangeComment"/>
+		<xs:attribute name="_ValueConclusionComment"/>
+	</xs:attributeGroup>
+	<xs:element name="_CATEGORY">
+		<xs:complexType>
+			<xs:attributeGroup ref="attlist._CATEGORY"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="attlist._CATEGORY">
+		<xs:attribute name="_ID" type="xs:ID"/>
+		<xs:attribute name="_Type">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="ComparableRentals"/>
+					<xs:enumeration value="ComparablesSimilar"/>
+					<xs:enumeration value="Contract"/>
+					<xs:enumeration value="CostAndIncome"/>
+					<xs:enumeration value="DataAnalysis"/>
+					<xs:enumeration value="Improvements"/>
+					<xs:enumeration value="MarketRent"/>
+					<xs:enumeration value="Neighborhood"/>
+					<xs:enumeration value="RentSchedule"/>
+					<xs:enumeration value="Subject"/>
+					<xs:enumeration value="Site"/>
+					<xs:enumeration value="TransferHistory"/>
+					<xs:enumeration value="ValueIndicators"/>
+					<xs:enumeration value="Other"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_TypeOtherDescription"/>
+		<xs:attribute name="_AccuracyType">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Accurate"/>
+					<xs:enumeration value="NotAccurate"/>
+					<xs:enumeration value="NotApplicable"/>
+					<xs:enumeration value="NotDeveloped"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="_Comment"/>
+	</xs:attributeGroup>
+	<xs:complexType name="any" mixed="true">
+		<xs:sequence>
+			<xs:any processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

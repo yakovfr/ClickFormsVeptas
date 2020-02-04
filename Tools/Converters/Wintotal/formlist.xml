@@ -1,0 +1,113 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<WinTotalClFForms xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "">
+	<FORMS>
+		<FORM FORMCODE = "UA2">1</FORM>
+		<FORM FORMCODE = "205">37</FORM>
+		<FORM FORMCODE = "PU2">7</FORM>
+		<FORM FORMCODE = "205FR">93</FORM>
+		<FORM FORMCODE = "SR3">18</FORM>
+		<FORM FORMCODE = "1004">340$341</FORM>
+		<FORM FORMCODE = "1004C">342$343</FORM>
+		<FORM FORMCODE = "1004DM">344</FORM>
+		<FORM FORMCODE = "1025">349$350</FORM>
+		<FORM FORMCODE = "1073">345$346</FORM>
+		<FORM FORMCODE = "1075">347$348</FORM>
+		<FORM FORMCODE = "2000">357$358</FORM>
+		<FORM FORMCODE = "2000A">360$361</FORM>
+		<FORM FORMCODE = "2055">355$356</FORM>
+		<FORM FORMCODE = "(AC)" SECCODE = "(AC)">2</FORM>
+		<FORM FORMCODE = "(AC)" SECCODE = "(AC)">8</FORM>
+		<FORM FORMCODE = "(AC)" SECCODE = "(AC)">10</FORM>
+		<FORM FORMCODE = "(AC)" SECCODE = "(AC)">21</FORM>
+		<FORM FORMCODE = "(AC)" SECCODE = "(AC)">38</FORM>
+		<FORM FORMCODE = "(AC)" SECCODE = "(AC)">363</FORM>
+		<FORM FORMCODE = "(AC)" SECCODE = "(AC)">365</FORM>
+		<FORM FORMCODE = "(AC)" SECCODE = "(AC)">364</FORM>
+		<FORM FORMCODE = "(AC)" SECCODE = "(AC)">367</FORM>
+		<FORM FORMCODE = "(AL)">19</FORM>
+		<FORM FORMCODE = "(AR)">20</FORM>
+		<FORM FORMCODE = "(AR)">362</FORM>
+		<FORM FORMCODE = "SKT">201</FORM>
+		<FORM FORMCODE = "MAP" SECCODE = "LOC">101</FORM>
+		<FORM FORMCODE = "LND">9</FORM>
+		<FORM FORMCODE = "MAP" SECCODE = "PLAT">103</FORM>
+		<FORM FORMCODE = "TADD">100</FORM>
+		<FORM FORMCODE = "PICPIX" SECCODE = "SR">301|302</FORM>
+		<FORM FORMCODE = "PICPIX" SECCODE = "TR">301</FORM>
+		<FORM FORMCODE = "PIC3X5" SECCODE = "SR">301|302</FORM>
+		<FORM FORMCODE = "PIC3X5" SECCODE = "TR">301</FORM>
+		<FORM FORMCODE = "PIC4X6" SECCODE = "SR">311|312</FORM>
+		<FORM FORMCODE = "PIC4X6" SECCODE = "TR">311</FORM>
+		<FORM FORMCODE = "PICPIX" SECCODE = "SI">308</FORM>
+		<FORM FORMCODE = "PIC3X5" SECCODE = "SI">308</FORM>
+		<FORM FORMCODE = "PIC4X6" SECCODE = "SI">318</FORM>
+		<FORM FORMCODE = "PICPIX" SECCODE = "CR" DESC = "[Digital/Small] Comparable Photos 1-3">304</FORM>
+		<FORM FORMCODE = "PICPIX" SECCODE = "CR" DESC = "[Digital/Small] Comparable Photos 4-6">304</FORM>
+		<FORM FORMCODE = "PICPIX" SECCODE = "CR" DESC = "[Digital/Small] Comparable Photos 7-9">304</FORM>
+		<FORM FORMCODE = "PICPIX" SECCODE = "CR" DESC = "[Digital] Comparable Photos 1-3">304</FORM>
+		<FORM FORMCODE = "PICPIX" SECCODE = "CR" DESC = "[Digital] Comparable Photos 4-6">304</FORM>
+		<FORM FORMCODE = "PICPIX" SECCODE = "CR" DESC = "[Digital] Comparable Photos 7-9">304</FORM>
+		<FORM FORMCODE = "PICPIX" SECCODE = "BR" DESC = "[Digital/Small] Comparable Photos [Minimal] 1-3">304</FORM>
+		<FORM FORMCODE = "PICPIX" SECCODE = "BR" DESC = "[Digital/Small] Comparable Photos [Minimal] 4-6">304</FORM>
+		<FORM FORMCODE = "PICPIX" SECCODE = "BR" DESC = "[Digital/Small] Comparable Photos [Minimal] 7-9">304</FORM>
+		<FORM FORMCODE = "GPICPIX" SECCODE = "1" DESC = "[Digital/Small] Photograph Addendum">308</FORM>
+		<FORM FORMCODE = "PIC3X5" SECCODE = "CR" DESC = "[Digital/Medium] Comparable Photos 1-3">304</FORM>
+		<FORM FORMCODE = "PIC3X5" SECCODE = "CR" DESC = "[Digital/Medium] Comparable Photos 4-6">304</FORM>
+		<FORM FORMCODE = "PIC3X5" SECCODE = "CR" DESC = "[Digital/Medium] Comparable Photos 7-9">304</FORM>
+		<FORM FORMCODE = "PIC3X5" SECCODE = "BC" DESC = "[Digital/Medium] Comparable Photos [Minimal] 1-3">304</FORM>
+		<FORM FORMCODE = "PIC3X5" SECCODE = "BC" DESC = "[Digital/Medium] Comparable Photos [Minimal] 4-6">304</FORM>
+		<FORM FORMCODE = "PIC3X5" SECCODE = "BC" DESC = "[Digital/Medium] Comparable Photos [Minimal] 7-9">304</FORM>
+		<FORM FORMCODE = "GPIC3X5" SECCODE = "1" DESC = "[Digital/Medium] Photograph Addendum">308</FORM>
+		<FORM FORMCODE = "PIC4X6" SECCODE = "CR" DESC = "[Digital/Large] Comparable Photos 1-3">314</FORM>
+		<FORM FORMCODE = "PIC4X6" SECCODE = "CR" DESC = "[Digital/Large] Comparable Photos 4-6">314</FORM>
+		<FORM FORMCODE = "PIC4X6" SECCODE = "CR" DESC = "[Digital/Large] Comparable Photos 7-9">314</FORM>
+		<FORM FORMCODE = "PIC4X6" SECCODE = "BR" DESC = "[Digital/Large] Comparable Photos [Minimal] 1-3">314</FORM>
+		<FORM FORMCODE = "PIC4X6" SECCODE = "BR" DESC = "[Digital/Large] Comparable Photos [Minimal] 4-6">314</FORM>
+		<FORM FORMCODE = "PIC4X6" SECCODE = "BR" DESC = "[Digital/Large] Comparable Photos [Minimal] 7-9">314</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DS$R" DESC = "[Digital/Small] Rental Photos 1-3">307</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DS$R" DESC = "[Digital/Small] Rental Photos 4-6">307</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DS$R" DESC = "[Digital/Small] Rental Photos 7-9">307</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DM$R" DESC = "[Digital/Medium] Rental Photos 1-3">307</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DM$R" DESC = "[Digital/Medium] Rental Photos 4-6">307</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DM$R" DESC = "[Digital/Medium] Rental Photos 7-9">307</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DL$R" DESC = "[Digital/Large] Rental Photos 1-3">317</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DL$R" DESC = "[Digital/Large] Rental Photos 4-6">317</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DL$R" DESC = "[Digital/Large] Rental Photos 7-9">317</FORM>
+		<FORM FORMCODE = "GPICPIX" SECCODE = "RNT" DESC = "[Digital/Small] Rentals Photograph Addendum">308</FORM>
+		<FORM FORMCODE = "GPICPIX" SECCODE = "RNT" DESC = "[Digital] Rentals Photograph Addendum">308</FORM>
+		<FORM FORMCODE = "GPIC3X5" SECCODE = "RNT" DESC = "[Digital/Medium] Rentals Photograph Addendum">308</FORM>
+		<FORM FORMCODE = "GPIC4X6" SECCODE = "RNT" DESC = "[Digital/Large] Rentals Photograph Addendum">318</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DS#R" DESC = "[Digital/Small] Listings Photos 1-3">306</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DS#R" DESC = "[Digital/Small] Listings Photos 4-6">306</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DS#R" DESC = "[Digital/Small] Listings Photos 7-9">306</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DM#R" DESC = "[Digital/Medium] Listings Photos 1-3">306</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DM#R" DESC = "[Digital/Medium] Listings Photos 4-6">306</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DM#R" DESC = "[Digital/Medium] Listings Photos 7-9">306</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DL#R" DESC = "[Digital/Large] Listings Photos 1-3">316</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DL#R" DESC = "[Digital/Large] Listings Photos 4-6">316</FORM>
+		<FORM FORMCODE = "DLSTRNT" SECCODE = "DL#R" DESC = "[Digital/Large] Listings Photos 7-9">316</FORM>
+		<FORM FORMCODE = "GPICPIX" SECCODE = "LST" DESC = "[Digital/Small] Listings Photograph Addendum">308</FORM>
+		<FORM FORMCODE = "GPICPIX" SECCODE = "LST" DESC = "[Digital] Listings Photograph Addendum">308</FORM>
+		<FORM FORMCODE = "GPIC3X5" SECCODE = "LST" DESC = "[Digital/Medium] Listings Photograph Addendum">308</FORM>
+		<FORM FORMCODE = "GPIC4X6" SECCODE = "LST" DESC = "[Digital/Large] Listings Photograph Addendum">318</FORM>
+		<FORM FORMCODE = "GA1">209</FORM>
+		<FORM FORMCODE = "GA1_LTR">209</FORM>
+		<FORM FORMCODE = "GA2">208</FORM>
+		<FORM FORMCODE = "GA3">208</FORM>
+		<FORM FORMCODE = "GA4">209</FORM>
+		<FORM FORMCODE = "GA5">209</FORM>
+		<FORM FORMCODE = "GA6">208</FORM>
+		<FORM FORMCODE = "NIV1">225</FORM>
+		<FORM FORMCODE = "NIV2">225</FORM>
+		<FORM FORMCODE = "NIV3">225</FORM>
+		<FORM FORMCODE = "NIV4">225</FORM>
+		<FORM FORMCODE = "NIV5">225</FORM>
+		<FORM FORMCODE = "NIV5_SIG">225</FORM>
+		<FORM FORMCODE = "NIV6">225</FORM>
+		<FORM FORMCODE = "FAUCA">782</FORM>
+		<FORM FORMCODE = "INC">32</FORM>
+		<FORM FORMCODE = "ACR">3</FORM>
+		<FORM FORMCODE = "TOCPPIX">232</FORM>
+		<FORM FORMCODE = "TOCNP">232</FORM>
+	</FORMS>
+</WinTotalClFForms>

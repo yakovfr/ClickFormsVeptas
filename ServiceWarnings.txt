@@ -1,0 +1,141 @@
+'Methods: 0=Time Only, 1=Units Only, 2=Units AND Time, 3=Support/Maintance
+
+[Maintenance]
+Method=0
+Time=60,30,7,6,5,4,3,2,1
+URL=https://secure.appraisalworld.com/store/product.php?
+WebSvc=renewal
+
+[Live Support]
+Method=0
+Time=60,30,7,6,5,4,3,2,1
+URL=https://secure.appraisalworld.com/store/product.php?
+WebSvc=livesupport
+
+[AppraisalWorld]
+Method=0
+Time=60
+AppraisalWorldURL=https://secure.appraisalworld.com/store/product.php?productid=16334
+
+[AppraisalPort Connection] 
+Method=0
+Time=60
+URL=https://secure.appraisalworld.com/store/product.php?productid=16174
+WebSvc=
+
+[Lighthouse Connection]
+Method=0
+Time=60
+URL=https://secure.appraisalworld.com/store/product.php?productid=16173
+WebSvc=
+
+[Data Import Connection]
+Method=0
+Time=60
+TimeOffer=10
+URL=https://secure.appraisalworld.com/store/
+WebSvc=
+
+[MLS Connection]
+Method=0
+Time=60
+URL=https://secure.appraisalworld.com/store/product.php?productid=16176
+WebSvc=
+
+[Flood Maps]
+Method=3
+Time=30,7
+Units=20,10,5,2,1
+URL=https://secure.appraisalworld.com/store/home.php?cat=280&sort=orderby&sort_direction=0
+WebSvc=floodmaps
+
+[Location Maps]
+Method=3
+Time=30,7
+Units=20,10,5,2,1
+WebSvc=
+
+[VeroValue Reports]
+Method=1
+Units=2,1
+URL=https://secure.appraisalworld.com/store/home.php?cat=286&sort=orderby&sort_direction=0
+WebSvc=veros
+
+[Marshal & Swift Service]
+Method=1
+Units=5,2
+URL=https://secure.appraisalworld.com/store/home.php?cat=284&sort=orderby&sort_direction=0
+WebSvc=swift
+
+[Flood Risk Determination]
+Method=2
+Time=60
+Units=40
+URL=https://secure.appraisalworld.com/store/home.php?cat=280&sort=orderby&sort_direction=0
+WebSvc=
+
+[Fidelity National Information Service]
+Method=2
+Time=30,7
+Units=5,2
+URL=https://secure.appraisalworld.com/store/home.php?cat=285&sort=orderby&sort_direction=0
+WebSvc=propertydata
+
+[WebsiteLinks]
+Link1Name=ClickFORMS Users Forum
+Link1URL=http://bradfordsoftware.com/cgi-bin/yabb/yabb.cgi
+Link2Name=AppraisalWorld
+Link2URL=http://appraisalworld.com/
+Link3Name=Working RE
+Link3URL=http://www.workingre.com
+Link4Name=Appraisal Foundation
+Link4URL=http://www.appraisalfoundation.org
+Link5Name=Appraisal Today
+Link5URL=http://www.appraisaltoday.com
+Link6Name=the Appraiser's Forum
+Link6URL=http://appraisersforum.com
+Link7Name=eFannieMae Appraiser Faqs
+Link7URL=https://www.efanniemae.com/is/appraisers/index.jsp?from=hp
+Link8Name=Valuation Review
+Link8URL=http://www.valuationreview.com
+Link9Name=Mortgage News Watch
+Link9URL=http://www.mortgagenewswatch.com
+Link10Name=Appraisal Scoop
+Link10URL=http://www.appraisalscoop.com
+
+[PromoLinks]
+Link1Name=Weekly Specials
+Link1URL=https://secure.appraisalworld.com/store/home.php?cat=279&sort=orderby&sort_direction=0
+Link2Name=AppraisalWorld Shopping Mall
+Link2URL=https://secure.appraisalworld.com/store/
+Link3Name=
+Link3URL=
+Link4Name=
+Link4URL=
+Link5Name=
+Link5URL=
+
+[BTLinks]
+Link1Name=ClickFORMS "Tell Me How" Help
+Link1URL=http://www.bradfordsoftware.com/learning_center/tell_me_how_frset.htm
+Link2Name=ClickFORMS "Show Me How" Videos
+Link2URL=http://www.bradfordsoftware.com/clickforms/showmehow.html
+Link3Name=ClickTALK
+Link3URL=http://www.bradfordsoftware.com/news/ClickTALK_2008/clicktalk153.html
+Link4Name=eFocus
+Link4URL=http://www.bradfordsoftware.com/news/customer_focus/04_jan15-2008.html
+Link5Name=Press Release
+Link5URL=http://www.appraisalworld.com/html/news/press_releases.html
+Link6Name=ClickFLASH
+Link6URL=http://www.bradfordsoftware.com/news/clickflash/clickforms_561_update.html
+Link7Name=
+Link7URL=
+Link8Name=
+Link8URL=
+Link9Name=
+Link9URL=
+
+
+[RSS]
+NAME=Valuation Review
+URL=http://www.valuationreview.com/ME2/Console/XmlSyndication/Display/RSS.asp?xsid=B727104000DA48318E23E3AFD577C5C1

@@ -1,0 +1,11 @@
+
+2			FILENUM	\
+4			CASE_NO	\
+
+
+	Formnum		FORMNUM	\
+	FormVersion		FORMVERSION	\
+	Vendor		VENDOR	\
+	Version		VERSION	\
+	DocID		DOCID	\
+	UADVersion		UADVERSION	\

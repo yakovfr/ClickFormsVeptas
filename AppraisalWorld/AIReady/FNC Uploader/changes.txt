@@ -1,0 +1,68 @@
+release 9.7.2
+	- Service release.  Fixed freeze when rapidly adding forms.  Fixed ShowMainForm() to show the main oadi/xml document.
+release 9.7.1
+	- Eliminated multiple pop-up dialog prompts on first launch of envupd.exe
+
+release 9.7.0
+	- Upgraded Xupload.ocx to version 3.1 
+
+release 9.6.1
+	- For HideSend interface method, removed additional menu items unecessary for preview mode
+
+release 9.6.0
+	- Corrected pop-up window size
+	- Added HideSend/ShowSend interface methods
+
+release 9.5.0
+	- Addition of the PDF button
+	- Addition of the InspectionPort and TitlePort tabs on the Definine URL window under Connections
+	- "Reset URL to Default" button on Definine URL window under Connections
+	- New Pop Up confirmation before uploading to portal
+	- Removed drop down arrow beside menu buttons
+
+release 8.0.3
+	- Corrects a problem with the drop-down Form menu not displaying minor
+	  forms when the document has not been signed
+
+release 8.0.2
+	- Integration with latest Xupload (2.1.0.1)
+
+release 8.0.1
+	- Fixes a but related to adding a new filter
+	- Adds the Delete button
+
+release 8.0.0
+	- Auto load main OADI document
+	- Pop-up to assist appraisers with web previews
+	- Check for MSXML3
+	- Correcting a problem with the Invoice button showing up after adding a minor form
+
+release 7.0.0 & 7.0.0B
+	- Addresses "Access Violation" messages on some Windows XP platforms.
+	- Trouble ticket feature (under Help).
+	- Invoice option (when Invoice is not included from forms software).
+
+release 6.6.7
+        - Improved error handling for AddMainForm and AddAddendumForm.
+
+	- Correction to allow any order of method calls to "AddMainForm"
+	  and "AddAddendumForm".
+
+release 6.6.5
+	- new OLE methods: AddMainForm, AddAddendumForm, AddImage.  See
+	  the ENVUPD API documentation in OADI Documents for more details.
+
+	- the ENVUPD.INI contains the live site URLs.
+
+release 6.6.4
+	- module recompilation to address original Windows 95 installations.
+	  (Windows 95 version B was not affected.).
+
+release 6.6.1
+	- addition of HideOnClose method.
+
+	- more informative error dialogue box when attempting to close
+	  ENVUPD before client has disconnected.
+
+release 6.5.18
+

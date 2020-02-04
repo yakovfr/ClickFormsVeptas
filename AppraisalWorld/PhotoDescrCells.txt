@@ -1,0 +1,45 @@
+formId,title,position,imageCell#,Line1Cell#,line2Cell#
+304,Photo Comparables 1-2-3,top,17,15,16
+304,Photo Comparables 1-2-3,middle,21,19,20
+304,Photo Comparables 1-2-3,bottom,25,23,24
+306,Photo Listings 1-2-3,top,17,15,16
+306,Photo Listings 1-2-3,middle,21,19,20
+306,Photo Listings 1-2-3,bottom,25,23,24
+307,Photo Rentals 1-2-3,top,17,15,16
+307,Photo Rentals 1-2-3,middle,21,19,20
+307,Photo Rentals 1-2-3,bottom,25,23,24
+301,Photo Subject,top,15,13,14
+301,Photo Subject,middle,18,16,17
+301,Photo Subject,bottom,21,19,20
+310,Photo Subject - 2 Photos,top,15,13,14
+310,Photo Subject - 2 Photos,middle,18,16,17
+302,Photo Subject Extra,top,15,13,14
+302,Photo Subject Extra,middle,18,16,17
+302,Photo Subject Extra,bottom,21,19,20
+309,Photo Subject,top,15,13,14
+308,Photos,top,16,14,15
+308,Photos,middle,19,17,18
+308,Photos,bottom,22,20,21
+314,Photo Comparables 1-2-3,top,17,15,16
+314,Photo Comparables 1-2-3,middle,18,19,20
+314,Photo Comparables 1-2-3,bottom,22,23,24
+316,Photo Listings 1-2-3,top,17,15,16
+316,Photo Listings 1-2-3,middle,21,19,20
+316,Photo Listings 1-2-3,bottom,25,23,24
+317,Photo Rentals 1-2-3,top,17,15,16
+317,Photo Rentals 1-2-3,middle,21,19,20
+317,Photo Rentals 1-2-3,bottom,25,23,24
+320,Photo Subject - 2 Photos,top,15,13,14
+320,Photo Subject - 2 Photos,middle,18,16,17
+311,Photo Subject Lg,top,15,13,14
+311,Photo Subject Lg,middle,18,16,17
+311,Photo Subject Lg,bottom,21,19,20
+312,Photo Subject Extra,top,15,13,14
+312,Photo Subject Extra,middle,18,16,17
+312,Photo Subject Extra,bottom,21,19,20
+319,Photo Subject Single,top,18,16,17
+318,Photos,top,16,14,15
+318,Photos,middle,19,17,18
+318,Photos,bottom,22,20,21
+619,Disaster Inspection Report,top,21,19,20
+619,Disaster Inspection Report,bottom,24,22,23

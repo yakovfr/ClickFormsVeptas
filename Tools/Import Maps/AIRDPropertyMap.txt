@@ -1,0 +1,202 @@
+Delimiter,','
+SrcHasFieldNames,Yes
+SrcHdrHasExcessDelim,No
+SourceFields,198
+1,Full Address,46,Property Address
+2,City,47,City
+3,State,48,State
+4,Zip Code,49,ZIP
+5,Gross Living Area,1004,Gross Living Area
+6,Lot Size Dimensions,66,Dimensions
+7,Lot Size Area,67,Site
+8,Assessor Lot Size,,
+9,Land Use,68,Zoning
+10,Rooms,229,Rooms (Total)
+12,Bedrooms,230,Bedrooms
+12,Bathrooms,231,Bathrooms
+13,Distance from Subject,929,Proximity to Subject
+14,Recording Date,,
+15,Recording Price,,
+16,Contract Date,2053,Contract Date
+17,Contract Price,2052,Contract Price
+18,Year Built,100005,Year Built
+19,Year Built Effective,,
+20,Units Total,,
+21,Stories in Building,,
+22,Stories in Unit,148,No. of Stories
+23,Assessor Parcel Number,60,Assesor's Parcel No.
+24,Apt. Rent Actual 1,,
+25,Apt. Rent Actual 2,,
+26,Apt. Rent Actual 3,,
+27,Apt. Rent Actual 4,,
+28,Apt. Rent Actual 5,,
+29,Apt. Rent Actual 6,,
+30,Apt. Rent Actual 7,,
+31,Apt. Rent Actual 8,,
+32,Apt. Rent Actual 9,,
+33,Apt. Bathrooms Full 1,,
+34,Apt. Bathrooms Full 2,,
+35,Apt. Bathrooms Full 3,,
+36,Apt. Bathrooms Full 4,,
+37,Apt. Bathrooms Full 5,,
+38,Apt. Bathrooms Full 6,,
+39,Apt. Bathrooms Full 7,,
+40,Apt. Bathrooms Full 8,,
+41,Apt. Bathrooms Full 9,,
+42,Apt. Bathrooms Half 1,,
+43,Apt. Bathrooms Half 2,,
+44,Apt. Bathrooms Half 3,,
+45,Apt. Bathrooms Half 4,,
+46,Apt. Bathrooms Half 5,,
+47,Apt. Bathrooms Half 6,,
+48,Apt. Bathrooms Half 7,,
+49,Apt. Bathrooms Half 8,,
+50,Apt. Bathrooms Half 9,,
+51,Apt. Bedrooms 1,,
+52,Apt. Bedrooms 2,,
+53,Apt. Bedrooms 3,,
+54,Apt. Bedrooms 4,,
+55,Apt. Bedrooms 5,,
+56,Apt. Bedrooms 6,,
+57,Apt. Bedrooms 7,,
+58,Apt. Bedrooms 8,,
+59,Apt. Bedrooms 9,,
+60,Apt. Rent Estimated 1,,
+61,Apt. Rent Estimated 2,,
+62,Apt. Rent Estimated 3,,
+63,Apt. Rent Estimated 4,,
+64,Apt. Rent Estimated 5,,
+65,Apt. Rent Estimated 6,,
+66,Apt. Rent Estimated 7,,
+67,Apt. Rent Estimated 8,,
+68,Apt. Rent Estimated 9,,
+69,Apt. Rooms 1,,
+70,Apt. Rooms 2,,
+71,Apt. Rooms 3,,
+72,Apt. Rooms 4,,
+73,Apt. Rooms 5,,
+74,Apt. Rooms 6,,
+75,Apt. Rooms 7,,
+76,Apt. Rooms 8,,
+77,Apt. Rooms 9,,
+78,Apt. Square Feet 1,,
+79,Apt. Square Feet 2,,
+80,Apt. Square Feet 3,,
+81,Apt. Square Feet 4,,
+82,Apt. Square Feet 5,,
+83,Apt. Square Feet 6,,
+84,Apt. Square Feet 7,,
+85,Apt. Square Feet 8,,
+86,Apt. Square Feet 9,,
+87,Apt. Units 1,,
+88,Apt. Units 2,,
+89,Apt. Units 3,,
+90,Apt. Units 4,,
+91,Apt. Units 5,,
+92,Apt. Units 6,,
+93,Apt. Units 7,,
+94,Apt. Units 8,,
+95,Apt. Units 9,,
+96,Assessed Value Improvements,,
+97,Assessed Value Land,,
+98,Assessed Value Total,,
+99,Tax Roll Year,367,Tax Year
+100,HOA Fees,390,HOA
+101,SQ FT Assessor Above Finished,,
+102,SQ FT Assessor Below Finished,,
+103,SQ FT Assessor Below UnFinished,,
+104,SQ FT Appraiser Above Finished,,
+105,SQ FT Appraiser Below Finished,,
+106,SQ FT Appraiser Below UnFinished,,
+107,Basement Rooms Finished,,
+108,Remodeled,,
+109,Energy Efficient Items,,
+110,Exterior Walls,174,Exterior Walls
+111,Flooring Materials,253,Flooring Materials
+112,Foundation,173,Foundation
+113,Kitchen Equipment,,
+114,Carport,,
+115,Garage - # of Cars,2030,Garage # of Cars
+116,Garage SqFt,893,Garage SqFt
+117,Driveway Surface,92,Driveway Surface
+118,Basement Percent Finished,201,Basement Percent Finished
+119,Parking Spaces Covered,345,Garage Spaces
+120,Parking Spaces Offstreet Open,,
+121,Census Tract,599,Census Tract
+122,Community Name,,
+123,Community Pool,,
+124,Construction Quality,994,Construction Quality
+125,Cooling Type,292,Central Cooling
+126,Units in Coop,,
+127,Deed Type,,
+128,Design/Style,149,Design/Style
+129,Detached/Attached,,
+130,First Mortgage Amount,,
+131,First Mortgage Lender,,
+132,Second Mortgage Amount,,
+133,FIPS Code (State/County),,
+134,FIPS Code (Township),,
+135,Flood Zone,106,FEMA Zone
+136,Flood Zone Flag,,
+137,Flood Zone Map Date,107,FEMA Map Date
+138,Flood Zone Map Reference,108,FEMA Map No.
+139,Fuel Type,288,Fuel Type
+140,Gross Rent Multiplier Actual,,
+141,Gross Rent Multiplier Estimated,,
+142,Gross Building Area,,
+143,Heating Type,287,Heating Type
+144,Fireplaces,323,Fireplaces
+145,Pool/Spa,1022,Pool
+146,Latitude,,
+147,Legal Desc. Block,,
+148,Legal Description,59,Legal Description
+149,Legal Desc. Lot,,
+150,Legal Desc. Range,,
+151,Legal Desc. Section,,
+152,Legal Desc. Subdivision,,
+153,Legal Desc. Township,,
+154,Legal Desc. Tract,,
+155,Legal Desc. Unit,,
+156,Longitude,,
+157,Manufactured House,,
+158,Map Code,598,Map Reference
+159,Units in Mob,,
+160,Parking Information,,
+161,Parking Ratio,,
+162,Price per Sq. Ft. (GBA),,
+163,Price per Sq. Ft. (GLA),,
+164,Price per Unit,,
+165,Property Tax Amount,368,R.E. Taxes $
+166,Recording Document Number,,
+167,Rent Total Actual Monthly,,
+168,Rent Total Market Monthly,,
+169,Net Rentable Area,,
+170,Roof Type,175,Roof Surface
+171,Sq. Ft. - Additions,,
+172,Sq. Ft. - Basement,,
+173,Sq. Ft. - Level 1,,
+174,Sq. Ft. - Level 2,,
+175,Sq. Ft. - Level 3,,
+176,Street Post Direction,,
+177,Street Direction,,
+178,Street Fraction,,
+179,Street Name,,
+180,Street Number,,
+181,Street Number To,,
+182,Street Suffix,,
+183,Unit Number,,
+184,Units in Project,,
+185,Units Vacant,,
+186,Appraisal Zoning Code,,
+187,Zoning Code,,
+188,Current Owner,58,Current Owner
+189,Second Owner,,
+190,Seller,,
+191,Actual Sales Price,447,Sale Price
+192,Actual Sales Date,448,Date of Sale
+193,Homeowner Exemption Applied For,,
+194,Prior Sale Date,934,Prior Sale Date
+195,Prior Sale Amount,935,Prior Sale Price
+196,Effective Date of Data Source,2074,Effective Date of Data Source
+197,Site Influence,,
+198,Loan Type,956,Sale or Financing

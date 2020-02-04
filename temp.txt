@@ -1,0 +1,6 @@
+C:\ClickFORMS\CF\UAppraisalIDs.pas(97):   kSuprCertNo = 45;
+C:\ClickFORMS\CF\UCellMunger.pas(222):     kSuprCertNo,
+C:\ClickFORMS\CF\UCellMunger.pas(435):       MungeStr := MungedText[kSuprCertNo];
+C:\ClickFORMS\CF\UCellMunger.pas(572):     kSuprCertNo: begin
+C:\ClickFORMS\CF\UCellMunger.pas(573):       FMungedText.Values[IntToStr(kSuprCertNo)] := value;
+C:\ClickFORMS\CF\UContainer.pas(3153):   LoadCellMunger(kSuprCertNo, CurrentUser.WorkLic.CertNo[0]);

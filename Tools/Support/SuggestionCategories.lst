@@ -1,0 +1,43 @@
+[Major]
+Product1=ClickFORMS
+Product2=Forms
+Product3=Tools
+Product4=Databases
+Product5=Maps
+[ClickForms]
+Area1=Add Capability
+Area2=Add Tool
+Area3=Add ...
+Area4=Preferences
+Area5=PDF
+Area6=Comp Editor
+Area7=Calculations
+Area8=Forms
+Area9=Signatures
+Area10=Transfers
+Area11=Printing
+Area12=Images
+[Forms]
+Area1=Add Form
+Area2=Add Calculations
+Area3=Add Transfers
+Area4=Printing
+[Tools]
+Area1=Spell Checker
+Area2=Signatures
+Area3=PhotoSheet
+Area4=Tools
+Area5=Searching
+Area6=Viewing
+Area7=Export
+Area8=Import
+[Databases]
+Area1=Clients
+Area2=Reports
+Area3=Comparables
+Area4=Orders
+[Maps]
+Area1=GeoLocator
+Area2=Delorme
+Area3=Streets & Trips
+Area4=On-Line Maps

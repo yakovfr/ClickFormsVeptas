@@ -1,0 +1,109 @@
+Delimiter,','
+TextQualifier,"
+SrcHasFieldNames,No
+SrcHdrHasExcessDelim,No
+SourceFields,100
+1,fld1,60,Assesor's Parcel No.
+2,fld2,100003,Current Owner FName
+3,fld3,100004,Current Owner Lname
+4,fld4,,
+5,fld5,100001,Property Street No.
+6,fld6,100002,Property Street Name
+7,fld7,47,City
+8,fld8,49,ZIP
+9,fld9,,
+10,fld10,,
+11,fld11,,
+12,fld12,48,State
+13,fld13,,
+14,fld14,,
+15,fld15,,
+16,fld16,,
+17,fld17,,
+18,fld18,,
+19,fld19,,
+20,fld20,,
+21,fld21,,
+22,fld22,,
+23,fld23,,
+24,fld24,,
+25,fld25,368,R.E. Taxes $
+26,fld26,,
+27,fld27,931,Verification of Sources
+28,fld28,448,Date of Sale
+29,fld29,,
+30,fld30,,
+31,fld31,447,Sale Price
+32,fld32,,
+33,fld33,,
+34,fld34,956,Sale or Financing
+35,fld35,,
+36,fld36,68,Zoning
+37,fld37,,
+38,fld38,,
+39,fld39,,
+40,fld40,59,Legal Description
+41,fld41,,
+42,fld42,598,Map Reference
+43,fld43,100005,Year Built
+44,fld44,,
+45,fld45,,
+46,fld46,67,Site
+47,fld47,,
+48,fld48,,
+49,fld49,,
+50,fld50,,
+51,fld51,200,Basement Area SqFt
+52,fld52,,
+53,fld53,,
+54,fld54,,
+55,fld55,,
+56,fld56,,
+57,fld57,,
+58,fld58,,
+59,fld59,,
+60,fld60,,
+61,fld61,148,No. of Stories
+62,fld62,,
+63,fld63,1004,Gross Living Area
+64,fld64,,
+65,fld65,230,Bedrooms
+66,fld66,231,Bathrooms
+67,fld67,,
+68,fld68,,
+69,fld69,,
+70,fld70,,
+71,fld71,,
+72,fld72,,
+73,fld73,,
+74,fld74,,
+75,fld75,,
+76,fld76,,
+77,fld77,,
+78,fld78,,
+79,fld79,,
+80,fld80,,
+81,fld81,323,Fireplaces
+82,fld82,,
+83,fld83,,
+84,fld84,,
+85,fld85,287,Heating Type
+86,fld86,,
+87,fld87,,
+88,fld88,,
+89,fld89,,
+90,fld90,,
+91,fld91,,
+92,fld92,,
+93,fld93,,
+94,fld94,,
+95,fld95,,
+96,fld96,,
+97,fld97,,
+98,fld98,,
+99,fld99,,
+100,fld100,,
+customfields,3
+931,Datasource,,,
+190001,texttag1,,,setfieldtext 'Doc#'
+190002,datasource,931,931,mergefields 190001 931

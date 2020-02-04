@@ -1,0 +1,10 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<CellExceptions xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "file:///C:/ClickForms/wintotal/maps/WintotClFExceptions.xsd">
+	<Exception ID = "1" FUNCTION = "MERGE">
+		<Param>RECINSPECTDATE</Param>
+		<Param># #</Param>
+		<Param>RECCENTURY_0</Param>
+		<Param>##</Param>
+		<Param>RECYEAR</Param>
+	</Exception>
+</CellExceptions>

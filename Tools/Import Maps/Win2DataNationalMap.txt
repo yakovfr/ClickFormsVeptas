@@ -1,0 +1,105 @@
+Delimiter,','
+TextQualifier,"
+SrcHasFieldNames,Yes
+SourceFields,97
+1,Situs House No./House Alpha,100001,Property Street No.
+2,Situs Direction/Street/Suffix,100002,Property Street Name
+3,Situs City/State/ZIP/ZIP+4 DWL,926,City/State/Zip
+4,Situs ZIP/ZIP+4,,
+5,Situs Carrier Route,,
+6,Owner Name (First Name First),58,Current Owner
+7,Owner First Name,,
+8,Owner Middle Name,,
+9,Owner Last Name,,
+10,Owner Spouse First/Middle,,
+11,Owner 2,,
+12,Mail Care Of Name,,
+13,Mail Address,,
+14,Mail City/State/ZIP/ZIP+4 DWL,,
+15,Mail State DWL,,
+16,Mail ZIP/ZIP+4,,
+17,Mail Carrier Route,,
+18,Phone Number,,
+19,Land Use,,
+20,Zoning,68,Zoning
+21,Stories No.,148,No. of Stories
+22,No. Residential Units,,
+23,Gross Area,,
+24,Bldg/Living Area,1004,Gross Living Area
+25,Adj Area (Total),,
+26,Basement Area,200,Basement Area SqFt
+27,Total Rooms,229,Rooms (Total)
+28,Bedrooms,230,Bedrooms
+29,Baths (Total),,
+30,Baths (Full),100009,BathroomsFull
+31,Baths (Half),100010,BathroomsHalf
+32,Fixtures Number,,
+33,Pool,1022,Pool
+34,Fireplace Number,323,Fireplaces
+35,Parking Type,1016,Garage/Carport
+36,Parking Size,,
+37,Parking Type2 Code,,
+38,Garage 2 Area,,
+39,Sale Price,447,Sale Price
+40,Price per Square Foot,,
+41,Sale Price Type1 DWL,,
+42,Sale Type 2,,
+43,Recording Date,448,Date of Sale
+44,Sale Date,,
+45,Document Number,,
+46,1st TD Amount,,
+47,1st TD Loan Type,,
+48,1st TD Term No.,,
+49,1st TD Int Rate,,
+50,1st TD Int Rate Type,,
+51,Deed Type,,
+52,Lender,,
+53,Prior Sale Price,,
+54,Prior Sale Type Code1,,
+55,Prior Sale Date,,
+56,Seller,,
+57,Reserved Field 1,,
+58,Construction Type,,
+59,Foundation,173,Foundation
+60,Exterior Wall,174,Exterior Walls
+61,Roof Material Type,,
+62,Roof Type,175,Roof Surface
+63,Interior Wall,,
+64,Air Conditioning,292,Central Cooling
+65,Heat Fuel,,
+66,Heat Type,287,Heating Type
+67,Frame,,
+68,Floor Type,,
+69,Assessment Year,367,Tax Year
+70,Land Value,,
+71,Improvement Value,,
+72,Total Value,,
+73,Total Value (Taxable),,
+74,Property Tax,368,R.E. Taxes $
+75,Tax Area,,
+76,Lot Acreage,,
+77,Lot Area,67,Site
+78,County Land Use,,
+79,State Use,,
+80,Improvement Type,,
+81,Site Influence,,
+82,Site Waterfront,,
+83,APN,60,Assesor's Parcel No.
+84,Alt/Old APN,,
+85,APN Card First,,
+86,APN Card Last,,
+87,Map Ref1,,
+88,Map Ref2,598,Map Reference
+89,Municipality,,
+90,Year Built,100005,Year Built
+91,Year Built (Effective),100008,Effective Year Built
+92,Township/Range/Section,,
+93,Census Tract,599,Census Tract
+94,Subdivision,595,Neighborhood or Project Name (Subject Only)
+95,Legal Block,,
+96,Legal Lot,,
+97,Legal Plat BkPg,,
+CustomFields,3
+47,City,47,,ExtractCityCityStateZip 926
+48,State,48,,ExtractStateCityStateZip 926
+49,ZIP,49,,ExtractZipCityStateZip 926

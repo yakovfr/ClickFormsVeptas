@@ -1,0 +1,181 @@
+[Major]
+Product1=ClickFORMS
+Product2=Cameras
+Product3=Lender DB
+Product4=Comparable DB
+Product5=Delorme
+Product6=Email
+Product7=Error
+Product8=Forms
+Product9=Forms Library
+Product10=Geolocator
+Product11=Networking
+Product12=Online Maps
+Product13=PDF Adobe
+Product14=PDF Built-in
+Product15=Photosheet
+Product16=Printing
+Product17=Reports DB
+Product18=Scanner
+Product19=StreetsandMaps
+Product20=Winsketch
+
+[ClickForms]
+Area1=Adobe PDF
+Area2=Apex
+Area3=Built-in PDF
+Area4=Calculations
+Area5=Camera
+Area6=Client Database
+Area7=Comparable Database
+Area8=Convert
+Area9=Delorme
+Area10=Digital Signature
+Area11=Email
+Area12=Error
+Area12=Export
+Area13=Files
+Area14=Forms
+Area15=Forms Library
+Area16=GeoLocator
+Area17=Images
+Area18=Import
+Area19=Mapping
+Area20=Networking
+Area21=Online Maps
+Area22=Photosheet
+Area23=Preferences
+Area24=Printing
+Area25=Report Database
+Area26=Scanner
+Area27=Spelling
+Area28=Streets and Maps
+Area29=Tablet PC
+Area30=WinSketch
+
+[Cameras]
+Area1=Connecting
+Area2=Downloading
+Area3=No Image
+Area4=Out of Memory
+Area5=Picture
+
+[Lender DB]
+Area1=Convert
+Area2=Error
+Area3=Export
+Area4=Import
+
+[Comparable DB]
+Area1=Convert
+Area2=Error
+Area3=Export
+Area4=Import
+
+[Delorme]
+Area1=Error
+Area2=Integration
+Area3=Registration
+Area4=Use
+
+[Email]
+Area1=Attaching
+Area2=Error
+Area3=MAPI
+Area4=PDF
+Area5=Report
+
+[Error]
+Area1=Apex
+Area2=ClickForms
+Area3=Converting
+Area4=Crashing
+Area5=Installing
+Area6=Message
+Area7=Report
+Area8=Signature
+
+[Forms]
+Area1=Adding
+Area2=Converting
+Area3=Deleting
+Area4=Error
+Area5=Exporting
+Area6=Importing
+Area7=Missing
+
+[Forms Library]
+Area1=Category
+Area2=Forms
+Area3=Ordering
+Area4=Update
+
+[Geolocator]
+Area1=Error
+Area2=Integration
+Area3=Registration
+Area4=Use
+
+[Networking]
+Area1=Database
+Area2=Licensing
+Area3=Mapping
+Area4=Reports
+Area5=Templates
+
+[Online Maps]
+Area1=Error
+Area2=Integration
+Area3=Registration
+Area4=Use
+
+[PDF Adobe]
+Area1=Border
+Area2=Color
+Area3=Error
+Area4=Font
+
+[PDF Built-in]
+Area1=Border
+Area2=Color
+Area3=Error
+Area4=Font
+
+[Photosheet]
+Area1=Camera
+Area2=File
+Area3=Photos
+Area4=Transfer
+
+[Printing]
+Area1=Error
+Area2=Form Order
+Area3=Properties
+Area4=Selecting
+Area5=Setup
+
+[Reports DB]
+Area1=Convert
+Area2=Error
+Area3=Export
+Area4=Import
+
+[Scanner]
+Area1=Copy
+Area2=DPI
+Area3=File Type
+Area4=Saving
+Area5=Scanning
+
+[StreetsandMaps]
+Area1=Error
+Area2=Integration
+Area3=Registration
+Area4=Use
+
+[Winsketch]
+Area1=Error
+Area2=Integration
+Area3=Registration
+
+

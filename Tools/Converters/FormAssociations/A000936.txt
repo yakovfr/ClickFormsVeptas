@@ -1,0 +1,14 @@
+[Pg1]
+Assoc1ID1=-1
+Assoc1ID2=1
+Assoc2ID1=-1
+Assoc2ID2=1
+Assoc3ID1=-1
+Assoc3ID2=1
+Assoc4ID1=-1
+Assoc4ID2=1
+Assoc5ID1=-1
+Assoc5ID2=1
+Assoc6ID1=-1
+Assoc6ID2=1
+

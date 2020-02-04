@@ -1,0 +1,23 @@
+FirstPageName,ReportVersion,FormID
+"2055 Page 1",2,2055_2
+"2065 Page 1",2,2065_2
+"2nd Mortgage 704",1,mac704_1
+"Condo Page 1",2,Condo_2
+"ERC Cover",2,ERC_2
+"FEMA Page 1",2,Flood_2
+"Financial Page 1",2,Financial_2
+"FIRREA Page 1",2,Firrea_2
+"HUD VC Page 1",2,HUDVC_2
+"Operating Income Pg 1",2,OperIncome_2
+"Page 1",2,2070_2
+"Small Income Page 1",3,SmallIncome_3
+"Subject History Page 1",2,History_2
+"Vacant Land",1,Land_1
+"URAR Page 1",1,Urar_1
+"URAR Page 1",2,Urar_2
+"Condo 456A Page 1",2,Condo465A_2
+"Condo 456B Page1",2,Condo465B_2
+"Completion Certificate",2,ComplCert_2
+"FNMA 2075 Page 1",2,2075_1
+"Coop Request Info",2,CoopRequest
+"Individual Coop Page 1",2,Inidivual Coop Interest

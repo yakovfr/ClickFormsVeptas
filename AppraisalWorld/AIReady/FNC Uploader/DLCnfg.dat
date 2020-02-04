@@ -1,0 +1,5 @@
+start=https://www.collateraldna.com/dxp/mmlogin.aspx
+xmlField=Form_XML
+AporderField=form_aporder
+objlistField=ImagePaths
+pathfield=http://www.airdport.com/prop_photos/

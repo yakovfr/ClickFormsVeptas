@@ -1,0 +1,136 @@
+[OrderDetail]
+;Order ID
+ID0=2
+;Transaction Identifier
+ID1=4
+
+;Service Information
+;Name
+ID2=5
+;Address
+ID3=6
+;City, State Zip
+ID4=7
+;Phone
+ID5=8
+;Fax
+ID6=9
+;Email
+ID7=10
+
+;Property Information
+;Address
+ID8=11
+;Address 2
+ID9=0
+;City
+ID10=12
+;State
+ID11=13
+;Postal Code
+ID12=14
+;County
+ID13=15
+;Type
+ID14=16
+;Legal Description
+ID15=17
+;Status
+ID16=18
+;Year Built
+ID17=19
+;Occupancy
+ID18=20
+
+;Order Information
+;Order ID
+ID19=21
+;Received Date
+ID20=22
+;Due Date
+ID21=23
+;Rush Yes
+ID22=24
+;Rush No
+ID23=25
+;Product Description
+ID24=26
+;Product Price Amount
+ID25=27
+;Add On Service Description 1
+ID26=28
+;Add On Service Amount 1
+ID27=29
+;Add On Service Description 2
+ID28=30
+;Add On Service Amount 2
+ID29=31
+;Add On Service Description 3
+ID30=32
+;Add On Service Amount 3
+ID31=33
+;Add On Service Description 4
+ID32=34
+;Add On Service Amount 4
+ID33=35
+;Total Fees
+ID34=36
+
+;Loan Information
+;Loan Number
+ID35=37
+;FHA Case Number
+ID36=38
+;Loan Type
+ID37=39
+;Loan Purpose
+ID38=40
+;Borrower Name
+ID39=41
+;Borrower Home Phone
+ID40=42
+;Borrower Work Phone
+ID41=43
+;Co-Borrower Name
+ID42=44
+;Co-Borrower Home Phone
+ID43=45
+;Co-Borrower Work Phone
+ID44=46
+
+;Client Information
+;Name
+ID45=47
+;Contact
+ID46=48
+;Address
+ID47=49
+;City
+ID48=50
+;State
+ID49=51
+;Postal Code
+ID50=52
+;Phone
+ID51=53
+;Fax
+ID52=54
+;Email
+ID53=55
+
+;Appraiser Information
+;Number
+ID54=56
+;Name
+ID55=57
+;Phone
+ID56=58
+;Fax
+ID57=59
+
+;Special Instructions
+ID58=60
+
+;Compliance GuideLines
+ID59=61
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BradfordImportedMismoForms>
+	<MainForms>
+		<report FNMAtype="FNM1004">
+			<mainFormID>340</mainFormID>
+			<certFormID>341</certFormID>
+			<comps>
+				<SalesFormID first="" extra="363"/>
+				<RentalsFormID first="29" extra="122"/>
+			</comps>
+		</report>
+		<report FNMAtype="FNM1004" FNMAtypeVersion="2017">
+			<mainFormID>4218</mainFormID>
+			<certFormID>4219</certFormID>
+			<comps>
+				<SalesFormID first="" extra="363"/>
+				<RentalsFormID first="29" extra="122"/>
+			</comps>
+		</report>
+		<report FNMAtype="FNM1004" FNMAtypeVersion="2019">
+			<mainFormID>4365</mainFormID>
+			<certFormID>4366</certFormID>
+			<comps>
+				<SalesFormID first="" extra="363"/>
+				<RentalsFormID first="29" extra="122"/>
+			</comps>
+		</report>
+		<report FNMAtype="FNM2055">
+			<mainFormID>355</mainFormID>
+			<certFormID>356</certFormID>
+			<comps>
+				<SalesFormID first="" extra="363"/>
+				<RentalsFormID first="29" extra="122"/>
+			</comps>
+		</report>
+		<report FNMAtype="FNM1073">
+			<mainFormID>345</mainFormID>
+			<certFormID>346</certFormID>
+			<comps>
+				<SalesFormID first="" extra="367"/>
+				<RentalsFormID first="29" extra="122"/>
+			</comps>
+		</report>
+		<report FNMAtype="FNM1025">
+			<mainFormID>349</mainFormID>
+			<certFormID>350</certFormID>
+			<comps>
+				<SalesFormID first="" extra="364"/>
+				<RentalsFormID first="" extra="362"/>
+			</comps>
+		</report>
+		<report FNMAtype="FNM1075">
+			<mainFormID>347</mainFormID>
+			<certFormID>348</certFormID>
+			<comps>
+				<SalesFormID first="" extra="363"/>
+				<RentalsFormID first="29" extra="122"/>
+			</comps>
+		</report>
+		<report FNMAtype="FNM1004C">
+			<mainFormID>342</mainFormID>
+			<certFormID>343</certFormID>
+			<comps>
+				<SalesFormID first="" extra="365"/>
+				<RentalsFormID first="" extra=""/>
+			</comps>
+		</report>
+	</MainForms>
+	<OtherForms>
+		<form FNMAContentIdentifier="1004MC">
+			<formID>850</formID>
+		</form>
+		<form FNMAContentIdentifier="CommentAddendum">
+			<formID>98</formID>
+		</form>
+	</OtherForms>
+</BradfordImportedMismoForms>

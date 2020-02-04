@@ -1,0 +1,4 @@
+[Pg1]
+Assoc1ID1=-2
+Assoc1ID2=-1
+

@@ -1,0 +1,5 @@
+Response conversion, List of files to convert responses from. Format: oldResponseFileName	mapFileName
+BRCONDO2.STD	CONDO16Resp32.map
+BRSMIN2.STD	Sincom16Resp32.map
+BRNS2055.STD	S205516Resp32.map
+BRURAR2.STD	URAR16Resp32.map

@@ -1,0 +1,4 @@
+[Pg1]
+Assoc1ID1=3
+Assoc1ID2=4
+

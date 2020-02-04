@@ -1,0 +1,91 @@
+<HTML>
+ <HEAD>
+  <!-- $MVD$:app("MicroVision WebExpress","769") -->
+  <!-- $MVD$:template("","0","0") -->
+  <!-- $MVD$:color("18","f4d3c1","MyBlue","0") -->
+  <!-- $MVD$:fontset("Sans Serif","Arial","Helvetica","Monaco") -->
+  <TITLE>ClickForms HomePage</TITLE>
+  <META NAME="GENERATOR" CONTENT="Bradford Technologies - John-David Biggers">
+ </HEAD>
+ <BODY BGCOLOR="WHITE" CFWIDTH="700">
+  <P>
+   <TABLE WIDTH="100%" CELLPADDING="1" CELLSPACING="1" BORDER="0">
+    <TR>
+     <TD WIDTH="25%" VALIGN=TOP>
+      <P>
+       <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+        <TR>
+         <TD WIDTH="100%" BGCOLOR="#C1D3F4" VALIGN=TOP>
+          <P ALIGN=CENTER>
+           <FONT FACE="Arial,Helvetica,Monaco"><B>Recent Files</B></FONT></TD>
+        </TR>
+        <TR>
+         <TD WIDTH="100%" VALIGN=TOP>
+          <P>
+           [MRU]</TD>
+        </TR>
+        <TR>
+         <TD WIDTH="100%" BGCOLOR="#C1D3F4" VALIGN=TOP>
+          <P ALIGN=CENTER>
+           <FONT FACE="Arial,Helvetica,Monaco"><B>Templates</B></FONT></TD>
+        </TR>
+        <TR>
+         <TD WIDTH="100%" VALIGN=TOP>
+          <P>
+           [TEMPLATES]</TD>
+        </TR>
+       </TABLE></TD>
+     <TD WIDTH="30%" VALIGN=TOP>
+      <P>
+       <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+        <TR>
+         <TD WIDTH="100%" BGCOLOR="#C1D3F4" VALIGN=TOP>
+          <P ALIGN=CENTER>
+           <FONT FACE="Arial,Helvetica,Monaco"><B>News & Resource Sites</B></FONT></TD>
+        </TR>
+        <TR>
+         <TD WIDTH="100%" VALIGN=TOP>
+          <P>
+           [WWW]</TD>
+        </TR>
+        <TR>
+         <TD WIDTH="100%" BGCOLOR="#C1D3F4" VALIGN=TOP>
+          <P ALIGN=CENTER>
+           <FONT FACE="Arial,Helvetica,Monaco"><B>Bradford Resources</B></FONT></TD>
+        </TR>
+        <TR>
+         <TD WIDTH="100%" VALIGN=TOP>
+          <P>
+           <FONT FACE="Arial,Helvetica,Monaco"><FONT SIZE="2">
+[BTL]
+</FONT></FONT></TD>
+        </TR>
+       </TABLE></TD>
+     <TD WIDTH="45%" VALIGN=TOP>
+      <P>
+       <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+        <TR>
+         <TD WIDTH="100%" BGCOLOR="#C1D3F4" VALIGN=TOP>
+          <P ALIGN=CENTER>
+           <B><FONT FACE="Arial,Helvetica,Monaco">AppraisalWorld Specials</FONT></B></TD>
+        </TR>
+        <TR>
+         <TD WIDTH="100%" VALIGN=TOP>
+          <P>
+           [PROMO]</TD>
+        </TR>
+        <TR>
+         <TD WIDTH="100%" BGCOLOR="#C1D3F4" VALIGN=TOP>
+          <P ALIGN=CENTER>
+           <B><FONT FACE="Arial,Helvetica,Monaco">ClickFORMS Status</FONT></B></TD>
+        </TR>
+        <TR>
+         <TD WIDTH="100%" VALIGN=TOP>
+          <P>
+           [CF]</TD>
+        </TR>
+       </TABLE></TD>
+    </TR>
+   </TABLE>
+ </BODY>
+</HTML>

@@ -1,0 +1,14 @@
+[Pg1]
+Assoc1ID1=Kitchen
+Assoc1ID2=2
+Assoc2ID1=Living Room
+Assoc2ID2=2
+Assoc3ID1=Master Bath
+Assoc3ID2=2
+Assoc4ID1=Bath #2
+Assoc4ID2=2
+Assoc5ID1=Bath #3
+Assoc5ID2=2
+Assoc6ID1=Bath #4
+Assoc6ID2=2
+

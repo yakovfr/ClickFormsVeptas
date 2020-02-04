@@ -1,0 +1,2 @@
+2			FILENUM	\
+4			CASE_NO	\

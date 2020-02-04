@@ -1,0 +1,81 @@
+DB Field Name	RepGrid ID
+CompsID	
+CreateDate	
+ReportType	
+ModifiedDate	
+UnitNo	
+StreetNumber	925
+StreetName	925
+City	926
+State	926
+Zip	926
+County	
+ProjectName	
+ProjectSizeType	976
+FloorLocation	980
+MapRef1	
+MapRef2	
+Census	
+Longitude	
+Latitude	
+SalesPrice	947
+SalesDate	960
+DataSource	930
+PrevSalePrice	934
+PrevSaleDate	935
+PrevDataSource	936
+Prev2SalePrice	
+Prev2SaleDate	
+Prev2DataSource	
+VerificationSource	931
+PricePerGrossLivArea	953
+PricePerUnit	951
+FinancingConcessions	956
+SalesConcessions	958
+HOA_MoAssesment	966
+CommonElement1	968
+CommonElement2	970
+Furnished	
+DaysOnMarket	1106
+FinalListPrice	946
+SalesListRatio	949
+MarketChange	972
+MH_Make	988
+MH_TipOut	990
+Location	962
+LeaseFeeSimple	964
+SiteArea	976
+View	984
+DesignAppeal	986
+InteriorAppealDecor	1000
+NeighbdAppeal	974
+QualityConstruction	994
+Age	996
+Condition	998
+GrossLivArea	1004
+TotalRooms	1041
+BedRooms	1042
+BathRooms	1043
+Units	
+BasementFinished	1006
+RoomsBelowGrade	1008
+FunctionalUtility	1010
+HeatingCooling	1012
+EnergyEfficientItems	1014
+GarageCarport	1016
+FencesPoolsEtc	1022
+Fireplaces	1020
+PorchesPatioEtc	1018
+SignificantFeatures	1024
+OtherItem1	1032
+OtherItem2	1033
+OtherItem3	1035
+OtherItem4	1037
+Comment	
+UserValue1	
+UserValue2	
+UserValue3	
+ArchStyle	
+NoStories	
+ParcelNo	
+YearBuilt	

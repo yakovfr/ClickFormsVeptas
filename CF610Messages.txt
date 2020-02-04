@@ -1,0 +1,126 @@
+Build
+  [Warning] ApexX_TLB.pas(540): Method 'InitiateAction' hides virtual method of base type 'TControl'
+  [Hint] DLL96V1.pas(16204): Value assigned to 'TotalBlockSize' never used
+  [Hint] DLL96V1.pas(17038): Value assigned to 'ilSigX' never used
+  [Hint] DLL96V1.pas(17034): Value assigned to 'Counter' never used
+  [Warning] IlDocImg.pas(11133): Return value of function 'ILDocumentImage.TWainSourceInformation' might be undefined
+  [Hint] UAppInstances.pas(70): Variable 'hParent' is declared but never used in 'HasMultipleInstances'
+  [Hint] UMapLabelLib.pas(215): Value assigned to 'version' never used
+  [Hint] ULicRegister.pas(263): Variable 'SelectMode' is declared but never used in 'RegisterClickFORMS'
+  [Hint] UConvert.pas(928): Value assigned to 'CompsConvertRecords_v2Tov3' never used
+  [Hint] UMapLabels.pas(852): Variable 'WPts' is declared but never used in 'TMapLabel.Rotate'
+  [Hint] UMapLabels.pas(853): Variable 'WRgn' is declared but never used in 'TMapLabel.Rotate'
+  [Hint] UMapLabels.pas(854): Variable 'TempRect' is declared but never used in 'TMapLabel.Rotate'
+  [Hint] UMapPointClient.pas(379): Variable 'tmpMapFile' is declared but never used in 'TMapPointClient.UpdateMapArea'
+  [Hint] UClientMessaging.pas(785): Variable 'msg' is declared but never used in 'TClientMessages.CreateTestMmessages'
+  [Hint] UToolMapMgr.pas(529): Variable 'LabelStreet' is declared but never used in 'TMapDataMgr.SetMapPointers'
+  [Hint] UToolMapMgr.pas(529): Variable 'LabelCity' is declared but never used in 'TMapDataMgr.SetMapPointers'
+  [Hint] UToolMapMgr.pas(839): Value assigned to 'LabelColor' never used
+  [Hint] UToolMapMgr.pas(837): Value assigned to 'LabelID' never used
+  [Hint] UToolMapMgr.pas(901): Variable 'Moved' is declared but never used in 'TMapDataMgr.WndProc'
+  [Hint] UToolMapMgr.pas(902): Variable 'i' is declared but never used in 'TMapDataMgr.WndProc'
+  [Hint] UToolMapMgr.pas(929): Value assigned to 'n' never used
+  [Hint] UToolMapMgr.pas(934): Value assigned to 'n' never used
+  [Hint] UToolMapMgr.pas(1146): Variable 'frm' is declared but never used in 'TMapDataMgr.GetSubjectName'
+  [Hint] UToolMapMgr.pas(1313): Variable 'frm' is declared but never used in 'TMapDataMgr.GetCompName'
+  [Hint] UToolMapMgr.pas(1364): Variable 'sLabel' is declared but never used in 'TMapDataMgr.LoadCompData'
+  [Hint] UToolMapMgr.pas(1365): Variable 'p' is declared but never used in 'TMapDataMgr.LoadCompData'
+  [Hint] UToolMapMgr.pas(1813): Value assigned to 'k' never used
+  [Hint] UToolMapMgr.pas(1811): Variable 'n' is declared but never used in 'TMapDataMgr.edtMouseUp'
+  [Hint] UClickNotes.pas(79): Private symbol 'DeleteClickNotesFile' declared but never used
+  [Hint] UGPSConnector.pas(111): Variable 'CPort' is declared but never used in 'TGPSConnection.btnTrackClick'
+  [Hint] UGPSConnector.pas(112): Variable 'SatCount' is declared but never used in 'TGPSConnection.btnTrackClick'
+  [Hint] UGPSConnector.pas(112): Variable 'rate' is declared but never used in 'TGPSConnection.btnTrackClick'
+  [Hint] UGPSConnector.pas(113): Variable 'str' is declared but never used in 'TGPSConnection.btnTrackClick'
+  [Hint] UGPSConnector.pas(114): Variable 'BRate' is declared but never used in 'TGPSConnection.btnTrackClick'
+  [Hint] UWatchFolders.pas(37): Private symbol 'NewOrderEvent' declared but never used
+  [Hint] UWatchFolders.pas(38): Private symbol 'WorkInEvent' declared but never used
+  [Hint] UWatchFolders.pas(39): Private symbol 'WorkOutEvent' declared but never used
+  [Hint] USendHelp.pas(545): Value assigned to 'SentOK' never used
+  [Hint] UAppraisalSentry.pas(39): Private symbol 'FSentryForm' declared but never used
+  [Hint] UAppraisalSentry.pas(40): Private symbol 'TotalSize' declared but never used
+  [Hint] UAppraisalSentry.pas(40): Private symbol 'TotalRead' declared but never used
+  [Hint] UAppraisalSentry.pas(48): Private symbol 'FMatrixPath' declared but never used
+  [Hint] UPortVeroValue.pas(152): Private symbol 'CheckServiceExpiration' declared but never used
+  [Hint] uPortCensus.pas(291): Value assigned to 'P' never used
+  [Hint] uPortCensus.pas(269): Variable 'i' is declared but never used in 'TPortCensus.ParseCensusTract'
+  [Hint] uPortCensus.pas(269): Variable 'm' is declared but never used in 'TPortCensus.ParseCensusTract'
+  [Hint] uPortCensus.pas(270): Variable 'ovElements' is declared but never used in 'TPortCensus.ParseCensusTract'
+  [Hint] UDriveHQ.pas(211): Value assigned to 'TDriveHQ.CreateAddTaskINIFile' never used
+  [Hint] UDriveHQ.pas(291): Value assigned to 'TDriveHQ.CreateGetListINIFile' never used
+  [Hint] UDriveHQ.pas(323): Variable 'sLicINIPath' is declared but never used in 'TDriveHQ.CreateDefaultBackupTask'
+  [Hint] UDriveHQ.pas(409): Value assigned to 'TDriveHQ.LaunchFileManager' never used
+  [Hint] UDriveHQ.pas(444): Value assigned to 'TDriveHQ.LaunchWWWbackup' never used
+  [Hint] UDriveHQ.pas(58): Private symbol 'CheckDriveHQSubscription' declared but never used
+  [Hint] UDriveHQ.pas(64): Private symbol 'InstallBackupDefaultTaskFirstTime' declared but never used
+  [Hint] DecodeFormula2.pas(1115): Value assigned to 'P2' never used
+  [Hint] DecodeFormula2.pas(1145): Value assigned to 'P2' never used
+  [Hint] DecodeFormula2.pas(978): Value assigned to 'V' never used
+  [Hint] UInsertPDF.pas(292): Value assigned to 'ACell' never used
+  [Hint] uMISMOImportExport.pas(749): Variable 'ANumber' is declared but never used in 'TMISMOTranslator.ExportValue'
+  [Hint] UAMC_RELSPort.pas(423): Variable 'XMLDataW' is declared but never used in 'GetValidationStatus'
+  [Hint] UAMC_RELSExport.pas(547): Value assigned to 'reviewOK' never used
+  [Hint] UAMC_RELSExport.pas(649): Value assigned to 'hasErrs' never used
+  [Hint] UAMC_RELSExport.pas(1101): Value assigned to 'goodForm' never used
+  [Hint] UAMC_RELSExport.pas(1069): Variable 'XPindex' is declared but never used in 'TExportRELSReport.ExtractRELSValidationRules'
+  [Hint] UAMC_RELSExport.pas(1195): Variable 'curNode' is declared but never used in 'TExportRELSReport.FindCellIDByXpath'
+  [Hint] UAMC_RELSExport.pas(183): Private symbol 'LoadXMLCopy' declared but never used
+  [Hint] UAMC_RELSExport.pas(186): Private symbol 'FindCellIDByXpath' declared but never used
+  [Hint] UAddressMgr.pas(377): Value assigned to 'FoundIt' never used
+  [Hint] UAddressMgr.pas(373): Variable 'i' is declared but never used in 'TCompAddress.GetCellTextByID'
+  [Hint] UAddressMgr.pas(373): Variable 'j' is declared but never used in 'TCompAddress.GetCellTextByID'
+  [Hint] UAddressMgr.pas(397): Variable 'i' is declared but never used in 'TCompAddress.GetCellTextByNo'
+  [Hint] UAddressMgr.pas(397): Variable 'j' is declared but never used in 'TCompAddress.GetCellTextByNo'
+  [Hint] UAddressMgr.pas(398): Variable 'FoundIt' is declared but never used in 'TCompAddress.GetCellTextByNo'
+  [Hint] UAddressMgr.pas(549): Variable 'i' is declared but never used in 'TSubAddress.GetCellTextByID'
+  [Hint] UAddressMgr.pas(561): Variable 'i' is declared but never used in 'TSubAddress.GetCellTextByNo'
+  [Hint] UAddressMgr.pas(65): Private symbol 'GetTableCellText' declared but never used
+  [Hint] UAddressMgr.pas(92): Private symbol 'FCompID' declared but never used
+  [Hint] UAddressMgr.pas(106): Private symbol 'GetTableCompID' declared but never used
+  [Hint] UAddressMgr.pas(107): Private symbol 'GetTableCellText' declared but never used
+  [Hint] UMapEditorFrame.pas(393): Variable 'FNewRect' is declared but never used in 'TMapEditorFrame.ZoomMap'
+  [Hint] UMapEditorFrame.pas(432): Variable 'i' is declared but never used in 'TMapEditorFrame.ZoomBarMouseUp'
+  [Hint] UMapEditorFrame.pas(501): Value assigned to 'k' never used
+  [Hint] UMapEditorFrame.pas(528): Variable 'n' is declared but never used in 'TMapEditorFrame.btnRevertClick'
+  [Hint] UMapPtClient2.pas(133): Variable 'isRegistered' is declared but never used in 'TMapPtClient2.Create'
+  [Hint] UMapPtClient2.pas(343): Variable 'dViewScale' is declared but never used in 'TMapPtClient2.GetGeoCodeFromMapPoint'
+  [Hint] UMain.pas(2292): Variable 'HelpMItem' is declared but never used in 'TMain.SetupAppMenus'
+  [Hint] UMain.pas(2988): Variable 'doc' is declared but never used in 'TMain.ShowSampleReport'
+  [Hint] UMain.pas(2989): Variable 'docStream' is declared but never used in 'TMain.ShowSampleReport'
+  [Hint] UMain.pas(2990): Variable 'version' is declared but never used in 'TMain.ShowSampleReport'
+  [Hint] UMain.pas(3795): Value assigned to 'doc' never used
+  [Hint] UMain.pas(3802): Value assigned to 'doc' never used
+  [Hint] UMain.pas(3819): Value assigned to 'doc' never used
+  [Hint] UMain.pas(3827): Value assigned to 'doc' never used
+  [Hint] UMain.pas(3964): Value assigned to 'doc' never used
+  [Hint] UNewsDeskThread.pas(265): Value assigned to 'dt' never used
+  [Hint] UNewsDeskThread.pas(298): Value assigned to 'TNewsDeskThread.GetInetFile' never used
+  [Hint] UNewsDeskThread.pas(746): Value assigned to 'CompOp' never used
+  [Hint] UNewsDeskThread.pas(732): Value assigned to 'CompOpTime' never used
+  [Hint] UNewsDeskThread.pas(706): Value assigned to 'CompOp' never used
+  [Hint] UNewsDeskThread.pas(683): Value assigned to 'CompOpTime' never used
+  [Hint] UNewsDeskThread.pas(630): Value assigned to 'CompOpTime' never used
+  [Hint] UNewsDeskThread.pas(629): Value assigned to 'CompOp' never used
+  [Hint] UNewsDeskThread.pas(602): Value assigned to 'CompOp' never used
+  [Hint] UNewsDeskThread.pas(551): Value assigned to 'CompOp' never used
+  [Hint] UNewsDeskThread.pas(1021): Value assigned to 'CompOpTime' never used
+  [Hint] UNewsDeskThread.pas(1020): Value assigned to 'CompOp' never used
+  [Hint] UAgWare.pas(620): Value assigned to 'cmd' never used
+  [Hint] UContainer.pas(4059): Value assigned to 'OK2Do' never used
+  [Hint] UContainer.pas(4373): Variable 'WinPrint' is declared but never used in 'TContainer.PrintReport'
+  [Hint] UContainer.pas(4563): Value assigned to 'fIndex' never used
+  [Hint] UDragUtils.pas(67): Variable 'doc' is declared but never used in 'TDropTarget.Drop'
+  [Hint] UUtil3.pas(276): Value assigned to 'CreateThumbnail' never used
+  [Warning] ULicSubscription.pas(55): Return value of function 'GetUserHasValidSubscription' might be undefined
+  [Warning] ULicUser.pas(1765): Variable 'LicUser' might not have been initialized
+  [Warning] ULicUser.pas(1780): Variable 'LicUser' might not have been initialized
+  [Warning] ULicUser.pas(1794): Variable 'LicUser' might not have been initialized
+  [Warning] ULicUser.pas(2182): Text after final 'END.' - ignored by compiler
+  [Hint] UDocView.pas(1378): Value assigned to 'DC' never used
+  [Warning] Ueditor.pas(2591): Combining signed and unsigned types - widened both operands
+  [Warning] Ueditor.pas(3275): Comparing signed and unsigned types - widened both operands
+  [Hint] Ueditor.pas(6135): Value assigned to 'Distance' never used
+  [Hint] UPage.pas(1158): Value assigned to 'Ok2Read' never used
+  [Warning] UCell.pas(3581): Text after final 'END.' - ignored by compiler
+  [Hint] UPgAnnotation.pas(373): Value assigned to 'version' never used
+  [Hint] Uutil1.pas(1733): Value assigned to 'R' never used

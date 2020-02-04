@@ -1,0 +1,143 @@
+ClickFormsFields,141
+46,Property Address,46,925,MergeFields 100001 100032 100002 100012
+100001,Property Street No.,,,
+100002,Property Street Name,,,
+100012,Property Street Suffix,,,
+100032,Property Street Post Direction,,,
+47,City,47,,ExtractCityCityStateZip 926
+48,State,48,,ExtractStateCityStateZip 926
+49,ZIP,49,,ExtractZipCityStateZip 926
+926,City/State/Zip,926,926,MakeCityStateZip 47 48 49
+59,Legal Description,59,,
+50,County,50,,
+2052,Contract Price,2052,,
+2053,Contract Date,2053,,
+595,Neighborhood or Project Name (Subject Only),595,,
+60,Assesor's Parcel No.,60,,
+58,Current Owner,58,,MergeFields 100003 100004
+100003,Current Owner FName,,,SpliField1 58
+100004,Current Owner Lname,,,SpliField2 58
+367,Tax Year,367,,
+368,R.E. Taxes $,368,,
+369,Special Assesments $,369,,
+452,Loan Charges/Concessions Paid By Seller,452,,
+390,HOA $  (monthly),390,,
+598,Map Reference,598,,MergeFields 100006 100007
+100006,Map Page,,,Split1 598
+100007,Map Grid,,,Split2 598
+599,Census Tract,599,,
+447,Sale Price,447,947,
+448,Date of Sale,,960,MergeFields 960 100016
+100016,Days On Market (Merge with Date of Sale),,,
+66,Dimensions,66,,
+67,Site,67,976,
+68,Zoning,68,,
+85,Topography,85,,
+86,Size,86,,
+88,Shape,88,,
+90,View,90,984,
+76,Electricity (Subject Only),76,,
+78,Gas (Subject Only),78,,
+80,Water (Subject Only),80,,
+125,Sidewalk (Subject Only),125,,
+106,FEMA Zone,106,,
+107,FEMA Map Date,107,,
+108,FEMA Map No.,108,,
+146,Number Of Units,146,1332,
+951,Price per Unit,,951,
+148,No. of Stories,148,,
+156,Type (Det./Att.),156,,
+149,Design (Style),149,986,
+150,Existing/Proposed,150,,
+498,Age (Yrs),498,996,CalcAge 100005
+100005,Year Built,,,CalcYearBuilt 498
+499,Effective Age (yrs),499,,CalcAge 100008
+100008,Effective Year Built,,,CalcYearBuilt 499
+173,Foundation,173,,
+174,Exterior Walls,174,,
+175,Roof Surface,175,,
+253,Flooring Material,253,,
+200,Basement Area SqFt,200,1006,
+201,Basement % Finished,201,1008,
+229,Rooms (Total),229,1041,
+230,Bedrooms,230,1042,SumUpFields 100028 100029 100030 100031
+100028,Combine Bedrooms 1,,,
+100029,Combine Bedrooms 2,,,
+100030,Combine Bedrooms 3,,,
+100031,Combine Bedrooms 4,,,
+231,Bathrooms,231,1043,CalcBathrooms 100009 100010 100041 100011
+100009,BathroomsFull,,,SumUpFields 100033 100034 100035 100036
+100033,Combine Full Baths 1,,,
+100034,Combine Full Baths 2,,,
+100035,Combine Full Baths 3,,,
+100036,Combine Full Baths 4,,,
+100010,BathroomsHalf,,,SumUpFields 100037 100038 100039 100040
+100037,Combine Half Baths 1,,,
+100038,Combine Half Baths 2,,,
+100039,Combine Half Baths 3,,,
+100040,Combine Half Baths 4,,,
+100041,Bathrooms3/4,,,SumUpFields 100042 100043 100044 100045
+100042,Combine 3/4 Baths 1,,,
+100043,Combine 3/4 Baths 2,,,
+100044,Combine 3/4 Baths 3,,,
+100045,Combine 3/4 Baths 4,,,
+100011,BathroomsQuarter,,,SumUpFields 100046 100047 100048 100049
+100046,Combine Qt Baths 1,,,
+100047,Combine Qt Baths 2,,,
+100048,Combine Qt Baths 3,,,
+100049,Combine Qt Baths 4,,,
+1004,Gross Living Area,232,1004,SumUpFields 100013 100014 100015 100027
+100013,Combine GLA 1,,,
+100014,Combine GLA 2,,,
+100015,Combine GLA 3,,,
+100027,Combine GLA 4,,,
+2030,Garage # of Cars,2030,,
+345,Garage Spaces,345,,MergeFields 100017 100018
+92,Driveway Surface,92,,
+893,Garage/Carport SqFt,893,,
+100017,Car Port Cap,,,
+100018,Garage Cap,,,
+1016,Garage/Carport,1016,1016,MergeFields 345 100019 100020 100021 100026
+100019,Merge Garage Desc 1,,,
+100020,Merge Garage Desc 2,,,
+100021,Merge Garage Desc 3,,,
+100026,Merge Garage Desc 4,,,
+287,Heating Type,287,,
+288,Heating Fuel,288,,
+292,Central Cooling,292,,
+1012,Heating/Cooling,1012,1012,MergeFields 287 292
+323,Fireplaces,323,1020,
+962,Location,,962,
+964,Leasehold/FeeSimple,964,964,
+994,Construction Quality,994,994,
+998,Condition,998,998,
+1010,Functional Utility,,1010,
+1014,Energy Efficient Items,,1014,
+1018,Porch/Patio/ Deck,1018,1018,mergefields 100050 100051
+100050,mergeporch/deck1,,,
+100051,mergeporch/deck2,,,
+908,Patio,908,908,
+1022,Pool,1022,1022,MergeFields 100022 100023 100024 100025
+100022,Mereg Amenities 1,,,
+100023,Merge Amenities 2,,,
+100024,Merge Amenities 3,,,
+100025,Merge Amenities 4,,,
+929,Proximity to Subject,,929,
+930,Data Source,,930,
+931,Verification of Sources,,931,
+956,Sale or Financing,,956,
+958,Concessions,,958,
+1214,Project Size/Type,,1214,
+980,Floor Location,,980,
+1032,Blank 1,1032,1032,
+1033,Blank 2,1033,1033,
+1305,Project Security,1305,1305,
+1307,Features,1307,1307,
+1309,Remodeling,1309,1309,
+1311,Kitchen Baths Etc.,1311,1311,
+1304,Project Name,1304,1304,
+934,Prior Sale Date,934,934,
+935,Prior Sale Price,935,935,
+936,Within Year of Appraisal,936,936,
+2074,Effective Date of Data Source,2074,,
+1205,StreetPhoto,,,,
