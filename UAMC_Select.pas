@@ -450,7 +450,10 @@ begin
         PackageData.FGoToNextOk := PackageData.FGoToNextOk and isDocSigned;
       end;
   end;
-  result := IsDocSaved and IsDocSigned and PackageData.FGoToNextOk;
+  if PackageData.AMCIdentifier = AMC_Veptas then
+    result := IsDocSaved and PackageData.FGoToNextOk  // signature not requireed
+  else
+    result := IsDocSaved and IsDocSigned and PackageData.FGoToNextOk;
   //result := IsDocSaved and PackageData.FGoToNextOk;
 end;
 
