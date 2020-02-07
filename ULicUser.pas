@@ -1094,6 +1094,7 @@ begin
       LicInfo.FIsValidUser  := UserLicInfo.FReplyID = rsSubsRegisteredOK;  //PAM: need to set the FIsValidUser
       if FUseCRMRegistration then
         begin
+          LicInfo.FVers := cSWLicVers6;
           LicInfo.FGroupID      := UserLicInfo.FGroupID;
           LicInfo.FRegAsIndividual := UserLicInfo.FRegAsIndividual;
 
