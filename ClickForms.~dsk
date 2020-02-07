@@ -1,72 +1,33 @@
 [Closed Files]
-File_0=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\UForms.pas',0,1,517,1,527,0,0
-File_1=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\ULicSelectOptions.pas',0,1,163,39,144,0,0
-File_2=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\UStrings.pas',0,1,104,1,119,0,0
-File_3=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\UContainer.pas',0,1,1234,47,1250,0,0
-File_4=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\UGridMgr.pas',0,1,226,1,233,0,0
-File_5=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\UServices.pas',0,1,69,43,69,0,0
-File_6=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\UCustomerServices.pas',0,1,188,10,195,0,0
+File_0=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\ClickForms.dpr',0,1,443,1,459,0,0
+File_1=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\UMarshalSwiftMgr.pas',0,1,2153,10,2159,0,0
+File_2=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\UWebConfig.pas',0,1,507,54,519,0,0
+File_3=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\UMarshalSwiftSite.pas',0,1,121,1,135,0,0
+File_4=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\UXMLUtil.pas',0,1,126,24,126,0,0
+File_5=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\uVerificationAddress.pas',0,1,10,1,1,0,0
+File_6=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\ULicUser.pas',0,1,1093,1,1117,0,0
+File_7=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\ULicAuthorize.pas',0,1,147,50,163,0,0
+File_8=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\ULicConfirmation.pas',0,1,1164,62,1180,0,0
+File_9=SourceModule,'C:\Github\ClickFormsUSA\master\ClickFORMs\UWebUtils.pas',0,1,740,1,756,0,0
 
 [Modules]
-Module0=C:\Delphi Components\Changed Units\SoapUpdate 24535\src\SOAPHTTPTrans.pas
-Module1=C:\Github\ClickFormsUSA\master\ClickFORMs\UWebConfig.pas
-Module2=C:\Delphi Components\Changed Units\SoapUpdate 24535\src\OPToSOAPDomConv.pas
-Module3=C:\Github\ClickFormsUSA\master\ClickFORMs\MarshalSwiftService.pas
-Module4=C:\Github\ClickFormsUSA\master\ClickFORMs\UPortMarshalSwift.pas
-Module5=C:\Github\ClickFormsUSA\master\ClickFORMs\UWebUtils.pas
-Module6=C:\Github\ClickFormsUSA\master\ClickFORMs\ULicConfirmation.pas
-Module7=C:\Github\ClickFormsUSA\master\ClickFORMs\ULicAuthorize.pas
-Module8=C:\Github\ClickFormsUSA\master\ClickFORMs\ClickForms.dpr
-Module9=C:\Github\ClickFormsUSA\master\ClickFORMs\ULicUser.pas
-Count=10
+Module0=C:\Github\ClickFormsUSA\ClickForms9.55 Veptas\ULicUser.pas
+Module1=C:\Github\ClickFormsUSA\ClickForms9.55 Veptas\UAMC_Select.pas
+Module2=C:\Github\ClickFormsUSA\ClickForms9.55 Veptas\UAMC_BuildX26GSE.pas
+Count=3
 EditWindowCount=1
 
-[C:\Delphi Components\Changed Units\SoapUpdate 24535\src\SOAPHTTPTrans.pas]
+[C:\Github\ClickFormsUSA\ClickForms9.55 Veptas\ULicUser.pas]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[C:\Github\ClickFormsUSA\master\ClickFORMs\UWebConfig.pas]
+[C:\Github\ClickFormsUSA\ClickForms9.55 Veptas\UAMC_Select.pas]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[C:\Delphi Components\Changed Units\SoapUpdate 24535\src\OPToSOAPDomConv.pas]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[C:\Github\ClickFormsUSA\master\ClickFORMs\MarshalSwiftService.pas]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[C:\Github\ClickFormsUSA\master\ClickFORMs\UPortMarshalSwift.pas]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[C:\Github\ClickFormsUSA\master\ClickFORMs\UWebUtils.pas]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[C:\Github\ClickFormsUSA\master\ClickFORMs\ULicConfirmation.pas]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[C:\Github\ClickFormsUSA\master\ClickFORMs\ULicAuthorize.pas]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[C:\Github\ClickFormsUSA\master\ClickFORMs\ClickForms.dpr]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[C:\Github\ClickFormsUSA\master\ClickFORMs\ULicUser.pas]
+[C:\Github\ClickFormsUSA\ClickForms9.55 Veptas\UAMC_BuildX26GSE.pas]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
@@ -75,26 +36,27 @@ FormOnTop=0
 FormState=0
 FormOnTop=0
 
+[C:\Github\ClickFormsUSA\ClickForms9.55 Veptas\ClickForms.dpr]
+FormState=0
+FormOnTop=0
+
+[C:\Github\ClickFormsUSA\ClickForms9.55 Veptas\UAMC_WorkFlowBaseFrame.pas]
+FormState=0
+FormOnTop=0
+
 [EditWindow0]
-ViewCount=10
-CurrentView=6
+ViewCount=3
+CurrentView=2
 View0=0
 View1=1
 View2=2
-View3=3
-View4=4
-View5=5
-View6=6
-View7=7
-View8=8
-View9=9
 CodeExplorer=CodeExplorer@EditWindow0
 MessageView=MessageView@EditWindow0
 Create=1
 Visible=1
 State=0
-Left=219
-Top=159
+Left=320
+Top=124
 Width=1412
 Height=745
 MaxLeft=-1
@@ -105,78 +67,29 @@ LeftPanelSize=140
 LeftPanelClients=CodeExplorer@EditWindow0
 LeftPanelData=000004000000000000000000000000000000000000000000000100000000000000000C000000436F64654578706C6F726572FFFFFFFF
 RightPanelSize=0
-BottomPanelSize=157
+BottomPanelSize=185
 BottomPanelClients=MessageView@EditWindow0
 BottomPanelData=000004000000000000000000000000000000000000000000000100000000000000000B0000004D65737361676556696577FFFFFFFF
 
 [View0]
-Module=C:\Github\ClickFormsUSA\master\ClickFORMs\ULicUser.pas
-CursorX=1
-CursorY=1117
-TopLine=1093
+Module=C:\Github\ClickFormsUSA\ClickForms9.55 Veptas\UAMC_BuildX26GSE.pas
+CursorX=62
+CursorY=205
+TopLine=199
 LeftCol=1
 
 [View1]
-Module=C:\Github\ClickFormsUSA\master\ClickFORMs\ClickForms.dpr
-CursorX=1
-CursorY=459
-TopLine=443
+Module=C:\Github\ClickFormsUSA\ClickForms9.55 Veptas\UAMC_Select.pas
+CursorX=47
+CursorY=441
+TopLine=428
 LeftCol=1
 
 [View2]
-Module=C:\Github\ClickFormsUSA\master\ClickFORMs\ULicAuthorize.pas
-CursorX=50
-CursorY=163
-TopLine=147
-LeftCol=1
-
-[View3]
-Module=C:\Github\ClickFormsUSA\master\ClickFORMs\ULicConfirmation.pas
-CursorX=62
-CursorY=1180
-TopLine=1164
-LeftCol=1
-
-[View4]
-Module=C:\Github\ClickFormsUSA\master\ClickFORMs\UWebUtils.pas
-CursorX=1
-CursorY=756
-TopLine=740
-LeftCol=1
-
-[View5]
-Module=C:\Github\ClickFormsUSA\master\ClickFORMs\UPortMarshalSwift.pas
-CursorX=1
-CursorY=258
-TopLine=244
-LeftCol=1
-
-[View6]
-Module=C:\Delphi Components\Changed Units\SoapUpdate 24535\src\SOAPHTTPTrans.pas
-CursorX=69
-CursorY=333
-TopLine=313
-LeftCol=1
-
-[View7]
-Module=C:\Github\ClickFormsUSA\master\ClickFORMs\MarshalSwiftService.pas
-CursorX=48
-CursorY=55
-TopLine=33
-LeftCol=1
-
-[View8]
-Module=C:\Delphi Components\Changed Units\SoapUpdate 24535\src\OPToSOAPDomConv.pas
-CursorX=16
-CursorY=1487
-TopLine=1474
-LeftCol=1
-
-[View9]
-Module=C:\Github\ClickFormsUSA\master\ClickFORMs\UWebConfig.pas
-CursorX=3
-CursorY=277
-TopLine=263
+Module=C:\Github\ClickFormsUSA\ClickForms9.55 Veptas\ULicUser.pas
+CursorX=61
+CursorY=1961
+TopLine=1944
 LeftCol=1
 
 [Watches]
@@ -205,10 +118,8 @@ LRDockWidth=426
 Dockable=1
 
 [Breakpoints]
-Count=3
-Breakpoint0='C:\Github\ClickFormsUSA\master\ClickFORMs\UMarshalSwiftSite.pas',105,'',0,1,'',1,0,0,'',1,'','',''
-Breakpoint1='C:\Github\ClickFormsUSA\master\ClickFORMs\UAMC_BuildENV.pas',358,'',0,1,'',1,0,0,'',1,'','',''
-Breakpoint2='C:\Github\ClickFormsUSA\master\ClickFORMs\UPortMarshalSwift.pas',250,'',0,1,'',1,0,0,'',1,'','',''
+Count=1
+Breakpoint0='C:\Github\ClickFormsUSA\master\ClickFORMs\UMarshalSwiftMgr.pas',2163,'',0,1,'',1,0,0,'',1,'','',''
 
 [AddressBreakpoints]
 Count=0
@@ -498,11 +409,11 @@ State=0
 Left=0
 Top=12
 Width=140
-Height=542
+Height=514
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=140
-ClientHeight=542
+ClientHeight=514
 TBDockHeight=305
 LRDockWidth=140
 Dockable=1
@@ -514,12 +425,12 @@ State=0
 Left=12
 Top=0
 Width=1392
-Height=157
+Height=185
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1392
-ClientHeight=157
-TBDockHeight=157
+ClientHeight=185
+TBDockHeight=185
 LRDockWidth=443
 Dockable=1
 
